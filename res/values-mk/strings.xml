@@ -4,9 +4,9 @@
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
-
+  
           http://www.apache.org/licenses/LICENSE-2.0
-
+  
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -42,13 +42,16 @@
     <string name="cert_too_large_error" msgid="8715414972725646285">"Не можеше да се инсталира зашто сертификатот е преголем."</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"Не можеше да се инсталира зашто датотеката со сертификат не можеше да се лоцира."</string>
     <string name="cert_read_error" msgid="7353463360652419796">"Не можеше да се инсталира зашто датотеката со сертификат не можеше да се прочита."</string>
+    <string name="no_cert_file_found" product="nosdcard" msgid="3555332946357131929">"Не е пронајдена датотека со сертификати на USB меморијата."</string>
+    <string name="no_cert_file_found" product="default" msgid="1942077544887243999">"Не е пронајдена датотека со сертификати на СД картичката."</string>
+    <string name="sdcard_not_present" product="nosdcard" msgid="9197143240492611196">"USB меморијата не е достапна."</string>
+    <string name="sdcard_not_present" product="default" msgid="3866952732541932947">"Нема СД картичка."</string>
     <string name="only_primary_user_allowed" msgid="4005084935023047716">"Само сопственикот на овој уред може да инсталира сертификати."</string>
     <string name="credential_usage_label" msgid="1513892208033156805">"Употреба на акредитив:"</string>
   <string-array name="credential_usage">
     <item msgid="375085478373011304">"Виртуелна приватна мрежа и апликации"</item>
     <item msgid="692322974985472861">"Wi-Fi"</item>
   </string-array>
-    <string name="certificate_capabilities_warning" msgid="4158609401937799110">"Забелешка: издавачот на овој сертификат може да провери целиот сообраќај кон и од уредот."</string>
     <string name="wifi_title" msgid="8475811746333426489">"Профил на Wi-Fi"</string>
     <string name="wifi_detail_title" msgid="3627332137252994395">"Детали за %s"</string>
     <string name="wifi_detail_label" msgid="3032151019356747583">"Детали"</string>
