@@ -4,9 +4,9 @@
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
-  
+
           http://www.apache.org/licenses/LICENSE-2.0
-  
+
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -38,26 +38,24 @@
     <string name="cert_not_saved" msgid="4037698479662830270">"ସର୍ଟିଫିକେଟ୍‌ଟି ଇନଷ୍ଟଲ୍‌ ହୋଇନାହିଁ।"</string>
     <string name="no_cert_to_saved" msgid="5708884372817309068">"ଇନଷ୍ଟଲ୍‌ କରାଯିବାକୁ କୌଣସି ସର୍ଟିଫିକେଟ୍‍ ନାହିଁ।"</string>
     <string name="invalid_cert" msgid="7704228670980743590">"ଏହି ସର୍ଟିଫିକେଟ୍‍ ବୈଧ ନୁହେଁ।"</string>
+    <string name="action_missing_private_key" msgid="7543470057312920042">"ଗୋଟିଏ ସର୍ଟିଫିକେଟ୍‍କୁ ଇନଷ୍ଟଲ୍ କରିବା ପାଇଁ ବ୍ୟକ୍ତିଗତ କୀ\' ଆବଶ୍ୟକ"</string>
+    <string name="action_missing_user_cert" msgid="3727411730202316771">"ଗୋଟିଏ ବ୍ୟକ୍ତିଗତ କୀ’କୁ ଇନଷ୍ଟଲ୍ କରିବା ପାଇଁ ସର୍ଟିଫିକେଟ୍ ଆବଶ୍ୟକ"</string>
     <string name="cert_is_added" msgid="6996557598167000500">"<xliff:g id="CREDENTIAL">%s</xliff:g> ଇନଷ୍ଟଲ୍‌ ହୋଇଛି।"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"ଇନଷ୍ଟଲ୍‌ କରିହେଉନାହିଁ, କାରଣ ସର୍ଟିଫିକେଟ୍‌ର ଆକାର ବହୁତ ବଡ଼ ଅଟେ।"</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"ଇନଷ୍ଟଲ୍‌ କରିହେଉନାହିଁ, କାରଣ ସର୍ଟିଫିକେଟ୍‌ ଫାଇଲ୍‍ ମିଳୁନାହିଁ।"</string>
     <string name="cert_read_error" msgid="7353463360652419796">"ଇନଷ୍ଟଲ୍‌ କରିହେଉନାହିଁ, କାରଣ ସର୍ଟିଫିକେଟ୍‌ ଫାଇଲ୍‍ ପଢ଼ି ହେଉନାହିଁ।"</string>
-    <string name="no_cert_file_found" product="nosdcard" msgid="3555332946357131929">"USB ଷ୍ଟୋରେଜରେ କୌଣସି ସର୍ଟିଫିକେଟ୍‍ ଫାଇଲ୍ ମିଳୁନାହିଁ।"</string>
-    <string name="no_cert_file_found" product="default" msgid="1942077544887243999">"SD କାର୍ଡରେ କୌଣସି ସର୍ଟିଫିକେଟ୍‍ ଫାଇଲ୍ ମିଳୁନାହିଁ।"</string>
-    <string name="sdcard_not_present" product="nosdcard" msgid="9197143240492611196">"USB ଷ୍ଟୋରେଜ୍ ଉପଲବ୍ଧ ନାହିଁ।"</string>
-    <string name="sdcard_not_present" product="default" msgid="3866952732541932947">"ଏଥିରେ SD କାର୍ଡ ନାହିଁ।"</string>
     <string name="only_primary_user_allowed" msgid="4005084935023047716">"କେବଳ ଏହି ଡିଭାଇସ୍‌‍ର ମାଲିକ ହିଁ ସର୍ଟିଫିକେଟ୍‌ ଇନଷ୍ଟଲ୍‍ କରିପାରିବେ।"</string>
     <string name="credential_usage_label" msgid="1513892208033156805">"ତଥ୍ୟର ବ୍ୟବହାର:"</string>
   <string-array name="credential_usage">
     <item msgid="375085478373011304">"VPN ଓ ଆପ୍‍"</item>
     <item msgid="692322974985472861">"ୱାଇ-ଫାଇ"</item>
   </string-array>
+    <string name="certificate_capabilities_warning" msgid="4158609401937799110">"ଧ୍ୟାନଦିଅନ୍ତୁ: ଏହି ସର୍ଟିଫିକେଟ୍ ଜାରି କରିଥିବା କମ୍ପାନୀ, ଡିଭାଇସ୍‌ରୁ ଯାଉଥିବା ଓ ଆସୁଥିବା ସମସ୍ତ ଟ୍ରାଫିକ୍‌କୁ ଯାଞ୍ଚ କରିପାରନ୍ତି।"</string>
     <string name="wifi_title" msgid="8475811746333426489">"ୱାଇ-ଫାଇ ପ୍ରୋଫାଇଲ୍‍"</string>
     <string name="wifi_detail_title" msgid="3627332137252994395">"%sର ବିବରଣୀ"</string>
     <string name="wifi_detail_label" msgid="3032151019356747583">"ବିବରଣୀ"</string>
     <string name="wifi_install_label" msgid="1449629407724323233">"ଇନଷ୍ଟଲ୍‍"</string>
-    <!-- no translation found for wifi_installing_label (8387393993627129025) -->
-    <skip />
+    <string name="wifi_installing_label" msgid="8387393993627129025">"ଇନଷ୍ଟଲ୍ କରାଯାଉଛି"</string>
     <string name="wifi_cancel_label" msgid="1328748037608392134">"କ୍ୟାନ୍ସଲ୍‍ କରନ୍ତୁ"</string>
     <string name="wifi_dismiss_label" msgid="1916684434873972698">"ଖାରଜ"</string>
     <string name="wifi_no_config" msgid="1835743123288916755">"କିଛିନୁହେଁ"</string>
@@ -72,10 +70,7 @@
     <string name="wifi_installer_detail" msgid="63879632832701669">"<xliff:g id="NAME">%1$s</xliff:g> ଜରିଆରେ ଉପଲବ୍ଧ ନେଟୱର୍କଗୁଡ଼ିକ ସହ ସଂଯୋଗ କରିବାକୁ ୱାଇ-ଫାଇ କ୍ରେଡେନସିଆଲ୍ସ ଇନଷ୍ଟଲ୍‍ କରନ୍ତୁ।"</string>
     <string name="wifi_installer_download_error" msgid="5429453090956277692">"ଡାଉନଲୋଡ୍ କରାଯାଇଥିବା ଫାଇଲ୍‍ରେ ସମସ୍ୟା ରହିଛି ଏବଂ ଇନଷ୍ଟଲ୍‍ କରାଯାଇପାରିବ ନାହିଁ। ଆପଣ ସଠିକ୍‍ ସୋର୍ସରୁ ଫାଇଲ୍‍ ଡାଉନଲୋଡ୍ କରିଥିବା ନିଶ୍ଚିତ କରନ୍ତୁ।"</string>
     <string name="wifi_installer_fail" msgid="894483173306576331">"ୱାଇ-ଫାଇଲ କ୍ରେଡେନସିଆଲ୍ସ ଇନଷ୍ଟଲ୍‍ କରିପାରିବ ନାହିଁ। ଫାଇଲ୍‍ ପୁଣି ଡାଉନଲୋଡ୍ କରିବାକୁ ଚେଷ୍ଟା କରନ୍ତୁ।"</string>
-    <!-- no translation found for wifi_installer_fail_no_wifi_title (8358191074828840533) -->
-    <skip />
-    <!-- no translation found for wifi_installer_fail_title (5547079779067835479) -->
-    <skip />
-    <!-- no translation found for wifi_installer_fail_no_wifi (2044576439984209921) -->
-    <skip />
+    <string name="wifi_installer_fail_no_wifi_title" msgid="8358191074828840533">"ଇନଷ୍ଟଲେଶନ୍ କ୍ୟାନ୍ସଲ୍‍ କରାଯାଇଛି"</string>
+    <string name="wifi_installer_fail_title" msgid="5547079779067835479">"ଇନଷ୍ଟଲ୍‍ କରାଯାଇପାରିବ ନାହିଁ"</string>
+    <string name="wifi_installer_fail_no_wifi" msgid="2044576439984209921">"ୱାଇ-ଫାଇ ଅନ୍‍ କରନ୍ତୁ ଏବଂ ପୁଣି ଚେଷ୍ଟା କରନ୍ତୁ।"</string>
 </resources>
