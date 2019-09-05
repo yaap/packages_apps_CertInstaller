@@ -4,9 +4,9 @@
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
-  
+
           http://www.apache.org/licenses/LICENSE-2.0
-  
+
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -40,20 +40,19 @@
     <string name="cert_not_saved" msgid="4037698479662830270">"සහතිකය ස්ථාපනය කර නැත."</string>
     <string name="no_cert_to_saved" msgid="5708884372817309068">"ස්ථාපනයට සහතික නැත."</string>
     <string name="invalid_cert" msgid="7704228670980743590">"සහතිකය අවලංගුයි."</string>
+    <string name="action_missing_private_key" msgid="7543470057312920042">"සහතිකයක් ස්ථාපනය කිරීම සඳහා පුද්ගලික යතුරක් අවශ්‍යයි"</string>
+    <string name="action_missing_user_cert" msgid="3727411730202316771">"පුද්ගලික යතුරක් ස්ථාපනය කිරීම සඳහා සහතිකයක් අවශ්‍යයි"</string>
     <string name="cert_is_added" msgid="6996557598167000500">"<xliff:g id="CREDENTIAL">%s</xliff:g> ස්ථාපනය කරන ලදි."</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"සහතිකයේ ප්‍රමාණය විශාල වැඩි බැවින් ස්ථාපනය කළ නොහැක."</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"සහතික ගොනුව තිබෙන ස්ථානය නිශ්චය කරගත නොහැකි නිසා ස්ථාපනය කල නොහැක."</string>
     <string name="cert_read_error" msgid="7353463360652419796">"සහතික ගොනුව කියවීමට නොහැකි වූ නිසා ස්ථාපනය කිරීමට නොහැකි විය."</string>
-    <string name="no_cert_file_found" product="nosdcard" msgid="3555332946357131929">"USB ආචයනය තුළ සහතික ගොනුවක් සොයාගත නොහැකිවිය."</string>
-    <string name="no_cert_file_found" product="default" msgid="1942077544887243999">"SD පතේ සහතික ගොනුවක් සොයාගත නොහැකි විය."</string>
-    <string name="sdcard_not_present" product="nosdcard" msgid="9197143240492611196">"USB ආචයනය ලද නොහැක."</string>
-    <string name="sdcard_not_present" product="default" msgid="3866952732541932947">"SD පත ඉදිරිපත් කර නැත."</string>
     <string name="only_primary_user_allowed" msgid="4005084935023047716">"මෙම උපාංගයේ හිමිකරුට පමණක් සහතිකය ස්ථාපනය කළ හැක."</string>
     <string name="credential_usage_label" msgid="1513892208033156805">"අක්තපත්‍ර භාවිතය:"</string>
   <string-array name="credential_usage">
     <item msgid="375085478373011304">"VPN සහ යෙදුම්"</item>
     <item msgid="692322974985472861">"Wi-Fi"</item>
   </string-array>
+    <string name="certificate_capabilities_warning" msgid="4158609401937799110">"සටහන: මෙම සහතිකය නිකුත්කරන්නාට උපාංගය වෙතට සහ ඉන් ඉවතට තදබදය සියල්ල පරීක්ෂා කළ හැකිය."</string>
     <string name="wifi_title" msgid="8475811746333426489">"Wi-Fi පැතිකඩ"</string>
     <string name="wifi_detail_title" msgid="3627332137252994395">"%s සඳහා විස්තර"</string>
     <string name="wifi_detail_label" msgid="3032151019356747583">"විස්තර"</string>
