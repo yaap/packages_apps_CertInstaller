@@ -281,22 +281,17 @@ class CredentialHelper {
         intent.setComponent(ComponentName.unflattenFromString(
                 context.getString(R.string.config_system_install_component)));
         intent.putExtra(Credentials.EXTRA_INSTALL_AS_UID, mUid);
+        intent.putExtra(Credentials.EXTRA_USER_KEY_ALIAS, mName);
         try {
             if (mUserKey != null) {
-                intent.putExtra(Credentials.EXTRA_USER_PRIVATE_KEY_NAME,
-                        Credentials.USER_PRIVATE_KEY + mName);
                 intent.putExtra(Credentials.EXTRA_USER_PRIVATE_KEY_DATA,
                         mUserKey.getEncoded());
             }
             if (mUserCert != null) {
-                intent.putExtra(Credentials.EXTRA_USER_CERTIFICATE_NAME,
-                        Credentials.USER_CERTIFICATE + mName);
                 intent.putExtra(Credentials.EXTRA_USER_CERTIFICATE_DATA,
                         Credentials.convertToPem(mUserCert));
             }
             if (!mCaCerts.isEmpty()) {
-                intent.putExtra(Credentials.EXTRA_CA_CERTIFICATES_NAME,
-                        Credentials.CA_CERTIFICATE + mName);
                 X509Certificate[] caCerts
                         = mCaCerts.toArray(new X509Certificate[mCaCerts.size()]);
                 intent.putExtra(Credentials.EXTRA_CA_CERTIFICATES_DATA,
@@ -432,10 +427,10 @@ class CredentialHelper {
     }
 
     /**
-     * Returns whether this credential contains CA certificates to be used as trust anchors
+     * Returns true if this credential contains _only_ CA certificates to be used as trust anchors
      * for VPN and apps.
      */
-    public boolean includesVpnAndAppsTrustAnchors() {
+    public boolean hasOnlyVpnAndAppsTrustAnchors() {
         if (!hasCaCerts()) {
             return false;
         }

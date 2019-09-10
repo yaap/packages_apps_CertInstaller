@@ -189,11 +189,6 @@ public class CertInstaller extends Activity {
                 Toast.makeText(this, getString(R.string.cert_is_added, mCredentials.getName()),
                         Toast.LENGTH_LONG).show();
 
-                if (mCredentials.includesVpnAndAppsTrustAnchors()) {
-                    // more work to do, don't finish just yet
-                    new InstallVpnAndAppsTrustAnchorsTask().execute();
-                    return;
-                }
                 setResult(RESULT_OK);
                 finish();
                 break;
@@ -355,7 +350,7 @@ public class CertInstaller extends Activity {
                     switch ((int) id) {
                         case USAGE_TYPE_SYSTEM:
                             ca_capabilities_warning.setVisibility(
-                                    mCredentials.includesVpnAndAppsTrustAnchors() ?
+                                    mCredentials.hasOnlyVpnAndAppsTrustAnchors() ?
                                     View.VISIBLE : View.GONE);
                             mCredentials.setInstallAsUid(KeyStore.UID_SELF);
                             break;
@@ -388,6 +383,14 @@ public class CertInstaller extends Activity {
                     } else {
                         removeDialog(NAME_CREDENTIAL_DIALOG);
                         mCredentials.setName(name);
+
+                        // If there's only a CA certificate to install, then it's going to be used
+                        // as a trust anchor. Install it and skip importing to Keystore.
+                        if (mCredentials.hasOnlyVpnAndAppsTrustAnchors()) {
+                            // more work to do, don't finish just yet
+                            new InstallVpnAndAppsTrustAnchorsTask().execute();
+                            return;
+                        }
 
                         // install everything to system keystore
                         try {
