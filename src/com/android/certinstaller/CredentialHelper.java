@@ -340,12 +340,8 @@ class CredentialHelper {
     }
 
     private void maybeApproveCaCert(Context context, String alias) {
-        // Some CTS verifier test asks testers to reset auto approved CA cert by removing
-        // lock sreen, but it's not possible if we don't have Android lock screen. (e.g.
-        // Android is running in the container).  In this case, disable auto cert approval.
         final KeyguardManager keyguardManager = context.getSystemService(KeyguardManager.class);
-        if (keyguardManager.isDeviceSecure(UserHandle.myUserId())
-                && context.getResources().getBoolean(R.bool.config_auto_cert_approval)) {
+        if (keyguardManager.isDeviceSecure(UserHandle.myUserId())) {
             // Since the cert is installed by real user, the cert is approved by the user
             final DevicePolicyManager dpm = context.getSystemService(DevicePolicyManager.class);
             dpm.approveCaCert(alias, UserHandle.myUserId(), true);
