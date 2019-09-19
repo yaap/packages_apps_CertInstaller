@@ -281,22 +281,17 @@ class CredentialHelper {
         intent.setComponent(ComponentName.unflattenFromString(
                 context.getString(R.string.config_system_install_component)));
         intent.putExtra(Credentials.EXTRA_INSTALL_AS_UID, mUid);
+        intent.putExtra(Credentials.EXTRA_USER_KEY_ALIAS, mName);
         try {
             if (mUserKey != null) {
-                intent.putExtra(Credentials.EXTRA_USER_PRIVATE_KEY_NAME,
-                        Credentials.USER_PRIVATE_KEY + mName);
                 intent.putExtra(Credentials.EXTRA_USER_PRIVATE_KEY_DATA,
                         mUserKey.getEncoded());
             }
             if (mUserCert != null) {
-                intent.putExtra(Credentials.EXTRA_USER_CERTIFICATE_NAME,
-                        Credentials.USER_CERTIFICATE + mName);
                 intent.putExtra(Credentials.EXTRA_USER_CERTIFICATE_DATA,
                         Credentials.convertToPem(mUserCert));
             }
             if (!mCaCerts.isEmpty()) {
-                intent.putExtra(Credentials.EXTRA_CA_CERTIFICATES_NAME,
-                        Credentials.CA_CERTIFICATE + mName);
                 X509Certificate[] caCerts
                         = mCaCerts.toArray(new X509Certificate[mCaCerts.size()]);
                 intent.putExtra(Credentials.EXTRA_CA_CERTIFICATES_DATA,
@@ -340,12 +335,8 @@ class CredentialHelper {
     }
 
     private void maybeApproveCaCert(Context context, String alias) {
-        // Some CTS verifier test asks testers to reset auto approved CA cert by removing
-        // lock sreen, but it's not possible if we don't have Android lock screen. (e.g.
-        // Android is running in the container).  In this case, disable auto cert approval.
         final KeyguardManager keyguardManager = context.getSystemService(KeyguardManager.class);
-        if (keyguardManager.isDeviceSecure(UserHandle.myUserId())
-                && context.getResources().getBoolean(R.bool.config_auto_cert_approval)) {
+        if (keyguardManager.isDeviceSecure(UserHandle.myUserId())) {
             // Since the cert is installed by real user, the cert is approved by the user
             final DevicePolicyManager dpm = context.getSystemService(DevicePolicyManager.class);
             dpm.approveCaCert(alias, UserHandle.myUserId(), true);
@@ -432,10 +423,10 @@ class CredentialHelper {
     }
 
     /**
-     * Returns whether this credential contains CA certificates to be used as trust anchors
+     * Returns true if this credential contains _only_ CA certificates to be used as trust anchors
      * for VPN and apps.
      */
-    public boolean includesVpnAndAppsTrustAnchors() {
+    public boolean hasOnlyVpnAndAppsTrustAnchors() {
         if (!hasCaCerts()) {
             return false;
         }
