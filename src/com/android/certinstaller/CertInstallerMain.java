@@ -99,26 +99,34 @@ public class CertInstallerMain extends PreferenceActivity {
             // If bundle is empty of any actual credentials, ask user to open.
             // Otherwise, pass extras to CertInstaller to install those credentials.
             // Either way, we use KeyChain.EXTRA_NAME as the default name if available.
-            if (bundle == null
-                    || bundle.isEmpty()
-                    || (bundle.size() == 1
-                        && (bundle.containsKey(KeyChain.EXTRA_NAME)
-                            || bundle.containsKey(Credentials.EXTRA_INSTALL_AS_UID)))) {
-                final String[] mimeTypes = MIME_MAPPINGS.keySet().toArray(new String[0]);
-                final Intent openIntent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
-                openIntent.setType("*/*");
-                openIntent.putExtra(Intent.EXTRA_MIME_TYPES, mimeTypes);
-                openIntent.putExtra(DocumentsContract.EXTRA_SHOW_ADVANCED, true);
-                startActivityForResult(openIntent, REQUEST_OPEN_DOCUMENT);
+            if (nullOrEmptyBundle(bundle) || bundleContainsNameOnly(bundle)
+                    || bundleContainsInstallAsUidOnly(bundle)
+                    || bundleContainsExtraCertificateUsageOnly(bundle)) {
+                startOpenDocumentActivity();
             } else {
-                final Intent installIntent = new Intent(this, CertInstaller.class);
-                installIntent.putExtras(intent);
-                startActivityForResult(installIntent, REQUEST_INSTALL);
+                startInstallActivity(intent);
             }
         } else if (Intent.ACTION_VIEW.equals(action)) {
             startInstallActivity(intent.getType(), intent.getData());
         }
     }
+
+    private boolean nullOrEmptyBundle(Bundle bundle) {
+        return bundle == null || bundle.isEmpty();
+    }
+
+    private boolean bundleContainsNameOnly(Bundle bundle) {
+        return bundle.size() == 1 && bundle.containsKey(KeyChain.EXTRA_NAME);
+    }
+
+    private boolean bundleContainsInstallAsUidOnly(Bundle bundle) {
+        return bundle.size() == 1 && bundle.containsKey(Credentials.EXTRA_INSTALL_AS_UID);
+    }
+
+    private boolean bundleContainsExtraCertificateUsageOnly(Bundle bundle) {
+        return bundle.size() == 1 && bundle.containsKey(Credentials.EXTRA_CERTIFICATE_USAGE);
+    }
+
 
     // The maximum amount of data to read into memory before aborting.
     // Without a limit, a sufficiently-large file will run us out of memory.  A
@@ -146,6 +154,12 @@ public class CertInstallerMain extends PreferenceActivity {
         return bytes.toByteArray();
     }
 
+    private void startInstallActivity(Intent intent) {
+        final Intent installIntent = new Intent(this, CertInstaller.class);
+        installIntent.putExtras(intent);
+        startActivityForResult(installIntent, REQUEST_INSTALL);
+    }
+
     private void startInstallActivity(String mimeType, Uri uri) {
         if (mimeType == null) {
             mimeType = getContentResolver().getType(uri);
@@ -165,7 +179,10 @@ public class CertInstallerMain extends PreferenceActivity {
                 in = getContentResolver().openInputStream(uri);
 
                 final byte[] raw = readWithLimit(in);
-                startInstallActivity(target, raw);
+
+                Intent intent = new Intent(this, CertInstaller.class);
+                intent.putExtra(target, raw);
+                startInstallActivity(intent);
 
             } catch (IOException e) {
                 Log.e(TAG, "Failed to read certificate: " + e);
@@ -174,13 +191,6 @@ public class CertInstallerMain extends PreferenceActivity {
                 IoUtils.closeQuietly(in);
             }
         }
-    }
-
-    private void startInstallActivity(String target, byte[] value) {
-        Intent intent = new Intent(this, CertInstaller.class);
-        intent.putExtra(target, value);
-
-        startActivityForResult(intent, REQUEST_INSTALL);
     }
 
     private void startWifiInstallActivity(String mimeType, Uri uri) {
@@ -196,6 +206,15 @@ public class CertInstallerMain extends PreferenceActivity {
             Log.e(TAG, "Failed to read wifi config: " + e);
             Toast.makeText(this, R.string.cert_read_error, Toast.LENGTH_LONG).show();
         }
+    }
+
+    private void startOpenDocumentActivity() {
+        final String[] mimeTypes = MIME_MAPPINGS.keySet().toArray(new String[0]);
+        final Intent openIntent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+        openIntent.setType("*/*");
+        openIntent.putExtra(Intent.EXTRA_MIME_TYPES, mimeTypes);
+        openIntent.putExtra(DocumentsContract.EXTRA_SHOW_ADVANCED, true);
+        startActivityForResult(openIntent, REQUEST_OPEN_DOCUMENT);
     }
 
     @Override
