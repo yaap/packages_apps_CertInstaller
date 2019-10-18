@@ -57,7 +57,6 @@ public class CertInstaller extends Activity {
     private static final int PROGRESS_BAR_DIALOG = 3;
 
     private static final int REQUEST_SYSTEM_INSTALL_CODE = 1;
-    private static final int REQUEST_CONFIRM_CREDENTIALS = 2;
 
     // key to states Bundle
     private static final String NEXT_ACTION_KEY = "na";
@@ -95,20 +94,8 @@ public class CertInstaller extends Activity {
                 toastErrorAndFinish(R.string.no_cert_to_saved);
                 finish();
             } else {
-                // Confirm credentials if there's _only_ a CA certificate
-                // NOTE: This will affect WiFi CA certificates - those should not require
-                // confirming the lock screen credentials but the code currently cannot skip the
-                // confirmation for WiFi CA certificates because the user designates the certificate
-                // to a UID only after this stage.
-                if (mCredentials.hasCaCerts() && !mCredentials.hasPrivateKey() &&
-                        !mCredentials.hasUserCertificate()) {
-                    KeyguardManager keyguardManager = getSystemService(KeyguardManager.class);
-                    Intent intent = keyguardManager.createConfirmDeviceCredentialIntent(null, null);
-                    if (intent == null) { // No screenlock
-                        extractPkcs12OrInstall();
-                    } else {
-                        startActivityForResult(intent, REQUEST_CONFIRM_CREDENTIALS);
-                    }
+                if (installingCaCertificate()) {
+                    extractPkcs12OrInstall();
                 } else {
                     if (mCredentials.hasUserCertificate() && !mCredentials.hasPrivateKey()) {
                         toastErrorAndFinish(R.string.action_missing_private_key);
@@ -124,6 +111,11 @@ public class CertInstaller extends Activity {
             mNextAction = (MyAction)
                     savedStates.getSerializable(NEXT_ACTION_KEY);
         }
+    }
+
+    private boolean installingCaCertificate() {
+        return mCredentials.hasCaCerts() && !mCredentials.hasPrivateKey() &&
+                !mCredentials.hasUserCertificate();
     }
 
     @Override
@@ -190,14 +182,6 @@ public class CertInstaller extends Activity {
                         Toast.LENGTH_LONG).show();
 
                 setResult(RESULT_OK);
-                finish();
-                break;
-            case REQUEST_CONFIRM_CREDENTIALS:
-                if (resultCode == RESULT_OK) {
-                    extractPkcs12OrInstall();
-                    return;
-                }
-                // Failed to confirm credentials, do nothing.
                 finish();
                 break;
             default:

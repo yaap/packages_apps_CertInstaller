@@ -16,6 +16,7 @@
 
 package com.android.certinstaller;
 
+import android.app.KeyguardManager;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -46,6 +47,7 @@ public class CertInstallerMain extends PreferenceActivity {
 
     private static final int REQUEST_INSTALL = 1;
     private static final int REQUEST_OPEN_DOCUMENT = 2;
+    private static final int REQUEST_CONFIRM_CREDENTIALS = 3;
 
     private static final String INSTALL_CERT_AS_USER_CLASS = ".InstallCertAsUser";
 
@@ -102,7 +104,13 @@ public class CertInstallerMain extends PreferenceActivity {
             if (nullOrEmptyBundle(bundle) || bundleContainsNameOnly(bundle)
                     || bundleContainsInstallAsUidOnly(bundle)
                     || bundleContainsExtraCertificateUsageOnly(bundle)) {
-                startOpenDocumentActivity();
+
+                // Confirm credentials if there's only a CA certificate
+                if (installingCaCertificate(bundle)) {
+                    confirmDeviceCredential();
+                } else {
+                    startOpenDocumentActivity();
+                }
             } else {
                 startInstallActivity(intent);
             }
@@ -127,6 +135,21 @@ public class CertInstallerMain extends PreferenceActivity {
         return bundle.size() == 1 && bundle.containsKey(Credentials.EXTRA_CERTIFICATE_USAGE);
     }
 
+    private boolean installingCaCertificate(Bundle bundle) {
+        return bundle.size() == 1 && bundle.containsKey(Credentials.EXTRA_CERTIFICATE_USAGE)
+                && bundle.getString(Credentials.EXTRA_CERTIFICATE_USAGE).equals(
+                Credentials.CERTIFICATE_USAGE_CA);
+    }
+    private void confirmDeviceCredential() {
+        KeyguardManager keyguardManager = getSystemService(KeyguardManager.class);
+        Intent intent = keyguardManager.createConfirmDeviceCredentialIntent(null,
+                null);
+        if (intent == null) { // No screenlock
+            startOpenDocumentActivity();
+        } else {
+            startActivityForResult(intent, REQUEST_CONFIRM_CREDENTIALS);
+        }
+    }
 
     // The maximum amount of data to read into memory before aborting.
     // Without a limit, a sufficiently-large file will run us out of memory.  A
@@ -219,17 +242,29 @@ public class CertInstallerMain extends PreferenceActivity {
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == REQUEST_OPEN_DOCUMENT) {
-            if (resultCode == RESULT_OK) {
-                startInstallActivity(null, data.getData());
-            } else {
+        switch (requestCode) {
+            case REQUEST_INSTALL:
+                setResult(resultCode);
                 finish();
-            }
-        } else if (requestCode == REQUEST_INSTALL) {
-            setResult(resultCode);
-            finish();
-        } else {
-            Log.w(TAG, "unknown request code: " + requestCode);
+                break;
+            case REQUEST_OPEN_DOCUMENT:
+                if (resultCode == RESULT_OK) {
+                    startInstallActivity(null, data.getData());
+                } else {
+                    finish();
+                }
+                break;
+            case REQUEST_CONFIRM_CREDENTIALS:
+                if (resultCode == RESULT_OK) {
+                    startOpenDocumentActivity();
+                    return;
+                }
+                // Failed to confirm credentials, do nothing.
+                finish();
+                break;
+            default:
+                Log.w(TAG, "unknown request code: " + requestCode);
+                break;
         }
     }
 }
