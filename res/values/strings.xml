@@ -58,6 +58,19 @@
     <string name="action_missing_private_key">Private key required to install a certificate</string>
     <string name="action_missing_user_cert">Certificate required to install a private key</string>
 
+    <!-- Title of User certificate -->
+    <string name="user_certificate">VPN &amp; app user certificate</string>
+    <!-- Title of Wi-Fi certificate -->
+    <string name="wifi_certificate">Wi\u2011Fi certificate</string>
+    <!-- Title of dialog to select the certificate usage when installing a certificate outside Settings -->
+    <string name="select_certificate_usage_title">Choose a certificate type</string>
+    <!-- Title of dialog to redirect user when installing a CA certificate outside Settings -->
+    <string name="redirect_ca_certificate_title">Can\'t install CA certificates</string>
+    <!-- Message of dialog to redirect user when installing a CA certificate outside Settings -->
+    <string name="redirect_ca_certificate_message">CA certificates can put your privacy at risk and must be installed in Settings</string>
+    <!-- Button of dialog to redirect user when installing a CA certificate outside Settings -->
+    <string name="redirect_ca_certificate_close_button">Close</string>
+
     <!-- Confirmation toast. This toast lets the user know that they successfully installed a CA certificate on their device. -->
     <string name="ca_cert_is_added">CA certificate installed</string>
     <!-- Confirmation toast. This toast lets the user know that they successfully installed a user certificate on their device. -->
@@ -70,6 +83,8 @@
     <string name="cert_missing_error">Couldn\'t install because the certificate file couldn\'t be located.</string>
     <!-- toast message -->
     <string name="cert_read_error">Couldn\'t install because the certificate file couldn\'t be read.</string>
+    <!-- toast message -->
+    <string name="cert_temp_error">Temporary failure. Please try again later.</string>
 
     <!-- Message displayed when a user other than the owner on a multi-user system tries to
          install a certificate into the certificate store. [CHAR LIMIT=NONE] -->

@@ -16,11 +16,14 @@
 
 package com.android.certinstaller;
 
+import android.app.ActivityTaskManager;
+import android.app.IActivityTaskManager;
 import android.app.KeyguardManager;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.RemoteException;
 import android.os.UserManager;
 import android.preference.PreferenceActivity;
 import android.provider.DocumentsContract;
@@ -179,8 +182,29 @@ public class CertInstallerMain extends PreferenceActivity {
 
     private void startInstallActivity(Intent intent) {
         final Intent installIntent = new Intent(this, CertInstaller.class);
+        if (intent.getExtras() != null && intent.getExtras().getString(Intent.EXTRA_REFERRER)
+                != null) {
+            Log.v(TAG, String.format(
+                    "Removing referrer extra with value %s which was not meant to be included",
+                    intent.getBundleExtra(Intent.EXTRA_REFERRER)));
+            intent.removeExtra(Intent.EXTRA_REFERRER);
+        }
         installIntent.putExtras(intent);
-        startActivityForResult(installIntent, REQUEST_INSTALL);
+
+        try {
+            // The referrer is passed as an extra because the launched-from package needs to be
+            // obtained here and not in the CertInstaller.
+            // It is also safe to add the referrer as an extra because the CertInstaller activity
+            // is not exported, which means it cannot be called from other apps.
+            IActivityTaskManager activityTaskManager = ActivityTaskManager.getService();
+            installIntent.putExtra(Intent.EXTRA_REFERRER,
+                    activityTaskManager.getLaunchedFromPackage(getActivityToken()));
+            startActivityForResult(installIntent, REQUEST_INSTALL);
+        } catch (RemoteException e) {
+            Log.v(TAG, "Could not talk to activity manager.", e);
+            Toast.makeText(this, R.string.cert_temp_error, Toast.LENGTH_LONG).show();
+            finish();
+        }
     }
 
     private void startInstallActivity(String mimeType, Uri uri) {
