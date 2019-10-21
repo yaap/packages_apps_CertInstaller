@@ -29,14 +29,14 @@ import android.security.KeyChain;
 import android.util.Log;
 import android.widget.Toast;
 
+import libcore.io.IoUtils;
+
 import java.io.BufferedInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
-
-import libcore.io.IoUtils;
 
 /**
  * The main class for installing certificates to the system keystore. It reacts
@@ -136,10 +136,10 @@ public class CertInstallerMain extends PreferenceActivity {
     }
 
     private boolean installingCaCertificate(Bundle bundle) {
-        return bundle.size() == 1 && bundle.containsKey(Credentials.EXTRA_CERTIFICATE_USAGE)
-                && bundle.getString(Credentials.EXTRA_CERTIFICATE_USAGE).equals(
-                Credentials.CERTIFICATE_USAGE_CA);
+        return bundle != null && bundle.size() == 1 && Credentials.CERTIFICATE_USAGE_CA.equals(
+                bundle.getString(Credentials.EXTRA_CERTIFICATE_USAGE));
     }
+
     private void confirmDeviceCredential() {
         KeyguardManager keyguardManager = getSystemService(KeyguardManager.class);
         Intent intent = keyguardManager.createConfirmDeviceCredentialIntent(null,
@@ -203,10 +203,9 @@ public class CertInstallerMain extends PreferenceActivity {
 
                 final byte[] raw = readWithLimit(in);
 
-                Intent intent = new Intent(this, CertInstaller.class);
+                Intent intent = getIntent();
                 intent.putExtra(target, raw);
                 startInstallActivity(intent);
-
             } catch (IOException e) {
                 Log.e(TAG, "Failed to read certificate: " + e);
                 Toast.makeText(this, R.string.cert_read_error, Toast.LENGTH_LONG).show();
