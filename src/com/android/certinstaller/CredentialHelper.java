@@ -71,6 +71,7 @@ class CredentialHelper {
     private HashMap<String, byte[]> mBundle = new HashMap<String, byte[]>();
 
     private String mName = "";
+    private String mCertTypeSelected = "";
     private int mUid = -1;
     private PrivateKey mUserKey;
     private X509Certificate mUserCert;
@@ -89,6 +90,12 @@ class CredentialHelper {
         bundle.remove(KeyChain.EXTRA_NAME);
         if (name != null) {
             mName = name;
+        }
+
+        String certTypeSelected = bundle.getString(Credentials.EXTRA_CERTIFICATE_USAGE);
+        bundle.remove(Credentials.EXTRA_CERTIFICATE_USAGE);
+        if (certTypeSelected != null) {
+            mCertTypeSelected = certTypeSelected;
         }
 
         mUid = bundle.getInt(Credentials.EXTRA_INSTALL_AS_UID, -1);
@@ -272,6 +279,10 @@ class CredentialHelper {
 
     int getInstallAsUid() {
         return mUid;
+    }
+
+    String getCertTypeSelected() {
+        return mCertTypeSelected;
     }
 
     Intent createSystemInstallIntent(final Context context) {

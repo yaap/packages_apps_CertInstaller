@@ -16,6 +16,7 @@
 
 package com.android.certinstaller;
 
+import android.app.KeyguardManager;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -28,14 +29,14 @@ import android.security.KeyChain;
 import android.util.Log;
 import android.widget.Toast;
 
+import libcore.io.IoUtils;
+
 import java.io.BufferedInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
-
-import libcore.io.IoUtils;
 
 /**
  * The main class for installing certificates to the system keystore. It reacts
@@ -46,6 +47,7 @@ public class CertInstallerMain extends PreferenceActivity {
 
     private static final int REQUEST_INSTALL = 1;
     private static final int REQUEST_OPEN_DOCUMENT = 2;
+    private static final int REQUEST_CONFIRM_CREDENTIALS = 3;
 
     private static final String INSTALL_CERT_AS_USER_CLASS = ".InstallCertAsUser";
 
@@ -99,24 +101,53 @@ public class CertInstallerMain extends PreferenceActivity {
             // If bundle is empty of any actual credentials, ask user to open.
             // Otherwise, pass extras to CertInstaller to install those credentials.
             // Either way, we use KeyChain.EXTRA_NAME as the default name if available.
-            if (bundle == null
-                    || bundle.isEmpty()
-                    || (bundle.size() == 1
-                        && (bundle.containsKey(KeyChain.EXTRA_NAME)
-                            || bundle.containsKey(Credentials.EXTRA_INSTALL_AS_UID)))) {
-                final String[] mimeTypes = MIME_MAPPINGS.keySet().toArray(new String[0]);
-                final Intent openIntent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
-                openIntent.setType("*/*");
-                openIntent.putExtra(Intent.EXTRA_MIME_TYPES, mimeTypes);
-                openIntent.putExtra(DocumentsContract.EXTRA_SHOW_ADVANCED, true);
-                startActivityForResult(openIntent, REQUEST_OPEN_DOCUMENT);
+            if (nullOrEmptyBundle(bundle) || bundleContainsNameOnly(bundle)
+                    || bundleContainsInstallAsUidOnly(bundle)
+                    || bundleContainsExtraCertificateUsageOnly(bundle)) {
+
+                // Confirm credentials if there's only a CA certificate
+                if (installingCaCertificate(bundle)) {
+                    confirmDeviceCredential();
+                } else {
+                    startOpenDocumentActivity();
+                }
             } else {
-                final Intent installIntent = new Intent(this, CertInstaller.class);
-                installIntent.putExtras(intent);
-                startActivityForResult(installIntent, REQUEST_INSTALL);
+                startInstallActivity(intent);
             }
         } else if (Intent.ACTION_VIEW.equals(action)) {
             startInstallActivity(intent.getType(), intent.getData());
+        }
+    }
+
+    private boolean nullOrEmptyBundle(Bundle bundle) {
+        return bundle == null || bundle.isEmpty();
+    }
+
+    private boolean bundleContainsNameOnly(Bundle bundle) {
+        return bundle.size() == 1 && bundle.containsKey(KeyChain.EXTRA_NAME);
+    }
+
+    private boolean bundleContainsInstallAsUidOnly(Bundle bundle) {
+        return bundle.size() == 1 && bundle.containsKey(Credentials.EXTRA_INSTALL_AS_UID);
+    }
+
+    private boolean bundleContainsExtraCertificateUsageOnly(Bundle bundle) {
+        return bundle.size() == 1 && bundle.containsKey(Credentials.EXTRA_CERTIFICATE_USAGE);
+    }
+
+    private boolean installingCaCertificate(Bundle bundle) {
+        return bundle != null && bundle.size() == 1 && Credentials.CERTIFICATE_USAGE_CA.equals(
+                bundle.getString(Credentials.EXTRA_CERTIFICATE_USAGE));
+    }
+
+    private void confirmDeviceCredential() {
+        KeyguardManager keyguardManager = getSystemService(KeyguardManager.class);
+        Intent intent = keyguardManager.createConfirmDeviceCredentialIntent(null,
+                null);
+        if (intent == null) { // No screenlock
+            startOpenDocumentActivity();
+        } else {
+            startActivityForResult(intent, REQUEST_CONFIRM_CREDENTIALS);
         }
     }
 
@@ -146,6 +177,12 @@ public class CertInstallerMain extends PreferenceActivity {
         return bytes.toByteArray();
     }
 
+    private void startInstallActivity(Intent intent) {
+        final Intent installIntent = new Intent(this, CertInstaller.class);
+        installIntent.putExtras(intent);
+        startActivityForResult(installIntent, REQUEST_INSTALL);
+    }
+
     private void startInstallActivity(String mimeType, Uri uri) {
         if (mimeType == null) {
             mimeType = getContentResolver().getType(uri);
@@ -165,8 +202,10 @@ public class CertInstallerMain extends PreferenceActivity {
                 in = getContentResolver().openInputStream(uri);
 
                 final byte[] raw = readWithLimit(in);
-                startInstallActivity(target, raw);
 
+                Intent intent = getIntent();
+                intent.putExtra(target, raw);
+                startInstallActivity(intent);
             } catch (IOException e) {
                 Log.e(TAG, "Failed to read certificate: " + e);
                 Toast.makeText(this, R.string.cert_read_error, Toast.LENGTH_LONG).show();
@@ -174,13 +213,6 @@ public class CertInstallerMain extends PreferenceActivity {
                 IoUtils.closeQuietly(in);
             }
         }
-    }
-
-    private void startInstallActivity(String target, byte[] value) {
-        Intent intent = new Intent(this, CertInstaller.class);
-        intent.putExtra(target, value);
-
-        startActivityForResult(intent, REQUEST_INSTALL);
     }
 
     private void startWifiInstallActivity(String mimeType, Uri uri) {
@@ -198,19 +230,40 @@ public class CertInstallerMain extends PreferenceActivity {
         }
     }
 
+    private void startOpenDocumentActivity() {
+        final String[] mimeTypes = MIME_MAPPINGS.keySet().toArray(new String[0]);
+        final Intent openIntent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+        openIntent.setType("*/*");
+        openIntent.putExtra(Intent.EXTRA_MIME_TYPES, mimeTypes);
+        openIntent.putExtra(DocumentsContract.EXTRA_SHOW_ADVANCED, true);
+        startActivityForResult(openIntent, REQUEST_OPEN_DOCUMENT);
+    }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == REQUEST_OPEN_DOCUMENT) {
-            if (resultCode == RESULT_OK) {
-                startInstallActivity(null, data.getData());
-            } else {
+        switch (requestCode) {
+            case REQUEST_INSTALL:
+                setResult(resultCode);
                 finish();
-            }
-        } else if (requestCode == REQUEST_INSTALL) {
-            setResult(resultCode);
-            finish();
-        } else {
-            Log.w(TAG, "unknown request code: " + requestCode);
+                break;
+            case REQUEST_OPEN_DOCUMENT:
+                if (resultCode == RESULT_OK) {
+                    startInstallActivity(null, data.getData());
+                } else {
+                    finish();
+                }
+                break;
+            case REQUEST_CONFIRM_CREDENTIALS:
+                if (resultCode == RESULT_OK) {
+                    startOpenDocumentActivity();
+                    return;
+                }
+                // Failed to confirm credentials, do nothing.
+                finish();
+                break;
+            default:
+                Log.w(TAG, "unknown request code: " + requestCode);
+                break;
         }
     }
 }

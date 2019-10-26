@@ -26,10 +26,10 @@
     <string name="extracting_pkcs12">Extracting\u2026</string>
     <!-- Title of dialog to enter password for pkcs12 file -->
     <string name="pkcs12_file_password_dialog_title">Extract from %s</string>
-    <!-- Title of dialog to name a credential -->
-    <string name="name_credential_dialog_title">Name the certificate</string>
-    <!-- Description for the credential name input box -->
-    <string name="credential_name">Certificate name:</string>
+    <!-- Title of a dialog. This title is asking the user to name the certificate they're installing on their device. -->
+    <string name="name_credential_dialog_title">Name this certificate</string>
+    <!-- Input field in a dialog. This dialog is asking the user to name the certificate they are installing on their device. -->
+    <string name="certificate_name">Certificate name</string>
     <!-- Title of the credential info -->
     <!-- Description for the credential password input box -->
     <string name="credential_password">Type the password to extract the certificates.</string>
@@ -58,8 +58,12 @@
     <string name="action_missing_private_key">Private key required to install a certificate</string>
     <string name="action_missing_user_cert">Certificate required to install a private key</string>
 
-    <!-- toast message -->
-    <string name="cert_is_added"><xliff:g id="credential">%s</xliff:g> is installed.</string>
+    <!-- Confirmation toast. This toast lets the user know that they successfully installed a CA certificate on their device. -->
+    <string name="ca_cert_is_added">CA certificate installed</string>
+    <!-- Confirmation toast. This toast lets the user know that they successfully installed a user certificate on their device. -->
+    <string name="user_cert_is_added">User certificate installed</string>
+    <!-- Confirmation toast. This toast lets the user know that they successfully installed a Wi-Fi certificate on their device. -->
+    <string name="wifi_cert_is_added">Wi\u2011Fi certificate installed</string>
     <!-- toast message -->
     <string name="cert_too_large_error">Couldn\'t install because the certificate size is too large.</string>
     <!-- toast message -->
