@@ -21,8 +21,10 @@
     <string name="pkcs12_password_dialog_title" msgid="5997624645207427161">"சான்றிதழைப் பிரித்தெடு"</string>
     <string name="extracting_pkcs12" msgid="1881267738821799771">"பிரித்தெடுக்கிறது…"</string>
     <string name="pkcs12_file_password_dialog_title" msgid="8102721384767269510">"%s இலிருந்து பிரித்தெடு"</string>
-    <string name="name_credential_dialog_title" msgid="277729846491554437">"சான்றிதழுக்குப் பெயரிடுக"</string>
-    <string name="credential_name" msgid="1974979771369744378">"சான்றிதழ் பெயர்:"</string>
+    <!-- no translation found for name_credential_dialog_title (1481964824549786927) -->
+    <skip />
+    <!-- no translation found for certificate_name (8415893401368824792) -->
+    <skip />
     <string name="credential_password" msgid="3520176519550993326">"சான்றிதழ்களைப் பிரித்தெடுக்க கடவுச்சொல்லை உள்ளிடவும்."</string>
     <string name="credential_info" msgid="2436768402308470397">"தொகுப்பில் உள்ளவை:"</string>
     <string name="p12_description" msgid="4128352087331630024">"PKCS12 விசைதொகுப்பில் உள்ள சான்றிதழ்கள்."</string>
@@ -41,7 +43,12 @@
     <string name="invalid_cert" msgid="7704228670980743590">"சான்றிதழ் தவறானது."</string>
     <string name="action_missing_private_key" msgid="7543470057312920042">"சான்றிதழை நிறுவ, தனிப்பட்ட குறியீடு தேவை"</string>
     <string name="action_missing_user_cert" msgid="3727411730202316771">"தனிப்பட்ட குறியீட்டை நிறுவ, சான்றிதழ் தேவை"</string>
-    <string name="cert_is_added" msgid="6996557598167000500">"<xliff:g id="CREDENTIAL">%s</xliff:g> நிறுவப்பட்டது."</string>
+    <!-- no translation found for ca_cert_is_added (2847081843756291802) -->
+    <skip />
+    <!-- no translation found for user_cert_is_added (3088794616560630823) -->
+    <skip />
+    <!-- no translation found for wifi_cert_is_added (333220613655140428) -->
+    <skip />
     <string name="cert_too_large_error" msgid="8715414972725646285">"சான்றிதழின் அளவு மிகப் பெரிதாக இருப்பதால் நிறுவ முடியவில்லை."</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"சான்றிதழ் கோப்பைக் கண்டறிய முடியாததால் நிறுவ முடியவில்லை."</string>
     <string name="cert_read_error" msgid="7353463360652419796">"சான்றிதழ் கோப்பைப் படிக்க முடியாததால் நிறுவ முடியவில்லை."</string>

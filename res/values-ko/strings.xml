@@ -21,8 +21,10 @@
     <string name="pkcs12_password_dialog_title" msgid="5997624645207427161">"인증서 추출"</string>
     <string name="extracting_pkcs12" msgid="1881267738821799771">"추출 중..."</string>
     <string name="pkcs12_file_password_dialog_title" msgid="8102721384767269510">"%s에서 추출"</string>
-    <string name="name_credential_dialog_title" msgid="277729846491554437">"인증서 이름 지정"</string>
-    <string name="credential_name" msgid="1974979771369744378">"인증서 이름:"</string>
+    <!-- no translation found for name_credential_dialog_title (1481964824549786927) -->
+    <skip />
+    <!-- no translation found for certificate_name (8415893401368824792) -->
+    <skip />
     <string name="credential_password" msgid="3520176519550993326">"인증서를 추출하기 위한 비밀번호를 입력하세요."</string>
     <string name="credential_info" msgid="2436768402308470397">"패키지 포함 내용:"</string>
     <string name="p12_description" msgid="4128352087331630024">"PKCS12 keystore의 인증서입니다."</string>
@@ -41,7 +43,12 @@
     <string name="invalid_cert" msgid="7704228670980743590">"인증서가 잘못되었습니다."</string>
     <string name="action_missing_private_key" msgid="7543470057312920042">"인증서 설치에 필요한 개인 키"</string>
     <string name="action_missing_user_cert" msgid="3727411730202316771">"개인 키 설치에 필요한 인증서"</string>
-    <string name="cert_is_added" msgid="6996557598167000500">"<xliff:g id="CREDENTIAL">%s</xliff:g>이(가) 설치되었습니다."</string>
+    <!-- no translation found for ca_cert_is_added (2847081843756291802) -->
+    <skip />
+    <!-- no translation found for user_cert_is_added (3088794616560630823) -->
+    <skip />
+    <!-- no translation found for wifi_cert_is_added (333220613655140428) -->
+    <skip />
     <string name="cert_too_large_error" msgid="8715414972725646285">"인증서 크기가 너무 크기 때문에 설치할 수 없습니다."</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"인증서 파일을 찾을 수 없어서 설치할 수 없습니다."</string>
     <string name="cert_read_error" msgid="7353463360652419796">"인증서 파일을 읽을 수 없어서 설치할 수 없습니다."</string>

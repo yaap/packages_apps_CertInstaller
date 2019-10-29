@@ -21,8 +21,10 @@
     <string name="pkcs12_password_dialog_title" msgid="5997624645207427161">"प्रमाणपत्र निकालें"</string>
     <string name="extracting_pkcs12" msgid="1881267738821799771">"निकाल रहा है..."</string>
     <string name="pkcs12_file_password_dialog_title" msgid="8102721384767269510">"%s से निकालें"</string>
-    <string name="name_credential_dialog_title" msgid="277729846491554437">"प्रमाणपत्र को नाम दें"</string>
-    <string name="credential_name" msgid="1974979771369744378">"प्रमाणपत्र नाम:"</string>
+    <!-- no translation found for name_credential_dialog_title (1481964824549786927) -->
+    <skip />
+    <!-- no translation found for certificate_name (8415893401368824792) -->
+    <skip />
     <string name="credential_password" msgid="3520176519550993326">"प्रमाणपत्रों को निकालने के लिए पासवर्ड लिखें."</string>
     <string name="credential_info" msgid="2436768402308470397">"पैकेज में शामिल है:"</string>
     <string name="p12_description" msgid="4128352087331630024">"PKCS12 कीस्‍टोर में प्रमाणपत्र."</string>
@@ -41,7 +43,12 @@
     <string name="invalid_cert" msgid="7704228670980743590">"प्रमाणपत्र अमान्य है."</string>
     <string name="action_missing_private_key" msgid="7543470057312920042">"प्रमाणपत्र इंस्टॉल करने के लिए निजी कुंजी ज़रूरी है"</string>
     <string name="action_missing_user_cert" msgid="3727411730202316771">"निजी कुंजी इंस्टॉल करने के लिए प्रमाणपत्र ज़रूरी है"</string>
-    <string name="cert_is_added" msgid="6996557598167000500">"<xliff:g id="CREDENTIAL">%s</xliff:g> इंस्‍टॉल किया हुआ है."</string>
+    <!-- no translation found for ca_cert_is_added (2847081843756291802) -->
+    <skip />
+    <!-- no translation found for user_cert_is_added (3088794616560630823) -->
+    <skip />
+    <!-- no translation found for wifi_cert_is_added (333220613655140428) -->
+    <skip />
     <string name="cert_too_large_error" msgid="8715414972725646285">"प्रमाणपत्र का आकार बहुत बड़ा होने के कारण इंस्‍टॉल नहीं कर सका."</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"प्रमाणपत्र फ़ाइल नहीं मिल सकने के ‍कारण इंस्टॉल नहीं कर सका."</string>
     <string name="cert_read_error" msgid="7353463360652419796">"प्रमाणपत्र फ़ाइल नहीं पढ़ी जा सकने के कारण इंस्‍टॉल नहीं कर सका."</string>
