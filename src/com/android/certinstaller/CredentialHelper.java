@@ -25,11 +25,12 @@ import android.os.Bundle;
 import android.os.RemoteException;
 import android.os.UserHandle;
 import android.security.Credentials;
-import android.security.KeyChain;
 import android.security.IKeyChainService;
+import android.security.KeyChain;
 import android.text.Html;
 import android.text.TextUtils;
 import android.util.Log;
+
 import com.android.org.bouncycastle.asn1.ASN1InputStream;
 import com.android.org.bouncycastle.asn1.ASN1Sequence;
 import com.android.org.bouncycastle.asn1.DEROctetString;
@@ -39,9 +40,9 @@ import com.android.org.conscrypt.TrustedCertificateStore;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.security.KeyFactory;
+import java.security.KeyStore;
 import java.security.KeyStore.PasswordProtection;
 import java.security.KeyStore.PrivateKeyEntry;
-import java.security.KeyStore;
 import java.security.NoSuchAlgorithmException;
 import java.security.PrivateKey;
 import java.security.cert.Certificate;
@@ -64,6 +65,7 @@ class CredentialHelper {
     private static final String DATA_KEY = "data";
     private static final String CERTS_KEY = "crts";
     private static final String USER_KEY_ALGORITHM = "user_key_algorithm";
+    private static final String SETTINGS_PACKAGE = "com.android.settings";
 
     private static final String TAG = "CredentialHelper";
 
@@ -71,7 +73,8 @@ class CredentialHelper {
     private HashMap<String, byte[]> mBundle = new HashMap<String, byte[]>();
 
     private String mName = "";
-    private String mCertTypeSelected = "";
+    private String mCertUsageSelected = "";
+    private String mReferrer = "";
     private int mUid = -1;
     private PrivateKey mUserKey;
     private X509Certificate mUserCert;
@@ -92,10 +95,16 @@ class CredentialHelper {
             mName = name;
         }
 
-        String certTypeSelected = bundle.getString(Credentials.EXTRA_CERTIFICATE_USAGE);
+        String certUsageSelected = bundle.getString(Credentials.EXTRA_CERTIFICATE_USAGE);
         bundle.remove(Credentials.EXTRA_CERTIFICATE_USAGE);
-        if (certTypeSelected != null) {
-            mCertTypeSelected = certTypeSelected;
+        if (certUsageSelected != null) {
+            mCertUsageSelected = certUsageSelected;
+        }
+
+        String referrer = bundle.getString(Intent.EXTRA_REFERRER);
+        bundle.remove(Intent.EXTRA_REFERRER);
+        if (referrer != null) {
+            mReferrer = referrer;
         }
 
         mUid = bundle.getInt(Credentials.EXTRA_INSTALL_AS_UID, -1);
@@ -281,8 +290,16 @@ class CredentialHelper {
         return mUid;
     }
 
-    String getCertTypeSelected() {
-        return mCertTypeSelected;
+    void setCertUsageSelected(String certUsageSelected) {
+        mCertUsageSelected = certUsageSelected;
+    }
+
+    String getCertUsageSelected() {
+        return mCertUsageSelected;
+    }
+
+    boolean calledBySettings() {
+        return mReferrer != null && mReferrer.equals(SETTINGS_PACKAGE);
     }
 
     Intent createSystemInstallIntent(final Context context) {
