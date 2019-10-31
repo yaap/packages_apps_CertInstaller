@@ -56,6 +56,7 @@ public class CertInstaller extends Activity {
     private static final int PROGRESS_BAR_DIALOG = 3;
     private static final int REDIRECT_CA_CERTIFICATE_DIALOG = 4;
     private static final int SELECT_CERTIFICATE_USAGE_DIALOG = 5;
+    private static final int INVALID_CERTIFICATE_DIALOG = 6;
 
     private static final int REQUEST_SYSTEM_INSTALL_CODE = 1;
 
@@ -165,6 +166,9 @@ public class CertInstaller extends Activity {
             case SELECT_CERTIFICATE_USAGE_DIALOG:
                 return createSelectCertificateUsageDialog();
 
+            case INVALID_CERTIFICATE_DIALOG:
+                return createInvalidCertificateDialog();
+
             default:
                 return null;
         }
@@ -255,7 +259,25 @@ public class CertInstaller extends Activity {
             return;
         }
 
-        installCertificateOrShowNameDialog();
+        if (validCertificateSelected()) {
+            installCertificateOrShowNameDialog();
+        } else {
+            showDialog(INVALID_CERTIFICATE_DIALOG);
+        }
+    }
+
+    private boolean validCertificateSelected() {
+        switch (mCredentials.getCertUsageSelected()) {
+            case Credentials.CERTIFICATE_USAGE_CA:
+                return mCredentials.hasOnlyVpnAndAppsTrustAnchors();
+            case Credentials.CERTIFICATE_USAGE_USER:
+                return mCredentials.hasUserCertificate()
+                        && !mCredentials.hasOnlyVpnAndAppsTrustAnchors();
+            case Credentials.CERTIFICATE_USAGE_WIFI:
+                return !mCredentials.hasOnlyVpnAndAppsTrustAnchors();
+            default:
+                return false;
+        }
     }
 
     private void installCertificateOrShowNameDialog() {
@@ -301,7 +323,11 @@ public class CertInstaller extends Activity {
         if (success) {
             removeDialog(PKCS12_PASSWORD_DIALOG);
             if (mCredentials.calledBySettings()) {
-                installCertificateOrShowNameDialog();
+                if (validCertificateSelected()) {
+                    installCertificateOrShowNameDialog();
+                } else {
+                    showDialog(INVALID_CERTIFICATE_DIALOG);
+                }
             } else {
                 createRedirectOrSelectUsageDialog();
             }
@@ -365,6 +391,31 @@ public class CertInstaller extends Activity {
                 .create();
         d.setOnCancelListener(dialog -> toastErrorAndFinish(R.string.cert_not_saved));
         return d;
+    }
+
+    private Dialog createInvalidCertificateDialog() {
+        Dialog d = new AlertDialog.Builder(this)
+                .setTitle(R.string.invalid_certificate_title)
+                .setMessage(getString(R.string.invalid_certificate_message,
+                        getCertificateUsageName()))
+                .setPositiveButton(R.string.invalid_certificate_close_button,
+                        (dialog, id) -> toastErrorAndFinish(R.string.cert_not_saved))
+                .create();
+        d.setOnCancelListener(dialog -> finish());
+        return d;
+    }
+
+    String getCertificateUsageName() {
+        switch (mCredentials.getCertUsageSelected()) {
+            case Credentials.CERTIFICATE_USAGE_CA:
+                return getString(R.string.ca_certificate);
+            case Credentials.CERTIFICATE_USAGE_USER:
+                return getString(R.string.user_certificate);
+            case Credentials.CERTIFICATE_USAGE_WIFI:
+                return getString(R.string.wifi_certificate);
+            default:
+                return getString(R.string.certificate);
+        }
     }
 
     private Dialog createPkcs12PasswordDialog() {
