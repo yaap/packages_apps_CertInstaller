@@ -21,10 +21,8 @@
     <string name="pkcs12_password_dialog_title" msgid="5997624645207427161">"Издвајање сертификата"</string>
     <string name="extracting_pkcs12" msgid="1881267738821799771">"Издвајање..."</string>
     <string name="pkcs12_file_password_dialog_title" msgid="8102721384767269510">"Издвајање из датотеке %s"</string>
-    <!-- no translation found for name_credential_dialog_title (1481964824549786927) -->
-    <skip />
-    <!-- no translation found for certificate_name (8415893401368824792) -->
-    <skip />
+    <string name="name_credential_dialog_title" msgid="1481964824549786927">"Дајте назив овом сертификату"</string>
+    <string name="certificate_name" msgid="8415893401368824792">"Назив сертификата"</string>
     <string name="credential_password" msgid="3520176519550993326">"Унесите лозинку да бисте издвојили сертификате."</string>
     <string name="credential_info" msgid="2436768402308470397">"Пакет обухвата:"</string>
     <string name="p12_description" msgid="4128352087331630024">"Сертификати у PKCS12 складишту за кључ."</string>
@@ -43,15 +41,24 @@
     <string name="invalid_cert" msgid="7704228670980743590">"Сертификат је неважећи."</string>
     <string name="action_missing_private_key" msgid="7543470057312920042">"Приватни кључ је обавезан за инсталирање сертификата"</string>
     <string name="action_missing_user_cert" msgid="3727411730202316771">"Сертификат је обавезан за инсталирање приватног кључа"</string>
-    <!-- no translation found for ca_cert_is_added (2847081843756291802) -->
-    <skip />
-    <!-- no translation found for user_cert_is_added (3088794616560630823) -->
-    <skip />
-    <!-- no translation found for wifi_cert_is_added (333220613655140428) -->
-    <skip />
+    <string name="select_certificate_usage_title" msgid="8853023485944920851">"Одаберите тип сертификата"</string>
+    <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"Инсталирање CA сертификата није успело"</string>
+    <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"CA сертификати могу да угрозе приватност и морају да се инсталирају у подешавањима"</string>
+    <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"Затвори"</string>
+    <string name="invalid_certificate_title" msgid="4642955675523621795">"Инсталирање сертификата није успело"</string>
+    <string name="invalid_certificate_close_button" msgid="350986774973653102">"Затвори"</string>
+    <string name="invalid_certificate_message" msgid="3508065546083182733">"Ова датотека не може да се користи као <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g>"</string>
+    <string name="certificate" msgid="8790577925509962529">"Сертификат"</string>
+    <string name="ca_certificate" msgid="7397198551290322945">"CA сертификат"</string>
+    <string name="user_certificate" msgid="514888069820553128">"Кориснички сертификат за VPN и апликацију"</string>
+    <string name="wifi_certificate" msgid="5356595832360140989">"Сертификат за Wi‑Fi"</string>
+    <string name="ca_cert_is_added" msgid="2847081843756291802">"CA сертификат је инсталиран"</string>
+    <string name="user_cert_is_added" msgid="3088794616560630823">"Кориснички сертификат је инсталиран"</string>
+    <string name="wifi_cert_is_added" msgid="333220613655140428">"Сертификат за Wi‑Fi је инсталиран"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"Инсталација није могућа јер је сертификат превелик."</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"Инсталација није могућа јер није могуће пронаћи датотеку сертификата."</string>
     <string name="cert_read_error" msgid="7353463360652419796">"Инсталација није могућа јер није могуће читати датотеку сертификата."</string>
+    <string name="cert_temp_error" msgid="617276803992714550">"Привремена грешка. Пробајте поново касније."</string>
     <string name="only_primary_user_allowed" msgid="4005084935023047716">"Само власник овог уређаја може да инсталира сертификате."</string>
     <string name="credential_usage_label" msgid="1513892208033156805">"Коришћење акредитива:"</string>
   <string-array name="credential_usage">

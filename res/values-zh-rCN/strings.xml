@@ -21,10 +21,8 @@
     <string name="pkcs12_password_dialog_title" msgid="5997624645207427161">"提取证书"</string>
     <string name="extracting_pkcs12" msgid="1881267738821799771">"正在提取..."</string>
     <string name="pkcs12_file_password_dialog_title" msgid="8102721384767269510">"从 %s 提取"</string>
-    <!-- no translation found for name_credential_dialog_title (1481964824549786927) -->
-    <skip />
-    <!-- no translation found for certificate_name (8415893401368824792) -->
-    <skip />
+    <string name="name_credential_dialog_title" msgid="1481964824549786927">"为此证书命名"</string>
+    <string name="certificate_name" msgid="8415893401368824792">"证书名称"</string>
     <string name="credential_password" msgid="3520176519550993326">"键入密码以提取证书。"</string>
     <string name="credential_info" msgid="2436768402308470397">"该数据包包含："</string>
     <string name="p12_description" msgid="4128352087331630024">"PKCS12 密钥库中的证书。"</string>
@@ -43,15 +41,24 @@
     <string name="invalid_cert" msgid="7704228670980743590">"该证书无效。"</string>
     <string name="action_missing_private_key" msgid="7543470057312920042">"需要提供私钥才能安装证书"</string>
     <string name="action_missing_user_cert" msgid="3727411730202316771">"需要提供证书才能安装私钥"</string>
-    <!-- no translation found for ca_cert_is_added (2847081843756291802) -->
-    <skip />
-    <!-- no translation found for user_cert_is_added (3088794616560630823) -->
-    <skip />
-    <!-- no translation found for wifi_cert_is_added (333220613655140428) -->
-    <skip />
+    <string name="select_certificate_usage_title" msgid="8853023485944920851">"选择证书类型"</string>
+    <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"无法安装 CA 证书"</string>
+    <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"CA 证书可能会给您带来隐私权方面的风险，而且必须通过“设置”安装"</string>
+    <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"关闭"</string>
+    <string name="invalid_certificate_title" msgid="4642955675523621795">"无法安装证书"</string>
+    <string name="invalid_certificate_close_button" msgid="350986774973653102">"关闭"</string>
+    <string name="invalid_certificate_message" msgid="3508065546083182733">"无法将此文件用作<xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g>"</string>
+    <string name="certificate" msgid="8790577925509962529">"证书"</string>
+    <string name="ca_certificate" msgid="7397198551290322945">"CA 证书"</string>
+    <string name="user_certificate" msgid="514888069820553128">"VPN 和应用用户证书"</string>
+    <string name="wifi_certificate" msgid="5356595832360140989">"WLAN 证书"</string>
+    <string name="ca_cert_is_added" msgid="2847081843756291802">"已安装 CA 证书"</string>
+    <string name="user_cert_is_added" msgid="3088794616560630823">"已安装用户证书"</string>
+    <string name="wifi_cert_is_added" msgid="333220613655140428">"已安装 WLAN 证书"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"无法安装该证书，因为证书尺寸过大。"</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"无法安装该证书，因为找不到证书文件。"</string>
     <string name="cert_read_error" msgid="7353463360652419796">"无法安装该证书，因为无法读取证书文件。"</string>
+    <string name="cert_temp_error" msgid="617276803992714550">"出现临时错误。请稍后重试。"</string>
     <string name="only_primary_user_allowed" msgid="4005084935023047716">"只有设备的机主才能安装证书。"</string>
     <string name="credential_usage_label" msgid="1513892208033156805">"凭据用途："</string>
   <string-array name="credential_usage">
