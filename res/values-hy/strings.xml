@@ -29,7 +29,8 @@
     <string name="credential_info" msgid="2436768402308470397">"Փաթեթը պարունակում է`"</string>
     <string name="p12_description" msgid="4128352087331630024">"Վկայականներ PKCS12 բանալիների պահոցում:"</string>
     <string name="one_userkey" msgid="3500697912370644881">"մեկ օգտատիրոջ բանալի"</string>
-    <string name="userkey_type" msgid="6214833257030657106">"Ալգորիթմ՝"</string>
+    <!-- no translation found for userkey_type (6214833257030657106) -->
+    <skip />
     <string name="one_usercrt" msgid="7690798336332403106">"մեկ օգտատիրոջ վկայական"</string>
     <string name="one_cacrt" msgid="2667950425420663146">"մեկ CA վկայագիր"</string>
     <string name="n_cacrts" msgid="2141498640685639208">"%d CA վկայականներ"</string>
@@ -61,7 +62,7 @@
     <string name="wifi_installing_label" msgid="8387393993627129025">"Տեղադրվում է"</string>
     <string name="wifi_cancel_label" msgid="1328748037608392134">"Չեղարկել"</string>
     <string name="wifi_dismiss_label" msgid="1916684434873972698">"Անտեսել"</string>
-    <string name="wifi_no_config" msgid="1835743123288916755">"Չկա"</string>
+    <string name="wifi_no_config" msgid="1835743123288916755">"Ոչ մի"</string>
     <string name="wifi_config_text" msgid="8259587306773310314">"Անուն՝ %1$s\nFQDN՝ %2$s\nRoaming Consortiums՝ %3$s\nRealm՝ %4$s\nԻսկորոշման եղանակ՝ EAP-%5$s\n"</string>
     <string name="wifi_ttls_config_text" msgid="2002413183253872168">"Օգտատիրոջ անուն՝ %s\n"</string>
     <string name="wifi_tls_config_text" msgid="9062328536640168510">"Սպասառուի վկայագիր՝\n%1$s\nԲանալի՝ %2$s\n"</string>
