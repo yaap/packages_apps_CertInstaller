@@ -37,12 +37,14 @@ import com.android.org.bouncycastle.asn1.DEROctetString;
 import com.android.org.bouncycastle.asn1.x509.BasicConstraints;
 import com.android.org.conscrypt.TrustedCertificateStore;
 
+import java.nio.ByteBuffer;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.security.KeyFactory;
 import java.security.KeyStore;
 import java.security.KeyStore.PasswordProtection;
 import java.security.KeyStore.PrivateKeyEntry;
+import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.security.PrivateKey;
 import java.security.cert.Certificate;
@@ -56,6 +58,7 @@ import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.List;
+import javax.security.auth.x500.X500Principal;
 
 /**
  * A helper class for accessing the raw data in the intent extra and handling
@@ -469,6 +472,26 @@ class CredentialHelper {
             return false;
         } else {
             return true;
+        }
+    }
+
+    /**
+     * Return a hash string of certificate in bytes. This can be used as file name for storing such
+     * a certificate.
+     */
+    static String hashAppSourceCertificateInfo(byte[] certBytes) {
+        try {
+            CertificateFactory certFactory = CertificateFactory.getInstance("X.509");
+            X509Certificate cert = (X509Certificate) certFactory.generateCertificate(
+                    new ByteArrayInputStream(certBytes));
+            cert.checkValidity();
+
+            byte[] hashedCertificate =  MessageDigest.getInstance("SHA-256").digest(certBytes);
+            long valueOfPrefix = ByteBuffer.wrap(hashedCertificate, 0, Long.BYTES).getLong();
+            return Long.toHexString(valueOfPrefix);
+        } catch (CertificateException | NoSuchAlgorithmException e) {
+            Log.e(TAG, "Invalid app source certificate: " + e);
+            return null;
         }
     }
 }
