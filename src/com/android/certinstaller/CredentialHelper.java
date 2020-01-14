@@ -16,12 +16,15 @@
 
 package com.android.certinstaller;
 
+import static android.security.KeyStore.UID_SELF;
+
 import android.app.KeyguardManager;
 import android.app.admin.DevicePolicyManager;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Process;
 import android.os.RemoteException;
 import android.os.UserHandle;
 import android.security.Credentials;
@@ -37,9 +40,9 @@ import com.android.org.bouncycastle.asn1.DEROctetString;
 import com.android.org.bouncycastle.asn1.x509.BasicConstraints;
 import com.android.org.conscrypt.TrustedCertificateStore;
 
-import java.nio.ByteBuffer;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
+import java.nio.ByteBuffer;
 import java.security.KeyFactory;
 import java.security.KeyStore;
 import java.security.KeyStore.PasswordProtection;
@@ -58,7 +61,6 @@ import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.List;
-import javax.security.auth.x500.X500Principal;
 
 /**
  * A helper class for accessing the raw data in the intent extra and handling
@@ -102,16 +104,17 @@ class CredentialHelper {
         bundle.remove(Credentials.EXTRA_CERTIFICATE_USAGE);
         if (certUsageSelected != null) {
             mCertUsageSelected = certUsageSelected;
+            mUid = getUidFromCertificateUsage(certUsageSelected);
+        } else {
+            mUid = bundle.getInt(Credentials.EXTRA_INSTALL_AS_UID, -1);
         }
+        bundle.remove(Credentials.EXTRA_INSTALL_AS_UID);
 
         String referrer = bundle.getString(Intent.EXTRA_REFERRER);
         bundle.remove(Intent.EXTRA_REFERRER);
         if (referrer != null) {
             mReferrer = referrer;
         }
-
-        mUid = bundle.getInt(Credentials.EXTRA_INSTALL_AS_UID, -1);
-        bundle.remove(Credentials.EXTRA_INSTALL_AS_UID);
 
         Log.d(TAG, "# extras: " + bundle.size());
         for (String key : bundle.keySet()) {
@@ -215,6 +218,16 @@ class CredentialHelper {
         return mBundle.containsKey(Credentials.EXTRA_PRIVATE_KEY);
     }
 
+    int getUidFromCertificateUsage(String certUsage) {
+        if (Credentials.CERTIFICATE_USAGE_WIFI.equals(certUsage)) {
+            return Process.WIFI_UID;
+        } else if (Credentials.CERTIFICATE_USAGE_APP_SOURCE.equals(certUsage)) {
+            return Process.FSVERITY_CERT_UID;
+        } else {
+            return UID_SELF;
+        }
+    }
+
     boolean hasUserCertificate() {
         return (mUserCert != null);
     }
@@ -279,18 +292,6 @@ class CredentialHelper {
 
     String getName() {
         return mName;
-    }
-
-    void setInstallAsUid(int uid) {
-        mUid = uid;
-    }
-
-    boolean isInstallAsUidSet() {
-        return mUid != -1;
-    }
-
-    int getInstallAsUid() {
-        return mUid;
     }
 
     void setCertUsageSelected(String certUsageSelected) {
@@ -461,7 +462,7 @@ class CredentialHelper {
         if (!hasCaCerts()) {
             return false;
         }
-        if (getInstallAsUid() != android.security.KeyStore.UID_SELF) {
+        if (mUid != UID_SELF) {
             // VPN and Apps trust anchors can only be installed under UID_SELF
             return false;
         }

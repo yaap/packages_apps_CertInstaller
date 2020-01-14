@@ -27,11 +27,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.Process;
 import android.security.Credentials;
 import android.security.KeyChain;
 import android.security.KeyChain.KeyChainConnection;
-import android.security.KeyStore;
 import android.text.TextUtils;
 import android.util.Log;
 import android.util.Slog;
@@ -292,7 +290,7 @@ public class CertInstaller extends Activity {
                 return mCredentials.hasUserCertificate()
                         && !mCredentials.hasOnlyVpnAndAppsTrustAnchors();
             case Credentials.CERTIFICATE_USAGE_WIFI:
-                return !mCredentials.hasOnlyVpnAndAppsTrustAnchors();
+                return true;
             default:
                 return false;
         }
@@ -301,8 +299,6 @@ public class CertInstaller extends Activity {
     private void installCertificateOrShowNameDialog() {
         if (!mCredentials.hasAnyForSystemInstall()) {
             toastErrorAndFinish(R.string.no_cert_to_saved);
-        } else if (mCredentials.getCertUsageSelected().equals(Credentials.CERTIFICATE_USAGE_WIFI)) {
-            installCertificateToKeystore(this);
         } else if (mCredentials.hasOnlyVpnAndAppsTrustAnchors()) {
             // If there's only a CA certificate to install, then it's going to be used
             // as a trust anchor. Install it and skip importing to Keystore.
@@ -500,14 +496,6 @@ public class CertInstaller extends Activity {
     }
 
     private void installCertificateToKeystore(Context context) {
-        String certUsage = mCredentials.getCertUsageSelected();
-        if (Credentials.CERTIFICATE_USAGE_WIFI.equals(certUsage)) {
-            mCredentials.setInstallAsUid(Process.WIFI_UID);
-        } else if (Credentials.CERTIFICATE_USAGE_APP_SOURCE.equals(certUsage)) {
-            mCredentials.setInstallAsUid(Process.FSVERITY_CERT_UID);
-        } else {
-            mCredentials.setInstallAsUid(KeyStore.UID_SELF);
-        }
         try {
             startActivityForResult(
                     mCredentials.createSystemInstallIntent(context),
