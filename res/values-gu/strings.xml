@@ -27,6 +27,7 @@
     <string name="credential_info" msgid="2436768402308470397">"પેકેજ સમાવે છે:"</string>
     <string name="p12_description" msgid="4128352087331630024">"PKCS12 કીસ્ટોરમાં પ્રમાણપત્રો."</string>
     <string name="one_userkey" msgid="3500697912370644881">"એક વપરાશકર્તા કી"</string>
+    <string name="userkey_type" msgid="6214833257030657106">"ઍલ્ગોરિધમ:"</string>
     <string name="one_usercrt" msgid="7690798336332403106">"એક વપરાશકર્તા પ્રમાણપત્ર"</string>
     <string name="one_cacrt" msgid="2667950425420663146">"એક CA પ્રમાણપત્ર"</string>
     <string name="n_cacrts" msgid="2141498640685639208">"%d CA પ્રમાણપત્રો"</string>
@@ -54,7 +55,7 @@
     <string name="wifi_title" msgid="8475811746333426489">"વાઇ-ફાઇ પ્રોફાઇલ"</string>
     <string name="wifi_detail_title" msgid="3627332137252994395">"%s માટેની વિગતો"</string>
     <string name="wifi_detail_label" msgid="3032151019356747583">"વિગતો"</string>
-    <string name="wifi_install_label" msgid="1449629407724323233">"ઇન્સ્ટોલ કરો"</string>
+    <string name="wifi_install_label" msgid="1449629407724323233">"ઇન્સ્ટૉલ કરો"</string>
     <string name="wifi_installing_label" msgid="8387393993627129025">"ઇન્સ્ટોલ કરી રહ્યું છે"</string>
     <string name="wifi_cancel_label" msgid="1328748037608392134">"રદ કરો"</string>
     <string name="wifi_dismiss_label" msgid="1916684434873972698">"કાઢી નાખો"</string>

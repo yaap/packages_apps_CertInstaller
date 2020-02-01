@@ -27,8 +27,7 @@
     <string name="credential_info" msgid="2436768402308470397">"தொகுப்பில் உள்ளவை:"</string>
     <string name="p12_description" msgid="4128352087331630024">"PKCS12 விசைதொகுப்பில் உள்ள சான்றிதழ்கள்."</string>
     <string name="one_userkey" msgid="3500697912370644881">"ஒரு பயனர் விசை"</string>
-    <!-- no translation found for userkey_type (6214833257030657106) -->
-    <skip />
+    <string name="userkey_type" msgid="6214833257030657106">"அல்காரிதம்:"</string>
     <string name="one_usercrt" msgid="7690798336332403106">"ஒரு பயனர் சான்றிதழ்"</string>
     <string name="one_cacrt" msgid="2667950425420663146">"ஒரு CA சான்றிதழ்"</string>
     <string name="n_cacrts" msgid="2141498640685639208">"%d CA சான்றிதழ்கள்"</string>
@@ -49,7 +48,7 @@
     <string name="only_primary_user_allowed" msgid="4005084935023047716">"இந்தச் சாதனத்தின் உரிமையாளர் மட்டுமே சான்றிதழ்களை நிறுவலாம்."</string>
     <string name="credential_usage_label" msgid="1513892208033156805">"நன்சான்றின் பயன்பாடு:"</string>
   <string-array name="credential_usage">
-    <item msgid="375085478373011304">"VPN மற்றும் பயன்பாடுகள்"</item>
+    <item msgid="375085478373011304">"VPN மற்றும் ஆப்ஸ்"</item>
     <item msgid="692322974985472861">"வைஃபை"</item>
   </string-array>
     <string name="certificate_capabilities_warning" msgid="4158609401937799110">"கவனத்திற்கு: இந்தச் சான்றிதழை வழங்குபவர், சாதனத்தைப் பயன்படுத்துவதன் மூலம் கிடைக்கும் ட்ராஃபிக் அனைத்தையும் ஆய்வுசெய்யக்கூடும்."</string>

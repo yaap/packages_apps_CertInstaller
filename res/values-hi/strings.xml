@@ -27,6 +27,7 @@
     <string name="credential_info" msgid="2436768402308470397">"पैकेज में शामिल है:"</string>
     <string name="p12_description" msgid="4128352087331630024">"PKCS12 कीस्‍टोर में प्रमाणपत्र."</string>
     <string name="one_userkey" msgid="3500697912370644881">"एक उपयोगकर्ता कुंजी"</string>
+    <string name="userkey_type" msgid="6214833257030657106">"एल्गोरिदम:"</string>
     <string name="one_usercrt" msgid="7690798336332403106">"एक उपयोगकर्ता प्रमाणपत्र"</string>
     <string name="one_cacrt" msgid="2667950425420663146">"एक CA प्रमाणपत्र"</string>
     <string name="n_cacrts" msgid="2141498640685639208">"%d CA प्रमाणपत्र"</string>
@@ -51,7 +52,7 @@
     <item msgid="692322974985472861">"वाई-फ़ाई"</item>
   </string-array>
     <string name="certificate_capabilities_warning" msgid="4158609401937799110">"ध्यान दें: यह प्रमाणपत्र देने वाली कंपनी, आपके डिवाइस पर आ रहे और आपके डिवाइस से भेजे जा रहे नेटवर्क से जुड़े सभी ट्रैफ़िक की जाँच कर सकती है."</string>
-    <string name="wifi_title" msgid="8475811746333426489">"वाई-फ़ार्इ प्रोफ़ाइल"</string>
+    <string name="wifi_title" msgid="8475811746333426489">"वाई-फ़ाई प्रोफ़ाइल"</string>
     <string name="wifi_detail_title" msgid="3627332137252994395">"%s के विवरण"</string>
     <string name="wifi_detail_label" msgid="3032151019356747583">"विवरण"</string>
     <string name="wifi_install_label" msgid="1449629407724323233">"इंस्टॉल करें"</string>
@@ -68,7 +69,7 @@
     <string name="install_done" msgid="1522718684172097080">"<xliff:g id="NAME">%1$s</xliff:g> की प्रमाणिकता को वाई-फ़ाई द्वारा सहेजे गए नेटवर्क में जोड़ा गया है."</string>
     <string name="done_label" msgid="5597425930652904250">"हो गया"</string>
     <string name="wifi_installer_detail" msgid="63879632832701669">"<xliff:g id="NAME">%1$s</xliff:g> के द्वारा उपलब्ध नेटवर्क से कनेक्ट करने के लिए वाई-फ़ाई प्रमाणिकता इंस्टॉल करें."</string>
-    <string name="wifi_installer_download_error" msgid="5429453090956277692">"डाउनलोड की गई फ़ाइल में समस्या है और उसे इंस्टॉल नहीं किया जा सकता. सुनिश्चित करें कि आपने सही स्रोत से फ़ाइल डाउनलोड की है."</string>
+    <string name="wifi_installer_download_error" msgid="5429453090956277692">"डाउनलोड की गई फ़ाइल में समस्या है और उसे इंस्टॉल नहीं किया जा सकता. पक्का करें कि आपने सही स्रोत से फ़ाइल डाउनलोड की है."</string>
     <string name="wifi_installer_fail" msgid="894483173306576331">"वाई-फ़ाई प्रमाणिकता को इंस्टॉल नहीं कर सकते. फ़ाइल को पुनः डाउनलोड करने का प्रयास करें."</string>
     <string name="wifi_installer_fail_no_wifi_title" msgid="8358191074828840533">"इंस्‍टॉलेशन रोका गया"</string>
     <string name="wifi_installer_fail_title" msgid="5547079779067835479">"इंस्‍टॉल नहीं किया जा सकता"</string>
