@@ -47,7 +47,6 @@ import java.security.KeyFactory;
 import java.security.KeyStore;
 import java.security.KeyStore.PasswordProtection;
 import java.security.KeyStore.PrivateKeyEntry;
-import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.security.PrivateKey;
 import java.security.cert.Certificate;
@@ -221,8 +220,6 @@ class CredentialHelper {
     int getUidFromCertificateUsage(String certUsage) {
         if (Credentials.CERTIFICATE_USAGE_WIFI.equals(certUsage)) {
             return Process.WIFI_UID;
-        } else if (Credentials.CERTIFICATE_USAGE_APP_SOURCE.equals(certUsage)) {
-            return Process.FSVERITY_CERT_UID;
         } else {
             return UID_SELF;
         }
@@ -473,26 +470,6 @@ class CredentialHelper {
             return false;
         } else {
             return true;
-        }
-    }
-
-    /**
-     * Return a hash string of certificate in bytes. This can be used as file name for storing such
-     * a certificate.
-     */
-    static String hashAppSourceCertificateInfo(byte[] certBytes) {
-        try {
-            CertificateFactory certFactory = CertificateFactory.getInstance("X.509");
-            X509Certificate cert = (X509Certificate) certFactory.generateCertificate(
-                    new ByteArrayInputStream(certBytes));
-            cert.checkValidity();
-
-            byte[] hashedCertificate =  MessageDigest.getInstance("SHA-256").digest(certBytes);
-            long valueOfPrefix = ByteBuffer.wrap(hashedCertificate, 0, Long.BYTES).getLong();
-            return Long.toHexString(valueOfPrefix);
-        } catch (CertificateException | NoSuchAlgorithmException e) {
-            Log.e(TAG, "Invalid app source certificate: " + e);
-            return null;
         }
     }
 }
