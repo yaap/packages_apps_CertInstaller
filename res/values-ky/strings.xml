@@ -60,7 +60,7 @@
     <string name="cert_too_large_error" msgid="8715414972725646285">"Орнотуу мүмкүн болгон жок, анткени сертификат өтө чоң."</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"Орнотуу мүмкүн болгон жок, анткени сертификат файлы табылбады."</string>
     <string name="cert_read_error" msgid="7353463360652419796">"Орнотуу мүмкүн болгон жок, анткени сертификат файлын окуу мүмкүн эмес."</string>
-    <string name="cert_temp_error" msgid="617276803992714550">"Убактылуу бузулуу. Кийинчерээк кайталаңыз."</string>
+    <string name="cert_temp_error" msgid="617276803992714550">"Убактылуу бузулуу. Бир аздан кийин кайталап көрүңүз."</string>
     <string name="only_primary_user_allowed" msgid="4005084935023047716">"Сертификаттарды бул түзмөктүн ээси гана орното алат."</string>
     <string name="credential_usage_label" msgid="1513892208033156805">"Тастыктама төмөнкү менен колдонулат:"</string>
   <string-array name="credential_usage">
@@ -89,5 +89,5 @@
     <string name="wifi_installer_fail" msgid="894483173306576331">"Wi-Fi эсептик дайындары орнотулбай калды. Файлды кайра жүктөп көрүңүз."</string>
     <string name="wifi_installer_fail_no_wifi_title" msgid="8358191074828840533">"Орнотуу жокко чыгарылды"</string>
     <string name="wifi_installer_fail_title" msgid="5547079779067835479">"Орнотулбай жатат"</string>
-    <string name="wifi_installer_fail_no_wifi" msgid="2044576439984209921">"Wi-Fi күйгүзүп, кайра аракет кылыңыз."</string>
+    <string name="wifi_installer_fail_no_wifi" msgid="2044576439984209921">"Wi-Fi күйгүзүп, кайталап көрүңүз."</string>
 </resources>
