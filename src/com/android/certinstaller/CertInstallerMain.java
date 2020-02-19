@@ -108,7 +108,8 @@ public class CertInstallerMain extends PreferenceActivity {
                     || bundleContainsInstallAsUidOnly(bundle)
                     || bundleContainsExtraCertificateUsageOnly(bundle)) {
 
-                if (needConfirmationWithCredential(bundle)) {
+                // Confirm credentials if there's only a CA certificate
+                if (installingCaCertificate(bundle)) {
                     confirmDeviceCredential();
                 } else {
                     startOpenDocumentActivity();
@@ -137,11 +138,9 @@ public class CertInstallerMain extends PreferenceActivity {
         return bundle.size() == 1 && bundle.containsKey(Credentials.EXTRA_CERTIFICATE_USAGE);
     }
 
-    private boolean needConfirmationWithCredential(Bundle bundle) {
-        String certUsage = bundle.getString(Credentials.EXTRA_CERTIFICATE_USAGE);
-        return bundle != null && bundle.size() == 1 && (
-                Credentials.CERTIFICATE_USAGE_CA.equals(certUsage) ||
-                Credentials.CERTIFICATE_USAGE_APP_SOURCE.equals(certUsage));
+    private boolean installingCaCertificate(Bundle bundle) {
+        return bundle != null && bundle.size() == 1 && Credentials.CERTIFICATE_USAGE_CA.equals(
+                bundle.getString(Credentials.EXTRA_CERTIFICATE_USAGE));
     }
 
     private void confirmDeviceCredential() {

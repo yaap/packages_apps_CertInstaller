@@ -92,29 +92,17 @@ public class CertInstaller extends Activity {
             if (!mCredentials.containsAnyRawData()) {
                 toastErrorAndFinish(R.string.no_cert_to_saved);
                 finish();
-                return;
-            }
-
-            String certUsage = mCredentials.getCertUsageSelected();
-            if (installingCaCertificate(certUsage)) {
-                extractPkcs12OrInstall();
-            } else if (Credentials.CERTIFICATE_USAGE_APP_SOURCE.equals(certUsage)) {
-                byte[] certBytes = getIntent().getExtras().getByteArray(KeyChain.EXTRA_CERTIFICATE);
-                String filename = CredentialHelper.hashAppSourceCertificateInfo(certBytes);
-                if (filename == null) {
-                    toastErrorAndFinish(R.string.invalid_cert);
-                    finish();
-                    return;
-                }
-                mCredentials.setName(filename);
-                installCertificateToKeystore(this);
             } else {
-                if (mCredentials.hasUserCertificate() && !mCredentials.hasPrivateKey()) {
-                    toastErrorAndFinish(R.string.action_missing_private_key);
-                } else if (mCredentials.hasPrivateKey() && !mCredentials.hasUserCertificate()) {
-                    toastErrorAndFinish(R.string.action_missing_user_cert);
-                } else {
+                if (installingCaCertificate()) {
                     extractPkcs12OrInstall();
+                } else {
+                    if (mCredentials.hasUserCertificate() && !mCredentials.hasPrivateKey()) {
+                        toastErrorAndFinish(R.string.action_missing_private_key);
+                    } else if (mCredentials.hasPrivateKey() && !mCredentials.hasUserCertificate()) {
+                        toastErrorAndFinish(R.string.action_missing_user_cert);
+                    } else {
+                        extractPkcs12OrInstall();
+                    }
                 }
             }
         } else {
@@ -124,9 +112,9 @@ public class CertInstaller extends Activity {
         }
     }
 
-    private boolean installingCaCertificate(String certUsage) {
-        return Credentials.CERTIFICATE_USAGE_CA.equals(certUsage) && mCredentials.hasCaCerts() &&
-                !mCredentials.hasPrivateKey() && !mCredentials.hasUserCertificate();
+    private boolean installingCaCertificate() {
+        return mCredentials.hasCaCerts() && !mCredentials.hasPrivateKey() &&
+                !mCredentials.hasUserCertificate();
     }
 
     @Override
@@ -197,11 +185,8 @@ public class CertInstaller extends Activity {
                     return;
                 }
 
-                String certUsage = mCredentials.getCertUsageSelected();
-                Log.d(TAG, "credential is added for " + certUsage + ": " + mCredentials.getName());
-                if (Credentials.CERTIFICATE_USAGE_APP_SOURCE.equals(certUsage)) {
-                    Toast.makeText(this, R.string.app_src_cert_is_added, Toast.LENGTH_LONG).show();
-                } else if (Credentials.CERTIFICATE_USAGE_WIFI.equals(certUsage)) {
+                Log.d(TAG, "credential is added: " + mCredentials.getName());
+                if (mCredentials.getCertUsageSelected().equals(Credentials.CERTIFICATE_USAGE_WIFI)) {
                     Toast.makeText(this, R.string.wifi_cert_is_added, Toast.LENGTH_LONG).show();
                 } else {
                     Toast.makeText(this, R.string.user_cert_is_added, Toast.LENGTH_LONG).show();
@@ -384,7 +369,6 @@ public class CertInstaller extends Activity {
                     break;
                 case R.id.wifi_certificate:
                     mCredentials.setCertUsageSelected(Credentials.CERTIFICATE_USAGE_WIFI);
-                    break;
                 default:
                     Slog.i(TAG, "Unknown selection for scope");
             }
@@ -428,8 +412,6 @@ public class CertInstaller extends Activity {
                 return getString(R.string.user_certificate);
             case Credentials.CERTIFICATE_USAGE_WIFI:
                 return getString(R.string.wifi_certificate);
-            case Credentials.CERTIFICATE_USAGE_APP_SOURCE:
-                return getString(R.string.app_src_certificate);
             default:
                 return getString(R.string.certificate);
         }
