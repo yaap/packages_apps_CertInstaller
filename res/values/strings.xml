@@ -80,8 +80,6 @@
     <string name="user_certificate">VPN &amp; app user certificate</string>
     <!-- WiFi certificate type used in dialog to inform user that certificate selected is invalid -->
     <string name="wifi_certificate">Wi\u2011Fi certificate</string>
-    <!-- App Source certificate type used in dialog to inform user that certificate selected is invalid -->
-    <string name="app_src_certificate">App Source certificate</string>
 
 
     <!-- Confirmation toast. This toast lets the user know that they successfully installed a CA certificate on their device. -->
@@ -90,8 +88,6 @@
     <string name="user_cert_is_added">User certificate installed</string>
     <!-- Confirmation toast. This toast lets the user know that they successfully installed a Wi-Fi certificate on their device. -->
     <string name="wifi_cert_is_added">Wi\u2011Fi certificate installed</string>
-    <!-- Confirmation toast. This toast lets the user know that they successfully installed an App Source certificate on their device. -->
-    <string name="app_src_cert_is_added">App Source certificate installed</string>
     <!-- toast message -->
     <string name="cert_too_large_error">Couldn\'t install because the certificate size is too large.</string>
     <!-- toast message -->
