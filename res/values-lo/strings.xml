@@ -52,11 +52,9 @@
     <string name="ca_certificate" msgid="7397198551290322945">"ໃບ​ຢັ້ງ​ຢືນ​ CA"</string>
     <string name="user_certificate" msgid="514888069820553128">"VPN ແລະ ໃບຮັບຮອງຜູ້ໃຊ້ແອັບ"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"ໃບຮັບຮອງ Wi‑Fi"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"ໃບຮັບຮອງແຫຼ່ງທີ່ມາແອັບ"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"ຕິດຕັ້ງໃບຮັບຮອງ CA ແລ້ວ"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"ຕິດຕັ້ງໃບຮັບຮອງຜູ້ໃຊ້ແລ້ວ"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"ຕິດຕັ້ງໃບຮັບຮອງ Wi‑Fi ແລ້ວ"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"ຕິດຕັ້ງໃບຮັບຮອງແຫຼ່ງທີ່ມາແອັບແລ້ວ"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"ບໍ່ສາມາດຕິດຕັ້ງໄດ້ເພາະວ່າໃບຮັບຮອງມີຂະໜາດໃຫຍ່ເກີນໄປ."</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"ບໍ່ສາມາດຕິດຕັ້ງໄດ້ເນື່ອງຈາກບໍ່ສາມາດລະບຸຕຳແໜ່ງຂອງໄຟລ໌ຮັບຮອງໄດ້."</string>
     <string name="cert_read_error" msgid="7353463360652419796">"ບໍ່ສາມາດຕິດຕັ້ງໄດ້ເນື່ອງຈາກບໍ່ສາມາດອ່ານໄຟລ໌ຮັບຮອງໄດ້."</string>

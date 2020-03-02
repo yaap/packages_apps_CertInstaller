@@ -52,11 +52,9 @@
     <string name="ca_certificate" msgid="7397198551290322945">"Πιστοποιητικό CA"</string>
     <string name="user_certificate" msgid="514888069820553128">"Πιστοποιητικό χρήστη VPN και εφαρμογής"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"Πιστοποιητικό Wi‑Fi"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"Πιστοποιητικό πηγής εφαρμογής"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"Εγκαταστάθηκε πιστοποιητικό CA"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"Εγκαταστάθηκε πιστοποιητικό χρήστη"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"Εγκαταστάθηκε πιστοποιητικό Wi‑Fi"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"Εγκαταστάθηκε πιστοποιητικό πηγής εφαρμογής"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"Δεν ήταν δυνατή η εγκατάσταση, επειδή το μέγεθος του πιστοποιητικού είναι πολύ μεγάλο."</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"Δεν ήταν δυνατή η εγκατάσταση, επειδή δεν ήταν δυνατό να εντοπιστεί το αρχείο πιστοποιητικού."</string>
     <string name="cert_read_error" msgid="7353463360652419796">"Δεν ήταν δυνατή η εγκατάσταση, επειδή δεν ήταν δυνατό να γίνει ανάγνωση του αρχείου πιστοποιητικού."</string>

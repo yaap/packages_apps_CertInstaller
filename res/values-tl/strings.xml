@@ -52,11 +52,9 @@
     <string name="ca_certificate" msgid="7397198551290322945">"CA certificate"</string>
     <string name="user_certificate" msgid="514888069820553128">"VPN at certificate ng app user"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"Certificate ng Wi-Fi"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"Certificate ng App Source"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"Na-install na ang CA certificate"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"Na-install na ang certificate ng user"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"Na-install na ang certificate ng Wi-Fi"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"Na-install na ang certificate ng App Source"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"Hindi ma-install dahil masyadong malaki ang certificate."</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"Hindi ma-install dahil hindi mahanap ang file ng certificate."</string>
     <string name="cert_read_error" msgid="7353463360652419796">"Hindi mai-install dahil hindi mabasa ang file ng certificate."</string>

@@ -52,11 +52,9 @@
     <string name="ca_certificate" msgid="7397198551290322945">"certificado de CA"</string>
     <string name="user_certificate" msgid="514888069820553128">"Certificado de usuario de VPN y aplicaciones"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"certificado de Wi‑Fi"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"Certificado de fuente de aplicación"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"Se ha instalado el certificado de CA"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"Se ha instalado el certificado de usuario"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"Se ha instalado el certificado de Wi‑Fi"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"Se ha instalado el certificado de fuente de aplicación"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"No se ha podido instalar porque el tamaño del certificado es demasiado grande."</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"No se ha podido instalar porque no se ha encontrado el archivo de certificado."</string>
     <string name="cert_read_error" msgid="7353463360652419796">"No se ha podido instalar porque no se puede leer el archivo de certificado."</string>

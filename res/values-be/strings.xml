@@ -52,11 +52,9 @@
     <string name="ca_certificate" msgid="7397198551290322945">"Сертыфікат ЦС"</string>
     <string name="user_certificate" msgid="514888069820553128">"Сертыфікат карыстальніка VPN і праграм"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"Сертыфікат Wi‑Fi"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"Сертыфікат крыніцы праграмы"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"Сертыфікат ЦС усталяваны"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"Сертыфікат карыстальніка ўсталяваны"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"Сертыфікат Wi‑Fi усталяваны"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"Сертыфікат крыніцы праграмы ўсталяваны"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"Не атрымлiваецца ўсталяваць, таму што памер сертыфiката занадта вялікі."</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"Не атрымлiваецца ўсталяваць, таму што немагчыма размясцiць файл сертыфіката."</string>
     <string name="cert_read_error" msgid="7353463360652419796">"Не атрымлiваецца ўсталяваць, таму што немагчыма прачытаць файл сертыфіката."</string>

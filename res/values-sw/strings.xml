@@ -52,11 +52,9 @@
     <string name="ca_certificate" msgid="7397198551290322945">"Cheti cha CA"</string>
     <string name="user_certificate" msgid="514888069820553128">"Cheti cha mtumiaji wa programu na VPN"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"Cheti cha Wi-Fi"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"Cheti cha Chanzo cha Programu"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"Cheti cha CA kimesakinishwa"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"Cheti cha mtumiaji kimesakinishwa"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"Cheti cha Wi-Fi kimesakinishwa"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"Cheti cha Chanzo cha Programu kimesakinishwa"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"Haikuweza kusakinisha kwa sababu cheti ni kikubwa mno."</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"Haikuweza kusakinisha kwa sababu faili ya cheti haikupatikana."</string>
     <string name="cert_read_error" msgid="7353463360652419796">"Haikuweza kusakinisha kwa sababu faili ya cheti haikuweza kusomwa."</string>

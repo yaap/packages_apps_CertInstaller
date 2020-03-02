@@ -52,11 +52,9 @@
     <string name="ca_certificate" msgid="7397198551290322945">"Certifikát CA"</string>
     <string name="user_certificate" msgid="514888069820553128">"Certifikát pro VPN a aplikaci"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"Certifikát Wi‑Fi"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"Certifikát zdroje aplikace"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"Certifikát CA byl nainstalován"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"Uživatelský certifikát byl nainstalován"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"Certifikát Wi-Fi byl nainstalován"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"Certifikát zdroje aplikace je nainstalován"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"Instalace se nezdařila, protože je soubor certifikátu příliš velký."</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"Instalace se nezdařila, protože se soubor certifikátu nepodařilo najít."</string>
     <string name="cert_read_error" msgid="7353463360652419796">"Instalace se nezdařila, protože se soubor certifikátu nepodařilo přečíst."</string>
