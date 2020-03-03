@@ -52,11 +52,9 @@
     <string name="ca_certificate" msgid="7397198551290322945">"CA ಪ್ರಮಾಣಪತ್ರ"</string>
     <string name="user_certificate" msgid="514888069820553128">"VPN ಮತ್ತು ಆ್ಯಪ್ ಬಳಕೆದಾರರ ಪ್ರಮಾಣಪತ್ರ"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"ವೈ-ಫೈ ಪ್ರಮಾಣಪತ್ರ"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"ಆ್ಯಪ್ ಮೂಲದ ಪ್ರಮಾಣಪತ್ರ"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"CA ಪ್ರಮಾಣಪತ್ರವನ್ನು ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಲಾಗಿದೆ"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"ಬಳಕೆದಾರರ ಪ್ರಮಾಣಪತ್ರವನ್ನು ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಲಾಗಿದೆ"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"ವೈ-ಫೈ ಪ್ರಮಾಣಪತ್ರವನ್ನು ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಲಾಗಿದೆ"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"ಆ್ಯಪ್ ಮೂಲದ ಪ್ರಮಾಣಪತ್ರವನ್ನು ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಲಾಗಿದೆ"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"ಪ್ರಮಾಣಪತ್ರದ ಗಾತ್ರವು ತುಂಬಾ ದೊಡ್ಡದಾಗಿರುವ ಕಾರಣ ಸ್ಥಾಪಿಸಲು ಸಾಧ್ಯವಾಗುತ್ತಿಲ್ಲ."</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"ಪ್ರಮಾಣಪತ್ರದ ಫೈಲ್ ಅನ್ನು ಪತ್ತೆಹಚ್ಚಲಾಗದ ಕಾರಣ ಸ್ಥಾಪಿಸಲು ಸಾಧ್ಯವಾಗುತ್ತಿಲ್ಲ."</string>
     <string name="cert_read_error" msgid="7353463360652419796">"ಪ್ರಮಾಣಪತ್ರದ ಫೈಲ್ ಅನ್ನು ಓದಲಾಗದ ಕಾರಣ ಸ್ಥಾಪಿಸಲು ಸಾಧ್ಯವಾಗುತ್ತಿಲ್ಲ."</string>

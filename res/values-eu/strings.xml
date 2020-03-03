@@ -52,11 +52,9 @@
     <string name="ca_certificate" msgid="7397198551290322945">"CA ziurtagiria"</string>
     <string name="user_certificate" msgid="514888069820553128">"VPN eta aplikazioetarako erabiltzaile-ziurtagiria"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"Wifi-ziurtagiria"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"Aplikazioen iturburuaren ziurtagiria"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"Instalatu da CA ziurtagiria"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"Instalatu da erabiltzaile-ziurtagiria"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"Instalatu da wifi-ziurtagiria"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"Instalatu da aplikazioen iturburuaren ziurtagiria"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"Ezin izan da instalatu ziurtagiria handiegia delako."</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"Ezin izan da instalatu ezin izan delako ziurtagiri-fitxategia aurkitu."</string>
     <string name="cert_read_error" msgid="7353463360652419796">"Ezin izan da instalatu ezin izan delako ziurtagiri-fitxategia irakurri."</string>

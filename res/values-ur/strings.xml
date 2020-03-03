@@ -52,11 +52,9 @@
     <string name="ca_certificate" msgid="7397198551290322945">"‏CA سرٹیفکیٹ"</string>
     <string name="user_certificate" msgid="514888069820553128">"‏VPN اور ایپ صارف کا سرٹیفکیٹ"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"‏Wi-Fi سرٹیفکیٹ"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"ایپ ماخذ سرٹیفکیٹ"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"‏CA سرٹیفکیٹ انسٹال کیا گیا"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"صارف کا سرٹیفیکیٹ انسٹال کیا گیا"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"‏Wi-Fi کا سرٹیفکیٹ انسٹال کیا گیا"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"ایپ ماخذ سرٹیفکیٹ انسٹال کیا گیا"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"انسٹال نہیں کیا جا سکا کیونکہ سرٹیفکیٹ کا سائز کافی بڑا ہے۔"</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"انسٹال نہیں کیا جا سکا کیونکہ سرٹیفکیٹ فائل تلاش نہیں کی جا سکی۔"</string>
     <string name="cert_read_error" msgid="7353463360652419796">"انسٹال نہیں کیا جا سکا کیونکہ سرٹیفکیٹ فائل پڑھی نہیں جاسکی۔"</string>

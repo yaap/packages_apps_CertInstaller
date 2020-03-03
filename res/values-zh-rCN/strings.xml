@@ -52,11 +52,9 @@
     <string name="ca_certificate" msgid="7397198551290322945">"CA 证书"</string>
     <string name="user_certificate" msgid="514888069820553128">"VPN 和应用用户证书"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"WLAN 证书"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"“应用来源”证书"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"已安装 CA 证书"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"已安装用户证书"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"已安装 WLAN 证书"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"已安装“应用来源”证书"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"无法安装该证书，因为证书尺寸过大。"</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"无法安装该证书，因为找不到证书文件。"</string>
     <string name="cert_read_error" msgid="7353463360652419796">"无法安装该证书，因为无法读取证书文件。"</string>

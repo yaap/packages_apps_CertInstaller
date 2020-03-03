@@ -52,11 +52,9 @@
     <string name="ca_certificate" msgid="7397198551290322945">"CA-sertifikaat"</string>
     <string name="user_certificate" msgid="514888069820553128">"VPN-i ja rakenduse kasutaja sertifikaat"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"WiFi-sertifikaat"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"Rakenduse allika sertifikaat"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"CA-sertifikaat on installitud"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"Kasutajasertifikaat on installitud"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"WiFi-sertifikaat on installitud"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"Rakenduse allika sertifikaat on installitud"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"Ei saanud installida, sest sertifikaadi maht on liiga suur."</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"Ei saanud installida, sest sertifikaadi faili ei leitud."</string>
     <string name="cert_read_error" msgid="7353463360652419796">"Ei saanud installida, sest sertifikaadi fail pole loetav."</string>

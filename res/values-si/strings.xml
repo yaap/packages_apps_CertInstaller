@@ -54,11 +54,9 @@
     <string name="ca_certificate" msgid="7397198551290322945">"CA සහතිකය"</string>
     <string name="user_certificate" msgid="514888069820553128">"VPN &amp; යෙදුම් පරිශීලක සහතිකය"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"Wi‑Fi සහතිකය"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"යෙදුම් මූලාශ්‍ර සහතිකය"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"CA සහතිකය ස්ථාපනය කරන ලදී"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"පරිශීලක සහතිකය ස්ථාපනය කරන ලදී"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"Wi‑Fi සහතිකය ස්ථාපනය කරන ලදී"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"යෙදුම් මූලාශ්‍ර සහතිකය ස්ථාපනය කර ඇත"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"සහතිකයේ ප්‍රමාණය විශාල වැඩි බැවින් ස්ථාපනය කළ නොහැක."</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"සහතික ගොනුව තිබෙන ස්ථානය නිශ්චය කරගත නොහැකි නිසා ස්ථාපනය කල නොහැක."</string>
     <string name="cert_read_error" msgid="7353463360652419796">"සහතික ගොනුව කියවීමට නොහැකි වූ නිසා ස්ථාපනය කිරීමට නොහැකි විය."</string>

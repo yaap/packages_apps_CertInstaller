@@ -52,11 +52,9 @@
     <string name="ca_certificate" msgid="7397198551290322945">"Certificat CA"</string>
     <string name="user_certificate" msgid="514888069820553128">"Certificatul de utilizator de aplicații și VPN"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"Certificat pentru Wi‑Fi"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"Certificat pentru sursa aplicației"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"Certificatul CA a fost instalat"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"Certificatul pentru utilizator a fost instalat"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"Certificatul pentru Wi‑Fi a fost instalat"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"Certificatul pentru sursa aplicației a fost instalat"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"Nu se poate instala, deoarece dimensiunea certificatului este prea mare."</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"Nu se poate instala, deoarece fișierul certificat nu a putut fi găsit."</string>
     <string name="cert_read_error" msgid="7353463360652419796">"Nu se poate instala, deoarece fișierul certificat nu a putut fi citit."</string>

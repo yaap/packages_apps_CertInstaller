@@ -52,11 +52,9 @@
     <string name="ca_certificate" msgid="7397198551290322945">"CA সার্টিফিকেট"</string>
     <string name="user_certificate" msgid="514888069820553128">"VPN ও অ্যাপ ব্যবহারকারীর সার্টিফিকেট"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"ওয়াই-ফাই সার্টিফিকেট"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"অ্যাপ সোর্স সার্টিফিকেট"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"CA সার্টিফিকেট ইনস্টল করা হয়েছে"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"ব্যবহারকারীর সার্টিফিকেট ইনস্টল করা হয়েছে"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"ওয়াই-ফাই সার্টিফিকেট ইনস্টল করা হয়েছে"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"অ্যাপ সোর্স সার্টিফিকেট ইনস্টল করা হয়েছে"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"শংসাপত্রের আকার খুব বেশি বড় হওয়ায় ইনস্টল করা যায়নি৷"</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"সার্টিফিকেট ফাইলটি খুঁজে না পাওয়ায় ইনস্টল করা যায়নি৷"</string>
     <string name="cert_read_error" msgid="7353463360652419796">"সার্টিফিকেট ফাইলটি পড়তে না পারায় ইনস্টল করা যায়নি৷"</string>
