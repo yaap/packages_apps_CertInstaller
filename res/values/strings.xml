@@ -67,7 +67,7 @@
     <!-- Button of dialog to redirect user when installing a CA certificate outside Settings -->
     <string name="redirect_ca_certificate_close_button">Close</string>
     <!-- Title of dialog to inform user that certificate selected is invalid -->
-    <string name="invalid_certificate_title">Can\'t install certificates</string>
+    <string name="invalid_certificate_title">Can\'t use this file</string>
     <!-- Button of dialog to inform user that certificate selected is invalid -->
     <string name="invalid_certificate_close_button">Close</string>
     <!-- Message of dialog to inform user that certificate selected is invalid -->
