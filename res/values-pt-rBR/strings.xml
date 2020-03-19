@@ -45,7 +45,8 @@
     <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"Não foi possível instalar os certificados de CA."</string>
     <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"Os certificados de CA podem gerar riscos à sua privacidade e precisam ser instalados nas configurações"</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"Fechar"</string>
-    <string name="invalid_certificate_title" msgid="4642955675523621795">"Não foi possível instalar os certificados"</string>
+    <!-- no translation found for invalid_certificate_title (6500315398016809635) -->
+    <skip />
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"Fechar"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"Não é possível usar esse arquivo como <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g>"</string>
     <string name="certificate" msgid="8790577925509962529">"Certificado"</string>
