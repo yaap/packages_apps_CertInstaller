@@ -47,7 +47,8 @@
     <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"CA සහතික ස්ථාපනය කළ නොහැකිය"</string>
     <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"CA සහතිකවලට ඔබේ රහස්‍යතාව අවදානමකට හෙළිය හැකි අතර සැකසීම් තුළ ස්ථාපනය කළ යුතුය"</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"වසන්න"</string>
-    <string name="invalid_certificate_title" msgid="4642955675523621795">"සහතික ස්ථාපනය කළ නොහැකිය"</string>
+    <!-- no translation found for invalid_certificate_title (6500315398016809635) -->
+    <skip />
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"වසන්න"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"මෙම ගොනුව <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g> එකක් ලෙස භාවිත කළ නොහැකිය"</string>
     <string name="certificate" msgid="8790577925509962529">"සහතිකය"</string>

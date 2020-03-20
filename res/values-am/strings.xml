@@ -45,7 +45,8 @@
     <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"የ CA የእውቅና ማረጋገጫዎችን መጫን አልተቻለም"</string>
     <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"CA የእውቅና ማረጋገጫዎች የእርስዎን ግላዊነት ስጋት ውስጥ ሊጨምሩት ይችላሉ እና በቅንብሮች ውስጥ መጫን አለባቸው"</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"ዝጋ"</string>
-    <string name="invalid_certificate_title" msgid="4642955675523621795">"የእውቅና ማረጋገጫዎችን መጫን አልተቻለም"</string>
+    <!-- no translation found for invalid_certificate_title (6500315398016809635) -->
+    <skip />
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"ዝጋ"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"ይህ ፋይል እንደ <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g> ጥቅም ላይ ሊውል አይችልም"</string>
     <string name="certificate" msgid="8790577925509962529">"የእውቅና ማረጋገጫ"</string>

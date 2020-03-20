@@ -45,7 +45,8 @@
     <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"CA प्रमाणपत्रे इंस्टॉल करू शकत नाही"</string>
     <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"CA प्रमाणपत्रे तुमची गोपनीयता धोक्यात आणू शकतात आणि ती सेटिंग्ज मध्ये इंस्टॉल केलेली असणे आवश्यक आहेत"</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"बंद करा"</string>
-    <string name="invalid_certificate_title" msgid="4642955675523621795">"प्रमाणपत्रे इंस्टॉल करू शकत नाही"</string>
+    <!-- no translation found for invalid_certificate_title (6500315398016809635) -->
+    <skip />
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"बंद करा"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"ही फाइल <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g> म्हणून वापरता येत नाही"</string>
     <string name="certificate" msgid="8790577925509962529">"प्रमाणपत्र"</string>

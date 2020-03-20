@@ -45,7 +45,8 @@
     <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"CA সার্টিফিকেট ইনস্টল করা যাবে না"</string>
     <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"CA সার্টিফিকেট আপনার গোপনীয়তাকে বিপদে ফেলতে পারে, তাই আপনাকে সেটিংসে গিয়ে সেটি ইনস্টল করতে হবে"</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"বন্ধ করুন"</string>
-    <string name="invalid_certificate_title" msgid="4642955675523621795">"সার্টিফিকেট ইনস্টল করা যাচ্ছে না"</string>
+    <!-- no translation found for invalid_certificate_title (6500315398016809635) -->
+    <skip />
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"বন্ধ করুন"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"এই ফাইলটি <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g> হিসেবে ব্যবহার করা যাবে না"</string>
     <string name="certificate" msgid="8790577925509962529">"সার্টিফিকেট"</string>

@@ -45,7 +45,8 @@
     <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"CA సర్టిఫికెట్‌లను ఇన్‌స్టాల్ చేయడం సాధ్యపడదు"</string>
     <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"CA సర్టిఫికెట్‌ల వలన మీ గోప్యతకు ప్రమాదం ఏర్పడవచ్చు, కనుక వాటిని సెట్టింగ్‌లలో తప్పక ఇన్‌స్టాల్ చేయవలసి ఉంటుంది"</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"మూసివేయి"</string>
-    <string name="invalid_certificate_title" msgid="4642955675523621795">"సర్టిఫికెట్‌లను ఇన్‌స్టాల్ చేయడం సాధ్యపడదు"</string>
+    <!-- no translation found for invalid_certificate_title (6500315398016809635) -->
+    <skip />
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"మూసివేయి"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"ఈ ఫైల్‌ను <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g>గా ఉపయోగించడం సాధ్యం కాదు"</string>
     <string name="certificate" msgid="8790577925509962529">"సర్టిఫికెట్"</string>

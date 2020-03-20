@@ -45,7 +45,8 @@
     <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"CA സർട്ടിഫിക്കറ്റുകൾ ഇൻസ്‌റ്റാൾ ചെയ്യാനാവുന്നില്ല"</string>
     <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"CA സർട്ടിഫിക്കറ്റുകൾ ഇൻസ്റ്റാൾ ചെയ്തില്ലെങ്കിൽ നിങ്ങളുടെ സ്വകാര്യത അപകടത്തിലാകും, അതിനാൽ ക്രമീകരണത്തിൽ അവ ഇൻസ്റ്റാൾ ചെയ്യേണ്ടതുണ്ട്."</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"അടയ്ക്കുക"</string>
-    <string name="invalid_certificate_title" msgid="4642955675523621795">"സർട്ടിഫിക്കറ്റുകൾ ഇൻസ്‌റ്റാൾ ചെയ്യാനാവില്ല"</string>
+    <!-- no translation found for invalid_certificate_title (6500315398016809635) -->
+    <skip />
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"അടയ്ക്കുക"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"ഈ ഫയൽ <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g> ആയി ഉപയോഗിക്കാനാവില്ല"</string>
     <string name="certificate" msgid="8790577925509962529">"സർട്ടിഫിക്കറ്റ്"</string>
