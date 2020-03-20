@@ -45,7 +45,8 @@
     <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"CA ਪ੍ਰਮਾਣ-ਪੱਤਰਾਂ ਨੂੰ ਸਥਾਪਤ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ"</string>
     <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"CA ਪ੍ਰਮਾਣ-ਪੱਤਰ ਤੁਹਾਡੀ ਪਰਦੇਦਾਰੀ ਨੂੰ ਜੋਖਮ ਵਿੱਚ ਪਾ ਸਕਦਾ ਹੈ ਅਤੇ ਇਸਦਾ \'ਸੈਟਿੰਗਾਂ\' ਵਿੱਚ ਸਥਾਪਤ ਕੀਤਾ ਹੋਣਾ ਲਾਜ਼ਮੀ ਹੈ"</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"ਬੰਦ ਕਰੋ"</string>
-    <string name="invalid_certificate_title" msgid="4642955675523621795">"ਪ੍ਰਮਾਣ-ਪੱਤਰਾਂ ਨੂੰ ਸਥਾਪਤ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ"</string>
+    <!-- no translation found for invalid_certificate_title (6500315398016809635) -->
+    <skip />
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"ਬੰਦ ਕਰੋ"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"ਇਸ ਫ਼ਾਈਲ ਨੂੰ <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g> ਵਜੋਂ ਵਰਤਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ"</string>
     <string name="certificate" msgid="8790577925509962529">"ਪ੍ਰਮਾਣ-ਪੱਤਰ"</string>
