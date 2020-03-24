@@ -45,8 +45,7 @@
     <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"Не вдається встановити сертифікати ЦС"</string>
     <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"Сертифікати центру сертифікації можуть поставити вашу конфіденційність під загрозу. Їх потрібно встановлювати в Налаштуваннях"</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"Закрити"</string>
-    <!-- no translation found for invalid_certificate_title (6500315398016809635) -->
-    <skip />
+    <string name="invalid_certificate_title" msgid="6500315398016809635">"Не вдається використати цей файл"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"Закрити"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"Цей файл не можна використовувати з такою ціллю (<xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g>)"</string>
     <string name="certificate" msgid="8790577925509962529">"Сертифікат"</string>
