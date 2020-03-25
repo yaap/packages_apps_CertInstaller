@@ -45,7 +45,8 @@
     <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"CA சான்றிதழ்களை நிறுவ இயலவில்லை"</string>
     <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"CA சான்றிதழ்களால் உங்கள் தனியுரிமைக்கு ஆபத்து நேரலாம், எனவே அவற்றை அமைப்புகளில் நிறுவ வேண்டும்"</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"மூடுக"</string>
-    <string name="invalid_certificate_title" msgid="4642955675523621795">"சான்றிதழ்களை நிறுவ இயலவில்லை"</string>
+    <!-- no translation found for invalid_certificate_title (6500315398016809635) -->
+    <skip />
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"மூடுக"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"இந்தக் கோப்பை <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g> ஆகப் பயன்படுத்த முடியாது"</string>
     <string name="certificate" msgid="8790577925509962529">"சான்றிதழ்"</string>
