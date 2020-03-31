@@ -45,8 +45,7 @@
     <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"চিএ প্ৰমাণপত্ৰসমূহ ইনষ্টল কৰিব নোৱাৰি"</string>
     <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"চিএ প্ৰমাণপত্ৰসমূহে আপোনাৰ গোপনীয়তা অসুৰক্ষিত কৰিব পাৰে আৰু এইবোৰ ছেটিংসমূহতে ইনষ্টল কৰিব লাগিব"</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"বন্ধ কৰক"</string>
-    <!-- no translation found for invalid_certificate_title (6500315398016809635) -->
-    <skip />
+    <string name="invalid_certificate_title" msgid="6500315398016809635">"এই ফাইলটো ব্যৱহাৰ কৰিব নোৱাৰি"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"বন্ধ কৰক"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"এই ফাইলটো <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g> হিচাপে ব্যৱহাৰ কৰিব নোৱাৰি"</string>
     <string name="certificate" msgid="8790577925509962529">"প্ৰমাণপত্ৰ"</string>
