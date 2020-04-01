@@ -45,8 +45,7 @@
     <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"ບໍ່ສາມາດຕິດຕັ້ງໃບຢັ້ງຢືນ CA ໄດ້"</string>
     <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"ໃບຢັ້ງຢືນ CA ອາດເຮັດໃຫ້ທ່ານມີຄວາມສ່ຽງດ້ານຄວາມເປັນສ່ວນຕົວໄດ້ ແລະ ຈະຕ້ອງຕິດຕັ້ງໃນການຕັ້ງຄ່າ"</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"ປິດ"</string>
-    <!-- no translation found for invalid_certificate_title (6500315398016809635) -->
-    <skip />
+    <string name="invalid_certificate_title" msgid="6500315398016809635">"ບໍ່ສາມາດໃຊ້ໄຟລ໌ນີ້ໄດ້"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"ປິດ"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"ບໍ່ສາມາດໃຊ້ໄຟລ໌ນີ້ເປັນ <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g> ໄດ້"</string>
     <string name="certificate" msgid="8790577925509962529">"ໃບຮັບຮອງ"</string>

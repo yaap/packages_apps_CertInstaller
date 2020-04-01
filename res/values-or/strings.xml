@@ -45,8 +45,7 @@
     <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"CA ସାର୍ଟିଫିକେଟ୍‌ଗୁଡ଼ିକୁ ଇନ୍‌ଷ୍ଟଲ୍ କରାଯାଇପାରିବ ନାହିଁ"</string>
     <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"CA ସାର୍ଟିଫିକେଟ୍‌ଗୁଡ଼ିକ ଆପଣଙ୍କର ଗୋପନୀୟତାକୁ ବିପଦରେ ପକାଇ ପାରେ ଏବଂ ଏଗୁଡ଼ିକୁ ସେଟିଂସ୍‌ରେ ଇନ୍‌ଷ୍ଟଲ୍ କରାଯିବା ଦରକାର"</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"ବନ୍ଦ କରନ୍ତୁ"</string>
-    <!-- no translation found for invalid_certificate_title (6500315398016809635) -->
-    <skip />
+    <string name="invalid_certificate_title" msgid="6500315398016809635">"ଏହି ଫାଇଲକୁ ବ୍ୟବହାର କରିପାରିବେ ନାହିଁ"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"ବନ୍ଦ କରନ୍ତୁ"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"ଏହି ଫାଇଲ୍ <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g> ଭାବରେ ବ୍ୟବହାର କରାଯାଇପାରିବ ନାହିଁ"</string>
     <string name="certificate" msgid="8790577925509962529">"ସାର୍ଟିଫିକେଟ୍"</string>

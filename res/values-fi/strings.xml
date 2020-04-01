@@ -45,8 +45,7 @@
     <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"CA-varmenteita ei voi asentaa"</string>
     <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"CA-varmenteet voivat vaarantaa tietosuojasi. Ne on asennettava asetusten kautta."</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"Sulje"</string>
-    <!-- no translation found for invalid_certificate_title (6500315398016809635) -->
-    <skip />
+    <string name="invalid_certificate_title" msgid="6500315398016809635">"Tätä tiedostoa ei voi käyttää"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"Sulje"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"Tiedosto ei sovi tähän tarkoitukseen: <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g>"</string>
     <string name="certificate" msgid="8790577925509962529">"Varmenne"</string>
