@@ -45,18 +45,16 @@
     <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"Сертификатите от сертифициращ орган не могат да се инсталират"</string>
     <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"Сертификатите от сертифициращ орган могат да изложат поверителността ви на риск и трябва да се инсталират от настройките."</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"Затваряне"</string>
-    <string name="invalid_certificate_title" msgid="4642955675523621795">"Сертификатите не могат да се инсталират"</string>
+    <string name="invalid_certificate_title" msgid="6500315398016809635">"Този файл не може да се използва"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"Затваряне"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"Този файл не може да се използва като <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g>"</string>
     <string name="certificate" msgid="8790577925509962529">"Сертификат"</string>
     <string name="ca_certificate" msgid="7397198551290322945">"Сертификат от сертифициращ орган"</string>
     <string name="user_certificate" msgid="514888069820553128">"Виртуална частна мрежа (VPN) и потребителски сертификат за приложението"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"Сертификат за Wi‑Fi"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"Сертификат за източника на приложението"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"Сертификатът от сертифициращ орган е инсталиран"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"Потребителският сертификат е инсталиран"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"Сертификатът за Wi‑Fi е инсталиран"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"Сертификатът за източника на приложението е инсталиран"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"Не можа да се инсталира, защото размерът на сертификата е твърде голям."</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"Не можа да се инсталира, защото файлът със сертификата не можа да бъде намерен."</string>
     <string name="cert_read_error" msgid="7353463360652419796">"Не можа да се инсталира, защото файлът със сертификата не можа да бъде прочетен."</string>

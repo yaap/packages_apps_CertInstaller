@@ -45,18 +45,16 @@
     <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"CA လက်မှတ်များကို ထည့်သွင်း၍ မရပါ"</string>
     <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"CA လက်မှတ်သည် သင်၏ကန့်သတ်ဆက်တင်ကို အန္တရာယ်ရှိစေနိုင်ပြီး ဆက်တင်များတွင် ထည့်သွင်းရမည်"</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"ပိတ်ရန်"</string>
-    <string name="invalid_certificate_title" msgid="4642955675523621795">"လက်မှတ်များကို ထည့်သွင်း၍ မရပါ"</string>
+    <string name="invalid_certificate_title" msgid="6500315398016809635">"ဤဖိုင်ကို အသုံးပြု၍ မရပါ"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"ပိတ်ထားသည်"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"ဤဖိုင်ကို <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g>အဖြစ် သုံး၍မရပါ"</string>
     <string name="certificate" msgid="8790577925509962529">"အသိအမှတ်ပြုလက်မှတ်"</string>
     <string name="ca_certificate" msgid="7397198551290322945">"CA လက်မှတ်"</string>
     <string name="user_certificate" msgid="514888069820553128">"VPN အက်ပ် သုံးစွဲသူ လက်မှတ်"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"Wi‑Fi လက်မှတ်"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"အက်ပ် အရင်းအမြစ် အသိအမှတ်ပြုလက်မှတ်"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"CA လက်မှတ် ထည့်သွင်းပြီးပါပြီ"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"အသုံးပြုသူ အသိအမှတ်ပြုလက်မှတ် ထည့်သွင်းပြီးပါပြီ"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"Wi‑Fi အသိအမှတ်ပြုလက်မှတ် ထည့်သွင်းပြီးပါပြီ"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"အက်ပ် အရင်းအမြစ် အသိအမှတ်ပြုလက်မှတ် ထည့်သွင်းပြီးပါပြီ"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"အသိအမှတ်ပြုလက်မှတ်ဖိုင် အရွယ် ကြီးသောကြောင့် ထည့်သွင်းခြင်း မပြုနိုင်ပါ"</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"အသိအမှတ်ပြုလက်မှတ် မတွေ့သောကြောင့် ထည့်သွင်းခြင်း မပြုနိုင်ပါ"</string>
     <string name="cert_read_error" msgid="7353463360652419796">"အသိအမှတ်ပြုလက်မှတ်ဖိုင်အား ဖတ်မရသောကြောင့် ထည့်သွင်းခြင်း မပြုနိုင်ပါ"</string>

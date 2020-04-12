@@ -45,18 +45,16 @@
     <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"Nevar instalēt CA sertifikātus"</string>
     <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"CA sertifikāti var apdraudēt jūsu konfidencialitāti, tādēļ tie jāinstalē sadaļā Iestatījumi."</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"Aizvērt"</string>
-    <string name="invalid_certificate_title" msgid="4642955675523621795">"Nevar instalēt sertifikātus"</string>
+    <string name="invalid_certificate_title" msgid="6500315398016809635">"Nevar izmantot šo failu"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"Aizvērt"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"Šo failu nevar izmantot kā: <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g>"</string>
     <string name="certificate" msgid="8790577925509962529">"Sertifikāts"</string>
     <string name="ca_certificate" msgid="7397198551290322945">"CA sertifikāts"</string>
     <string name="user_certificate" msgid="514888069820553128">"VPN un lietotnes lietotāja sertifikāts"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"Wi‑Fi sertifikāts"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"Lietotnes avota sertifikāts"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"CA sertifikāts ir instalēts"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"Lietotāja sertifikāts ir instalēts"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"Wi‑Fi sertifikāts ir instalēts"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"Lietotnes avota sertifikāts ir instalēts"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"Nevarēja instalēt, jo sertifikāta izmērs ir pārāk liels."</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"Neizdevās instalēt, jo nevarēja atrast sertifikāta failu."</string>
     <string name="cert_read_error" msgid="7353463360652419796">"Neizdevās instalēt, jo nevarēja nolasīt sertifikāta failu."</string>

@@ -45,18 +45,16 @@
     <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"Không thể cài đặt chứng chỉ CA"</string>
     <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"Bạn cần phải cài đặt các chứng chỉ CA trong phần Cài đặt để tránh các rủi ro về quyền riêng tư"</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"Đóng"</string>
-    <string name="invalid_certificate_title" msgid="4642955675523621795">"Không thể cài đặt chứng chỉ"</string>
+    <string name="invalid_certificate_title" msgid="6500315398016809635">"Không thể sử dụng tệp này"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"Đóng"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"Bạn không thể dùng tệp này làm <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g>"</string>
     <string name="certificate" msgid="8790577925509962529">"Chứng chỉ"</string>
     <string name="ca_certificate" msgid="7397198551290322945">"Chứng chỉ CA"</string>
     <string name="user_certificate" msgid="514888069820553128">"Chứng chỉ người dùng ứng dụng và VPN"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"Chứng chỉ Wi‑Fi"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"Chứng chỉ nguồn ứng dụng"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"Đã cài đặt chứng chỉ CA"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"Đã cài đặt chứng chỉ người dùng"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"Đã cài đặt chứng chỉ Wi‑Fi"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"Đã cài đặt chứng chỉ nguồn ứng dụng"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"Không thể cài đặt vì kích thước chứng chỉ quá lớn."</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"Không thể cài đặt vì không thể định vị tệp chứng chỉ."</string>
     <string name="cert_read_error" msgid="7353463360652419796">"Không thể cài đặt vì không thể đọc tệp chứng chỉ."</string>

@@ -45,18 +45,16 @@
     <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"گواهینامه‌های مرکز صدور گواهی نمی‌توانند نصب شوند"</string>
     <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"گواهینامه‌های مرکز صدور گواهی می‌توانند حریم‌خصوصی شما را درمعرض خطر قرار دهند و باید در «تنظیمات» نصب شوند."</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"بستن"</string>
-    <string name="invalid_certificate_title" msgid="4642955675523621795">"گواهینامه‌ها نمی‌توانند نصب شوند"</string>
+    <string name="invalid_certificate_title" msgid="6500315398016809635">"استفاده از این فایل ممکن نیست"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"بستن"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"از این فایل نمی‌توانید به‌عنوان <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g> استفاده کنید"</string>
     <string name="certificate" msgid="8790577925509962529">"گواهی"</string>
     <string name="ca_certificate" msgid="7397198551290322945">"گواهینامه مرکز صدور گواهی"</string>
     <string name="user_certificate" msgid="514888069820553128">"‏گواهینامه کاربر برنامه و VPN"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"‏گواهینامه Wi-Fi"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"گواهینامه منبع برنامه"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"گواهینامه مرکز صدور گواهی نصب شد"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"گواهینامه کاربر نصب شد"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"‏گواهینامه Wi-Fi نصب شد"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"گواهینامه منبع برنامه نصب شد"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"نصب نشد زیرا اندازه گواهی‌نامه خیلی بزرگ است."</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"نصب نشد زیرا فایل گواهی‌نامه یافت نشد."</string>
     <string name="cert_read_error" msgid="7353463360652419796">"نصب نشد زیرا فایل گواهی‌نامه خوانده نشد."</string>

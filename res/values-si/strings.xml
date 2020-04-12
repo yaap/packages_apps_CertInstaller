@@ -20,9 +20,7 @@
     <string name="pick_file_title" msgid="4481949485108233297">"සහතිකයක් තෝරන්න"</string>
     <string name="pkcs12_password_dialog_title" msgid="5997624645207427161">"සහතිකය උද්ධෘත කරන්න"</string>
     <string name="extracting_pkcs12" msgid="1881267738821799771">"උද්ධෘත කරමින්..."</string>
-    <!-- String.format failed for translation -->
-    <!-- no translation found for pkcs12_file_password_dialog_title (8102721384767269510) -->
-    <skip />
+    <string name="pkcs12_file_password_dialog_title" msgid="8102721384767269510">"%s ගෙන් උද්ධෘත කරන්න"</string>
     <string name="name_credential_dialog_title" msgid="1481964824549786927">"මෙම සහතිකය නම් කරන්න"</string>
     <string name="certificate_name" msgid="8415893401368824792">"සහතිකයේ නම"</string>
     <string name="credential_password" msgid="3520176519550993326">"සහතික උද්ධෘත කිරීමට මුරපදය ටයිප් කරන්න."</string>
@@ -47,18 +45,16 @@
     <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"CA සහතික ස්ථාපනය කළ නොහැකිය"</string>
     <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"CA සහතිකවලට ඔබේ රහස්‍යතාව අවදානමකට හෙළිය හැකි අතර සැකසීම් තුළ ස්ථාපනය කළ යුතුය"</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"වසන්න"</string>
-    <string name="invalid_certificate_title" msgid="4642955675523621795">"සහතික ස්ථාපනය කළ නොහැකිය"</string>
+    <string name="invalid_certificate_title" msgid="6500315398016809635">"මෙම ගොනුව භාවිත කළ නොහැකිය"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"වසන්න"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"මෙම ගොනුව <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g> එකක් ලෙස භාවිත කළ නොහැකිය"</string>
     <string name="certificate" msgid="8790577925509962529">"සහතිකය"</string>
     <string name="ca_certificate" msgid="7397198551290322945">"CA සහතිකය"</string>
     <string name="user_certificate" msgid="514888069820553128">"VPN &amp; යෙදුම් පරිශීලක සහතිකය"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"Wi‑Fi සහතිකය"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"යෙදුම් මූලාශ්‍ර සහතිකය"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"CA සහතිකය ස්ථාපනය කරන ලදී"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"පරිශීලක සහතිකය ස්ථාපනය කරන ලදී"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"Wi‑Fi සහතිකය ස්ථාපනය කරන ලදී"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"යෙදුම් මූලාශ්‍ර සහතිකය ස්ථාපනය කර ඇත"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"සහතිකයේ ප්‍රමාණය විශාල වැඩි බැවින් ස්ථාපනය කළ නොහැක."</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"සහතික ගොනුව තිබෙන ස්ථානය නිශ්චය කරගත නොහැකි නිසා ස්ථාපනය කල නොහැක."</string>
     <string name="cert_read_error" msgid="7353463360652419796">"සහතික ගොනුව කියවීමට නොහැකි වූ නිසා ස්ථාපනය කිරීමට නොහැකි විය."</string>

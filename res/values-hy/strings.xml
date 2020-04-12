@@ -20,9 +20,7 @@
     <string name="pick_file_title" msgid="4481949485108233297">"Ընտրել վկայական"</string>
     <string name="pkcs12_password_dialog_title" msgid="5997624645207427161">"Արտահանեք վկայական"</string>
     <string name="extracting_pkcs12" msgid="1881267738821799771">"Արտահանվում է..."</string>
-    <!-- String.format failed for translation -->
-    <!-- no translation found for pkcs12_file_password_dialog_title (8102721384767269510) -->
-    <skip />
+    <string name="pkcs12_file_password_dialog_title" msgid="8102721384767269510">"Դուրսբերում %s-ից"</string>
     <string name="name_credential_dialog_title" msgid="1481964824549786927">"Անուն տվեք այս հավաստագրին"</string>
     <string name="certificate_name" msgid="8415893401368824792">"Հավաստագրի անունը"</string>
     <string name="credential_password" msgid="3520176519550993326">"Մուտքագրեք գաղտնաբառը` հավաստագրերն արտածելու համար:"</string>
@@ -47,18 +45,16 @@
     <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"Չհաջողվեց տեղադրել ՎԿ հավաստագիրը"</string>
     <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"ՎԿ հավաստագրերը կարող են վտանգել ձեր գաղտնիությունը և պետք է տեղադրվեն կարգավորումներում:"</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"Փակել"</string>
-    <string name="invalid_certificate_title" msgid="4642955675523621795">"Չհաջողվեց տեղադրել հավաստագրերը"</string>
+    <string name="invalid_certificate_title" msgid="6500315398016809635">"Հնարավոր չէ օգտագործել այս ֆայլը"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"Փակել"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"Այս ֆայլը չի կարող օգտագործվել որպես <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g>"</string>
     <string name="certificate" msgid="8790577925509962529">"Հավաստագիր"</string>
     <string name="ca_certificate" msgid="7397198551290322945">"ՎԿ հավաստագիր"</string>
     <string name="user_certificate" msgid="514888069820553128">"VPN-ի և հավելվածների օգտատիրոջ հավաստագիր"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"Wi‑Fi հավաստագիր"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"Հավելվածի աղբյուրի հավաստագիր"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"ՎԿ հավաստագիրը տեղադրվեց"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"Օգտատիրոջ հավաստագիրը տեղադրվեց"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"Wi‑Fi հավաստագիրը տեղադրվեց"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"Հավելվածի աղբյուրի հավաստագիրը տեղադրվեց"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"Չհաջողվեց տեղադրել, քանի որ վկայականի չափը չափազանց մեծ է:"</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"Չհաջողվեց տեղադրել, քանի որ վկայագրի ֆայլը չհաջողվեց տեղորոշել:"</string>
     <string name="cert_read_error" msgid="7353463360652419796">"Չհաջողվեց տեղադրել, քանի որ վկայագրի ֆայլը հնարավոր չէր կարդալ:"</string>

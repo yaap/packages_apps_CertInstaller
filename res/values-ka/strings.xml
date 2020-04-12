@@ -45,18 +45,16 @@
     <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"CA სერტიფიკატების ინსტალაცია ვერ მოხერხდა"</string>
     <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"CA სერტიფიკატები შეიძლება თქვენი კონფიდენციალურობისთვის საფრთხეს წარმოადგენდეს და უნდა დაყენდეს პარამეტრებში"</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"დახურვა"</string>
-    <string name="invalid_certificate_title" msgid="4642955675523621795">"სერტიფიკატების ინსტალაცია ვერ მოხერხდა"</string>
+    <string name="invalid_certificate_title" msgid="6500315398016809635">"ამ ფაილის გამოყენება ვერ ხერხდება"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"დახურვა"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"ეს ფაილი არ შეიძლება გამოყენებულ იქნას, როგორც <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g>"</string>
     <string name="certificate" msgid="8790577925509962529">"სერტიფიკატი"</string>
     <string name="ca_certificate" msgid="7397198551290322945">"CA სერტიფიკატი"</string>
     <string name="user_certificate" msgid="514888069820553128">"VPN და აპის მომხმარებლის სერტიფიკატი"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"Wi‑Fi სერტიფიკატი"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"აპის წყაროს სერტიფიკატი"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"CA სერტიფიკატი დაინსტალირდა"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"მომხმარებლის სერტიფიკატი დაინსტალირდა"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"Wi‑Fi სერტიფიკატი დაინსტალირდა"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"აპის წყაროს სერტიფიკატი დაინსტალირებულია"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"დაყენება ვერ მოხერხდა, რადგან სერტიფიკატი ზედმეტად დიდია."</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"ვერ დაინსტალირდა, რადგანაც სერთიფიკატის ფაილის პოვნა ვერ მოხერხდა."</string>
     <string name="cert_read_error" msgid="7353463360652419796">"ინსლატაცია ვერ განხორციელდა, რადგან სერტიფიკატის ფაილის წაკითხვა ვერ მოხერხდა."</string>
@@ -80,9 +78,7 @@
     <string name="wifi_ttls_config_text" msgid="2002413183253872168">"მომხმარებლის სახელი: %s\n"</string>
     <string name="wifi_tls_config_text" msgid="9062328536640168510">"კლიენტის სერტიფიკატი:\n%1$s\nგასაღები: %2$s\n"</string>
     <string name="wifi_sim_config_text" msgid="1666019954520831840">"SIM: %s\n"</string>
-    <!-- String.format failed for translation -->
-    <!-- no translation found for wifi_trust_config_text (5916047381475747783) -->
-    <skip />
+    <string name="wifi_trust_config_text" msgid="5916047381475747783">"სერტიფიკატის ნდობა: \n%s\n"</string>
     <string name="install_done_title" msgid="4822989918460334497">"ავტორიზაციის მონაცემები დაყენებულია"</string>
     <string name="install_done" msgid="1522718684172097080">"<xliff:g id="NAME">%1$s</xliff:g> ავტორიზაციის მონაცემები დაემატა შენახულ Wi-Fi ქსელებს."</string>
     <string name="done_label" msgid="5597425930652904250">"შესრულდა"</string>

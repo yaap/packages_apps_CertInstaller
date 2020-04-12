@@ -45,18 +45,16 @@
     <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"មិនអាច​ដំឡើង​វិញ្ញាបនបត្រ CA បានទេ"</string>
     <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"វិញ្ញាបនបត្រ CA អាច​ធ្វើឱ្យ​ឯកជនភាព​របស់អ្នក​ប្រឈមនឹង​ហានិភ័យ ហើយ​ត្រូវតែ​ដំឡើង​នៅក្នុង​ការកំណត់"</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"បិទ"</string>
-    <string name="invalid_certificate_title" msgid="4642955675523621795">"មិនអាច​ដំឡើង​វិញ្ញាបនបត្រ​បានទេ"</string>
+    <string name="invalid_certificate_title" msgid="6500315398016809635">"មិនអាច​ប្រើ​ឯកសារ​នេះ​បានទេ"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"បិទ"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"មិនអាច​ប្រើ​ឯកសារ​នេះ​ជា <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g> បានទេ"</string>
     <string name="certificate" msgid="8790577925509962529">"វិញ្ញាបនបត្រ"</string>
     <string name="ca_certificate" msgid="7397198551290322945">"វិញ្ញាបនបត្រ CA"</string>
     <string name="user_certificate" msgid="514888069820553128">"វិញ្ញាបនបត្រអ្នកប្រើប្រាស់កម្មវិធី និង VPN"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"វិញ្ញាបនបត្រ Wi‑Fi"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"វិញ្ញាបនបត្រ​ប្រភពកម្មវិធី"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"បានដំឡើង​វិញ្ញាបនបត្រ CA ហើយ"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"បានដំឡើង​វិញ្ញាបនបត្រ​អ្នកប្រើប្រាស់​ហើយ"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"បានដំឡើង​វិញ្ញាបនបត្រ Wi‑Fi ហើយ"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"បានដំឡើង​វិញ្ញាបនបត្រ​ប្រភពកម្មវិធីហើយ"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"មិន​អាច​ដំឡើង​ព្រោះ​ទំហំ​វិញ្ញាបនបត្រ​ធំ​ពេក។"</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"មិន​អាច​ដំឡើង​ ព្រោះ​មិន​​កំណត់​ទីតាំង​ឯកសារ​វិញ្ញាបនបត្រ។"</string>
     <string name="cert_read_error" msgid="7353463360652419796">"មិន​អាច​ដំឡើង​ព្រោះ​មិន​អាច​អាន​ឯកសារ​វិញ្ញាបនបត្រ។"</string>

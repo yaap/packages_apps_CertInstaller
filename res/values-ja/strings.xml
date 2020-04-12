@@ -45,18 +45,16 @@
     <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"CA 証明書をインストールできません"</string>
     <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"CA 証明書はユーザーのプライバシーを危険にさらす可能性があるため、[設定] でインストールしてください"</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"閉じる"</string>
-    <string name="invalid_certificate_title" msgid="4642955675523621795">"証明書をインストールできません"</string>
+    <string name="invalid_certificate_title" msgid="6500315398016809635">"このファイルは使用できません"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"閉じる"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"このファイルは <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g>として利用できません"</string>
     <string name="certificate" msgid="8790577925509962529">"証明書"</string>
     <string name="ca_certificate" msgid="7397198551290322945">"CA 証明書"</string>
     <string name="user_certificate" msgid="514888069820553128">"VPN とアプリユーザー証明書"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"Wi‑Fi 証明書"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"アプリ提供元証明書"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"CA 証明書をインストールしました"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"ユーザー証明書をインストールしました"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"Wi‑Fi 証明書をインストールしました"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"アプリ提供元証明書をインストールしました"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"インストールできませんでした。証明書のサイズが大きすぎます。"</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"インストールできませんでした。証明書ファイルが見つかりませんでした。"</string>
     <string name="cert_read_error" msgid="7353463360652419796">"インストールできませんでした。証明書ファイルが読み取れませんでした。"</string>

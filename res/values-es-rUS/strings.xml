@@ -45,18 +45,16 @@
     <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"No es posible instalar Certificados de CA"</string>
     <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"Los Certificados de CA pueden poner tu privacidad en riesgo y deben instalarse en Configuración"</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"Cerrar"</string>
-    <string name="invalid_certificate_title" msgid="4642955675523621795">"No es posible instalar certificados"</string>
+    <string name="invalid_certificate_title" msgid="6500315398016809635">"No se puede usar este archivo"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"Cerrar"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"No se puede usar este archivo como <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g>"</string>
     <string name="certificate" msgid="8790577925509962529">"Certificado"</string>
     <string name="ca_certificate" msgid="7397198551290322945">"Certificado de CA"</string>
     <string name="user_certificate" msgid="514888069820553128">"Certificado de usuario de app y VPN"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"Certificado de Wi‑Fi"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"Certificado de fuentes de apps"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"Se instaló el Certificado de CA"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"Se instaló el certificado de usuario"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"Se instaló el certificado de Wi‑Fi"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"Se instaló el certificado de fuente de la app"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"No fue posible realizar la instalación porque el certificado es demasiado grande."</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"No fue posible realizar la instalación porque no se pudo ubicar el archivo del certificado."</string>
     <string name="cert_read_error" msgid="7353463360652419796">"No fue posible realizar la instalación porque no se pudo leer el archivo del certificado."</string>

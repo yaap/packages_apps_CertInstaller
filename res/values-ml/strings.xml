@@ -45,18 +45,16 @@
     <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"CA സർട്ടിഫിക്കറ്റുകൾ ഇൻസ്‌റ്റാൾ ചെയ്യാനാവുന്നില്ല"</string>
     <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"CA സർട്ടിഫിക്കറ്റുകൾ ഇൻസ്റ്റാൾ ചെയ്തില്ലെങ്കിൽ നിങ്ങളുടെ സ്വകാര്യത അപകടത്തിലാകും, അതിനാൽ ക്രമീകരണത്തിൽ അവ ഇൻസ്റ്റാൾ ചെയ്യേണ്ടതുണ്ട്."</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"അടയ്ക്കുക"</string>
-    <string name="invalid_certificate_title" msgid="4642955675523621795">"സർട്ടിഫിക്കറ്റുകൾ ഇൻസ്‌റ്റാൾ ചെയ്യാനാവില്ല"</string>
+    <string name="invalid_certificate_title" msgid="6500315398016809635">"ഈ ഫയൽ ഉപയോഗിക്കാനാകില്ല"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"അടയ്ക്കുക"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"ഈ ഫയൽ <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g> ആയി ഉപയോഗിക്കാനാവില്ല"</string>
     <string name="certificate" msgid="8790577925509962529">"സർട്ടിഫിക്കറ്റ്"</string>
     <string name="ca_certificate" msgid="7397198551290322945">"CA സർട്ടിഫിക്കറ്റ്"</string>
     <string name="user_certificate" msgid="514888069820553128">"VPN ആപ്പ് യൂസർ സർട്ടിഫിക്കറ്റ്"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"വെെഫെെ സർട്ടിഫിക്കറ്റ്"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"ആപ്പ് സോഴ്സ് സർട്ടിഫിക്കറ്റ്"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"CA സർട്ടിഫിക്കറ്റ് ഇൻസ്റ്റാൾ ചെയ്തു"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"ഉപയോക്തൃ സർട്ടിഫിക്കറ്റ് ഇൻസ്റ്റാൾ ചെയ്തു"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"വെെഫെെ സർട്ടിഫിക്കറ്റ് ഇൻസ്റ്റാൾ ചെയ്തു"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"ആപ്പ് സോഴ്സ് സർട്ടിഫിക്കറ്റ് ഇൻസ്റ്റാൾ ചെയ്തു"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"സർട്ടിഫിക്കറ്റ് വലുപ്പം വളരെ വലുതായതിനാൽ ഇൻസ്റ്റാളുചെയ്യാനായില്ല."</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"സർട്ടിഫിക്കറ്റ് ഫയൽ കണ്ടെത്താൻ കഴിയാത്തതിനാൽ ഇൻസ്റ്റാളുചെയ്യാനായില്ല."</string>
     <string name="cert_read_error" msgid="7353463360652419796">"സർട്ടിഫിക്കറ്റ് ഫയൽ റീഡുചെയ്യാൻ കഴിയാത്തതിനാൽ ഇൻസ്റ്റാളുചെയ്യാനായില്ല."</string>

@@ -45,18 +45,16 @@
     <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"Non se puideron instalar os certificados de CA"</string>
     <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"Os certificados de CA poden pór en risco a túa privacidade e deben instalarse en Configuración"</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"Pechar"</string>
-    <string name="invalid_certificate_title" msgid="4642955675523621795">"Non se puideron instalar os certificados"</string>
+    <string name="invalid_certificate_title" msgid="6500315398016809635">"Non se pode utilizar este ficheiro"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"Pechar"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"Este ficheiro non se pode usar como <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g>"</string>
     <string name="certificate" msgid="8790577925509962529">"certificado"</string>
     <string name="ca_certificate" msgid="7397198551290322945">"certificado de CA"</string>
     <string name="user_certificate" msgid="514888069820553128">"Certificado de usuario de aplicacións e VPN"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"certificado de wifi"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"Certificado de orixe das aplicacións"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"Instalouse o certificado de CA"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"Instalouse o certificado de usuario"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"Instalouse o certificado de wifi"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"Instalouse o certificado de orixe das aplicacións"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"Non se puido instalar porque o tamaño do certificado é demasiado grande."</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"Non se puido instalar porque non se puido localizar o ficheiro de certificado."</string>
     <string name="cert_read_error" msgid="7353463360652419796">"Non se puido instalar porque non se puido ler o ficheiro de certificado."</string>

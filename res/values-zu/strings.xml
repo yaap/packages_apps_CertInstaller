@@ -45,18 +45,16 @@
     <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"Ayikwazi ukufaka isitifiketi se-CA"</string>
     <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"Izitifiketi ze-CA zingabeka ubumfihlo bakho engcupheni futhi kumele zifakwe kuzilungiselelo"</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"Vala"</string>
-    <string name="invalid_certificate_title" msgid="4642955675523621795">"Ayikwazi ukufaka izitifiketi"</string>
+    <string name="invalid_certificate_title" msgid="6500315398016809635">"Awukwazi ukusebenzisa leli fayela"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"Vala"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"Leli fayela alikwazi ukusetshenziswa njenge-<xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g>"</string>
     <string name="certificate" msgid="8790577925509962529">"Isitifiketi"</string>
     <string name="ca_certificate" msgid="7397198551290322945">"Isitifiketi se-CA"</string>
     <string name="user_certificate" msgid="514888069820553128">"I-VPN nesitifiketi somsebenzisi sohlelo lokusebenza"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"Isitifiketi se-Wi-Fi"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"Isitifiketi somthombo wohlelo lokusebenza"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"Isitifiketi se-CA sifakiwe"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"Isitifiketi somsebenzisi sifakiwe"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"Isitifiketi se-Wi-Fi sifakiwe"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"Isitifiketi somthombo wohlelo lokusebenza sifakiwe"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"Ayikwazanga ukufaka ngoba usayizi wesitifiketi mkhulu kakhulu."</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"Ayikwazanga ukufaka ngoba ifayela lesitifiketi alikwazanga ukutholwa."</string>
     <string name="cert_read_error" msgid="7353463360652419796">"Ayikwazanga ukufaka ngoba ifayela lesitifiketi alikwazanga ukufundwa."</string>
