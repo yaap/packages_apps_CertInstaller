@@ -50,7 +50,7 @@
     <string name="invalid_certificate_message" msgid="3508065546083182733">"ይህ ፋይል እንደ <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g> ጥቅም ላይ ሊውል አይችልም"</string>
     <string name="certificate" msgid="8790577925509962529">"የእውቅና ማረጋገጫ"</string>
     <string name="ca_certificate" msgid="7397198551290322945">"CA የእውቅና ማረጋገጫ"</string>
-    <string name="user_certificate" msgid="514888069820553128">"VPN &amp; መተግበሪያ የተጠቃሚ የእውቅና ማረጋገጫ"</string>
+    <string name="user_certificate" msgid="514888069820553128">"VPN እና መተግበሪያ የተጠቃሚ የእውቅና ማረጋገጫ"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"Wi‑Fi የእውቅና ማረጋገጫ"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"CA የእውቅና ማረጋገጫ ተጭኗል"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"የተጠቃሚ የእውቅና ማረጋገጫ ተጭኗል"</string>
