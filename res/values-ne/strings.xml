@@ -55,7 +55,7 @@
     <string name="ca_cert_is_added" msgid="2847081843756291802">"CA प्रमाणपत्र स्थापना गरियो"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"प्रयोगकर्ताको प्रमाणपत्र स्थापना गरियो"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"Wi‑Fi को प्रमाणपत्र स्थापना गरियो"</string>
-    <string name="cert_too_large_error" msgid="8715414972725646285">"स्थापना गर्न सकेन किनकि प्रमाणपत्रको आकार अति नै ठूलो छ।"</string>
+    <string name="cert_too_large_error" msgid="8715414972725646285">"स्थापना गर्न सकेन किनकि प्रमाणपत्रको आकार अति नै ठुलो छ।"</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"स्थापना गर्न सकेन किनभने प्रमाणपत्र फाइल पत्ता लगाउन सकिएन।"</string>
     <string name="cert_read_error" msgid="7353463360652419796">"स्थापना गर्न सकिएन किनभने प्रमाणपत्र फाइल पढ्न सकेन।"</string>
     <string name="cert_temp_error" msgid="617276803992714550">"अस्थायी विफलता। कृपया पछि फेरि प्रयास गर्नुहोस्।"</string>
