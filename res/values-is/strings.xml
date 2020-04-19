@@ -50,7 +50,7 @@
     <string name="invalid_certificate_message" msgid="3508065546083182733">"Ekki er hægt að nota þessa skrá sem <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g>"</string>
     <string name="certificate" msgid="8790577925509962529">"Vottorð"</string>
     <string name="ca_certificate" msgid="7397198551290322945">"CA-vottorð"</string>
-    <string name="user_certificate" msgid="514888069820553128">"VPN- og forritsnotandavottorð"</string>
+    <string name="user_certificate" msgid="514888069820553128">"Vottorð VPN og forritsnotanda"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"Wi‑Fi vottorð"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"CA-vottorð er uppsett"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"Notandavottorð er uppsett"</string>
