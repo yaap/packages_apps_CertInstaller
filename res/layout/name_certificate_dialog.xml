@@ -24,11 +24,6 @@
             android:layout_height="wrap_content"
             android:padding="16dp">
 
-        <TextView android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:text="@string/name_credential_dialog_title"
-                  style="@style/dialog_title"/>
-
         <TextView android:id="@+id/error"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
