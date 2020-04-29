@@ -458,6 +458,7 @@ public class CertInstaller extends Activity {
 
         Dialog d = new AlertDialog.Builder(this)
                 .setView(view)
+                .setTitle(R.string.name_credential_dialog_title)
                 .setPositiveButton(android.R.string.ok, (dialog, id) -> {
                     String name = mView.getText(R.id.certificate_name);
                     if (TextUtils.isEmpty(name)) {
