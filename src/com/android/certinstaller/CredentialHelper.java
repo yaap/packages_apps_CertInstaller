@@ -42,7 +42,6 @@ import com.android.org.conscrypt.TrustedCertificateStore;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
-import java.nio.ByteBuffer;
 import java.security.KeyFactory;
 import java.security.KeyStore;
 import java.security.KeyStore.PasswordProtection;
@@ -102,8 +101,7 @@ class CredentialHelper {
         String certUsageSelected = bundle.getString(Credentials.EXTRA_CERTIFICATE_USAGE);
         bundle.remove(Credentials.EXTRA_CERTIFICATE_USAGE);
         if (certUsageSelected != null) {
-            mCertUsageSelected = certUsageSelected;
-            mUid = getUidFromCertificateUsage(certUsageSelected);
+            setCertUsageSelectedAndUid(certUsageSelected);
         } else {
             mUid = bundle.getInt(Credentials.EXTRA_INSTALL_AS_UID, -1);
         }
@@ -291,8 +289,9 @@ class CredentialHelper {
         return mName;
     }
 
-    void setCertUsageSelected(String certUsageSelected) {
+    void setCertUsageSelectedAndUid(String certUsageSelected) {
         mCertUsageSelected = certUsageSelected;
+        mUid = getUidFromCertificateUsage(certUsageSelected);
     }
 
     String getCertUsageSelected() {
