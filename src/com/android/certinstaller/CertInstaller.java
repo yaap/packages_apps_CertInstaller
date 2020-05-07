@@ -365,10 +365,10 @@ public class CertInstaller extends Activity {
         radioGroup.setOnCheckedChangeListener((group, checkedId) -> {
             switch (checkedId) {
                 case R.id.user_certificate:
-                    mCredentials.setCertUsageSelected(Credentials.CERTIFICATE_USAGE_USER);
+                    mCredentials.setCertUsageSelectedAndUid(Credentials.CERTIFICATE_USAGE_USER);
                     break;
                 case R.id.wifi_certificate:
-                    mCredentials.setCertUsageSelected(Credentials.CERTIFICATE_USAGE_WIFI);
+                    mCredentials.setCertUsageSelectedAndUid(Credentials.CERTIFICATE_USAGE_WIFI);
                 default:
                     Slog.i(TAG, "Unknown selection for scope");
             }
@@ -379,11 +379,7 @@ public class CertInstaller extends Activity {
         Dialog d = new AlertDialog.Builder(this)
                 .setView(view)
                 .setPositiveButton(android.R.string.ok, (dialog, id) -> {
-                    if (radioGroup.getCheckedRadioButtonId() == R.id.user_certificate) {
-                        showDialog(NAME_CREDENTIAL_DIALOG);
-                    } else {
-                        installCertificateToKeystore(appContext);
-                    }
+                    showDialog(NAME_CREDENTIAL_DIALOG);
                 })
                 .setNegativeButton(android.R.string.cancel,
                         (dialog, id) -> toastErrorAndFinish(R.string.cert_not_saved))
