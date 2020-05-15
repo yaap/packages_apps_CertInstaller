@@ -77,7 +77,8 @@ public class CertInstallerMain extends PreferenceActivity {
         setResult(RESULT_CANCELED);
 
         UserManager userManager = (UserManager) getSystemService(Context.USER_SERVICE);
-        if (userManager.hasUserRestriction(UserManager.DISALLOW_CONFIG_CREDENTIALS)) {
+        if (userManager.hasUserRestriction(UserManager.DISALLOW_CONFIG_CREDENTIALS)
+                || userManager.isGuestUser()) {
             finish();
             return;
         }
