@@ -50,7 +50,7 @@
     <string name="invalid_certificate_message" msgid="3508065546083182733">"यो फाइल कुनै <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g> को रूपमा प्रयोग गर्न सकिँदैन"</string>
     <string name="certificate" msgid="8790577925509962529">"प्रमाणपत्र"</string>
     <string name="ca_certificate" msgid="7397198551290322945">"CA को प्रमाणपत्र"</string>
-    <string name="user_certificate" msgid="514888069820553128">"VPN र अनुप्रयोगको प्रयोगकर्तासम्बन्धी प्रमाणपत्र"</string>
+    <string name="user_certificate" msgid="514888069820553128">"VPN र एपको प्रयोगकर्तासम्बन्धी प्रमाणपत्र"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"Wi‑Fi को प्रमाणपत्र"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"CA प्रमाणपत्र स्थापना गरियो"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"प्रयोगकर्ताको प्रमाणपत्र स्थापना गरियो"</string>
@@ -62,7 +62,7 @@
     <string name="only_primary_user_allowed" msgid="4005084935023047716">"यो उपकरणको मालिकले मात्र प्रमाणपत्रहरू स्थापना गर्न सक्छ।"</string>
     <string name="credential_usage_label" msgid="1513892208033156805">"प्रमाणपत्रको प्रयोग:"</string>
   <string-array name="credential_usage">
-    <item msgid="375085478373011304">"VPN र अनुप्रयोगहरू"</item>
+    <item msgid="375085478373011304">"VPN र एपहरू"</item>
     <item msgid="692322974985472861">"Wi-Fi"</item>
   </string-array>
     <string name="certificate_capabilities_warning" msgid="4158609401937799110">"टिपोट: यो प्रमाणपत्रको जारीकर्ताले यो यन्त्रमा आउने र यहाँबाट जाने सबै ट्राफिकको निरीक्षण गर्न सक्नुहुन्छ।"</string>
