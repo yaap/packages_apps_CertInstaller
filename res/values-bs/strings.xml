@@ -28,7 +28,7 @@
     <string name="p12_description" msgid="4128352087331630024">"Certifikati u bazi ključeva PKCS12."</string>
     <string name="one_userkey" msgid="3500697912370644881">"jedan korisnički ključ"</string>
     <string name="userkey_type" msgid="6214833257030657106">"Algoritam:"</string>
-    <string name="one_usercrt" msgid="7690798336332403106">"jedan certifikat korisnika"</string>
+    <string name="one_usercrt" msgid="7690798336332403106">"jedan korisnički certifikat"</string>
     <string name="one_cacrt" msgid="2667950425420663146">"jedan CA certifikat"</string>
     <string name="n_cacrts" msgid="2141498640685639208">"%d CA certifikati"</string>
     <string name="password_error" msgid="2042471639556516356">"Unesite ispravnu lozinku."</string>
@@ -39,7 +39,7 @@
     <string name="cert_not_saved" msgid="4037698479662830270">"Certifikat nije instaliran."</string>
     <string name="no_cert_to_saved" msgid="5708884372817309068">"Nema certifikata za instalaciju."</string>
     <string name="invalid_cert" msgid="7704228670980743590">"Certifikat je nevažeći."</string>
-    <string name="action_missing_private_key" msgid="7543470057312920042">"Za instalaciju potvrde potreban je privatni ključ"</string>
+    <string name="action_missing_private_key" msgid="7543470057312920042">"Za instaliranje certifikata potreban je privatni ključ"</string>
     <string name="action_missing_user_cert" msgid="3727411730202316771">"Za instalaciju privatnog ključa potrebna je potvrda"</string>
     <string name="cert_is_added" msgid="6996557598167000500">"Certifikat <xliff:g id="CREDENTIAL">%s</xliff:g> je instaliran."</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"Instalacija je prekinuta jer je certifikat prevelik."</string>
