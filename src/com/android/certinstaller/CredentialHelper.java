@@ -471,4 +471,8 @@ class CredentialHelper {
             return true;
         }
     }
+
+    public String getReferrer() {
+        return mReferrer;
+    }
 }
