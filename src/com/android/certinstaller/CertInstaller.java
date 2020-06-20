@@ -25,6 +25,8 @@ import android.app.ProgressDialog;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.security.Credentials;
@@ -345,10 +347,31 @@ public class CertInstaller extends Activity {
         }
     }
 
+    public CharSequence getCallingAppLabel() {
+        final String callingPkg = mCredentials.getReferrer();
+        if (callingPkg == null) {
+            Log.e(TAG, "Cannot get calling calling AppPackage");
+            return null;
+        }
+
+        final PackageManager pm = getPackageManager();
+        final ApplicationInfo appInfo;
+        try {
+            appInfo = pm.getApplicationInfo(callingPkg, PackageManager.MATCH_DISABLED_COMPONENTS);
+        } catch (PackageManager.NameNotFoundException e) {
+            Log.e(TAG, "Unable to find info for package: " + callingPkg);
+            return null;
+        }
+
+        return appInfo.loadLabel(pm);
+    }
+
     private Dialog createRedirectCaCertificateDialog() {
+        final String message = getString(
+                R.string.redirect_ca_certificate_with_app_info_message, getCallingAppLabel());
         Dialog d = new AlertDialog.Builder(this)
                 .setTitle(R.string.redirect_ca_certificate_title)
-                .setMessage(R.string.redirect_ca_certificate_message)
+                .setMessage(message)
                 .setPositiveButton(R.string.redirect_ca_certificate_close_button,
                         (dialog, id) -> toastErrorAndFinish(R.string.cert_not_saved))
                 .create();
