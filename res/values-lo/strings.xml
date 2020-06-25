@@ -42,8 +42,8 @@
     <string name="action_missing_private_key" msgid="7543470057312920042">"ຕ້ອງໃຊ້ກະແຈສ່ວນຕົວເພື່ອຕິດຕັ້ງໃບຮັບຮອງ"</string>
     <string name="action_missing_user_cert" msgid="3727411730202316771">"ຕ້ອງໃຊ້ໃບຮັບຮອງເພື່ອຕິດຕັ້ງກະແຈສ່ວນຕົວ"</string>
     <string name="select_certificate_usage_title" msgid="8853023485944920851">"ເລືອກປະເພດໃບຮັບຮອງ"</string>
-    <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"ບໍ່ສາມາດຕິດຕັ້ງໃບຢັ້ງຢືນ CA ໄດ້"</string>
-    <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"ໃບຢັ້ງຢືນ CA ອາດເຮັດໃຫ້ທ່ານມີຄວາມສ່ຽງດ້ານຄວາມເປັນສ່ວນຕົວໄດ້ ແລະ ຈະຕ້ອງຕິດຕັ້ງໃນການຕັ້ງຄ່າ"</string>
+    <string name="redirect_ca_certificate_title" msgid="3457516863949244510">"ຕິດຕັ້ງໃບຮັບຮອງ CA ໃນການຕັ້ງຄ່າ"</string>
+    <string name="redirect_ca_certificate_with_app_info_message" msgid="934477720755323579">"ໃບຮັບຮອງນີ້ຈາກ <xliff:g id="REQUESTING_APP">%1$s</xliff:g> ຈະຕ້ອງຖືກຕິດຕັ້ງໃນການຕັ້ງຄ່າກ່ອນ. ໃຫ້ຕິດຕັ້ງໃບຮັບຮອງ CA ຈາກອົງການທີ່ທ່ານເຊື່ອຖືເທົ່ານັ້ນ."</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"ປິດ"</string>
     <string name="invalid_certificate_title" msgid="6500315398016809635">"ບໍ່ສາມາດໃຊ້ໄຟລ໌ນີ້ໄດ້"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"ປິດ"</string>

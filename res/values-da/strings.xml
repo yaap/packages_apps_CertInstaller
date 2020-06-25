@@ -42,8 +42,8 @@
     <string name="action_missing_private_key" msgid="7543470057312920042">"Et certifikat kan ikke installeres uden en privat nøgle"</string>
     <string name="action_missing_user_cert" msgid="3727411730202316771">"En privat nøgle kan ikke installeres uden et certifikat"</string>
     <string name="select_certificate_usage_title" msgid="8853023485944920851">"Vælg en certifikattype"</string>
-    <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"CA-certifikater kan ikke installeres"</string>
-    <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"CA-certifikater kan udgøre en risiko for dit privatliv, og de skal installeres under Indstillinger"</string>
+    <string name="redirect_ca_certificate_title" msgid="3457516863949244510">"Installer CA-certifikater under Indstillinger"</string>
+    <string name="redirect_ca_certificate_with_app_info_message" msgid="934477720755323579">"Dette certifikat fra <xliff:g id="REQUESTING_APP">%1$s</xliff:g> skal installeres under Indstillinger. Du bør kun installere CA-certifikater fra organisationer, du har tillid til."</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"Luk"</string>
     <string name="invalid_certificate_title" msgid="6500315398016809635">"Denne fil kan ikke bruges"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"Luk"</string>

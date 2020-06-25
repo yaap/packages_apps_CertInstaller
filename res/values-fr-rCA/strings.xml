@@ -42,8 +42,8 @@
     <string name="action_missing_private_key" msgid="7543470057312920042">"Clé privée requise pour installer un certificat"</string>
     <string name="action_missing_user_cert" msgid="3727411730202316771">"Certificat requis pour installer une clé privée"</string>
     <string name="select_certificate_usage_title" msgid="8853023485944920851">"Choisissez un type de certificat"</string>
-    <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"Impossible d\'installer les certificats CA"</string>
-    <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"Les certificats CA peuvent présenter un risque pour votre confidentialité et doivent être installés dans le menu Paramètres"</string>
+    <string name="redirect_ca_certificate_title" msgid="3457516863949244510">"Installer les certificats CA dans les paramètres"</string>
+    <string name="redirect_ca_certificate_with_app_info_message" msgid="934477720755323579">"Ce certificat de <xliff:g id="REQUESTING_APP">%1$s</xliff:g> doit être installé dans les paramètres. Installez uniquement les certificats CA provenant d\'organisations en qui vous avez confiance."</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"Fermer"</string>
     <string name="invalid_certificate_title" msgid="6500315398016809635">"Impossible d\'utiliser ce fichier"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"Fermer"</string>
