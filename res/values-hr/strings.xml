@@ -42,8 +42,8 @@
     <string name="action_missing_private_key" msgid="7543470057312920042">"Za instaliranje certifikata potreban je privatni ključ"</string>
     <string name="action_missing_user_cert" msgid="3727411730202316771">"Za instaliranje privatnog ključa potreban je certifikat"</string>
     <string name="select_certificate_usage_title" msgid="8853023485944920851">"Odaberite vrstu certifikata"</string>
-    <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"Instaliranje CA certifikata nije uspjelo"</string>
-    <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"CA certifikati mogu ugroziti vašu privatnost i potrebno ih je instalirati u Postavkama"</string>
+    <string name="redirect_ca_certificate_title" msgid="3457516863949244510">"Instalirajte CA certifikate u Postavkama"</string>
+    <string name="redirect_ca_certificate_with_app_info_message" msgid="934477720755323579">"Ovaj certifikat aplikacije <xliff:g id="REQUESTING_APP">%1$s</xliff:g> potrebno je instalirati u Postavkama. Instalirajte CA certifikate samo od organizacija kojima vjerujete."</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"Zatvori"</string>
     <string name="invalid_certificate_title" msgid="6500315398016809635">"Tu datoteku ne možete upotrebljavati"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"Zatvori"</string>

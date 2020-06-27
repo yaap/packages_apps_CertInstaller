@@ -42,8 +42,8 @@
     <string name="action_missing_private_key" msgid="7543470057312920042">"প্ৰমাণপত্ৰ ইনষ্টল কৰিবলৈ নিজা চাবি আৱশ্য়ক"</string>
     <string name="action_missing_user_cert" msgid="3727411730202316771">"নিজা চাবি ইনষ্টল কৰিবলৈ প্ৰমাণপত্ৰ আৱশ্য়ক"</string>
     <string name="select_certificate_usage_title" msgid="8853023485944920851">"এটা প্ৰমাণপত্ৰৰ প্ৰকাৰ বাছনি কৰক"</string>
-    <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"চিএ প্ৰমাণপত্ৰসমূহ ইনষ্টল কৰিব নোৱাৰি"</string>
-    <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"চিএ প্ৰমাণপত্ৰসমূহে আপোনাৰ গোপনীয়তা অসুৰক্ষিত কৰিব পাৰে আৰু এইবোৰ ছেটিংসমূহতে ইনষ্টল কৰিব লাগিব"</string>
+    <string name="redirect_ca_certificate_title" msgid="3457516863949244510">"CA প্ৰমাণপত্ৰসমূহ ছেটিংসমূহত ইনষ্টল কৰক"</string>
+    <string name="redirect_ca_certificate_with_app_info_message" msgid="934477720755323579">"<xliff:g id="REQUESTING_APP">%1$s</xliff:g>ৰ পৰা পোৱা এই প্ৰমাণপত্ৰখন ছেটিংসমূহতে ইনষ্টল কৰিবই লাগিব। কেৱল আপুনি বিশ্বাস কৰা প্ৰতিষ্ঠানসমূহৰ পৰাহে CA প্ৰমাণপত্ৰসমূহ ইনষ্টল কৰক।"</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"বন্ধ কৰক"</string>
     <string name="invalid_certificate_title" msgid="6500315398016809635">"এই ফাইলটো ব্যৱহাৰ কৰিব নোৱাৰি"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"বন্ধ কৰক"</string>

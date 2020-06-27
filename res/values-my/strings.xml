@@ -42,8 +42,8 @@
     <string name="action_missing_private_key" msgid="7543470057312920042">"အသိအမှတ်ပြုလက်မှတ် ထည့်သွင်းရန် သီးသန့်ကီး လိုအပ်သည်"</string>
     <string name="action_missing_user_cert" msgid="3727411730202316771">"သီးသန့်ကီး ထည့်သွင်းရန် အသိအမှတ်ပြုလက်မှတ် လိုအပ်သည်"</string>
     <string name="select_certificate_usage_title" msgid="8853023485944920851">"အသိအမှတ်ပြုလက်မှတ် အမျိုးအစားကို ရွေးပါ"</string>
-    <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"CA လက်မှတ်များကို ထည့်သွင်း၍ မရပါ"</string>
-    <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"CA လက်မှတ်သည် သင်၏ကန့်သတ်ဆက်တင်ကို အန္တရာယ်ရှိစေနိုင်ပြီး ဆက်တင်များတွင် ထည့်သွင်းရမည်"</string>
+    <string name="redirect_ca_certificate_title" msgid="3457516863949244510">"CA လက်မှတ်များကို \'ဆက်တင်များ\'တွင် ထည့်သွင်းပါ"</string>
+    <string name="redirect_ca_certificate_with_app_info_message" msgid="934477720755323579">"<xliff:g id="REQUESTING_APP">%1$s</xliff:g> မှ ဤလက်မှတ်ကို \'ဆက်တင်များ\'တွင် ထည့်သွင်းရမည်။ သင်ယုံကြည်ရသော အဖွဲ့အစည်းများထံမှ CA လက်မှတ်များကိုသာ ထည့်သွင်းပါ။"</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"ပိတ်ရန်"</string>
     <string name="invalid_certificate_title" msgid="6500315398016809635">"ဤဖိုင်ကို အသုံးပြု၍ မရပါ"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"ပိတ်ထားသည်"</string>
