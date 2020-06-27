@@ -42,8 +42,8 @@
     <string name="action_missing_private_key" msgid="7543470057312920042">"Sertifikatı quraşdırmaq üçün şəxsi açar tələb olunur"</string>
     <string name="action_missing_user_cert" msgid="3727411730202316771">"Şəxsi açarı quraşdırmaq üçün sertifikat tələb olunur"</string>
     <string name="select_certificate_usage_title" msgid="8853023485944920851">"Sertifikat növü seçin"</string>
-    <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"CA sertifikatlarını quraşdırmaq olmur"</string>
-    <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"CA sertifikatları məxfiliyinizi təhlükəyə ata bilər və Ayarlarda quraşdırılmalıdır"</string>
+    <string name="redirect_ca_certificate_title" msgid="3457516863949244510">"Ayarlarda CA sertifikarlarını quraşdırın"</string>
+    <string name="redirect_ca_certificate_with_app_info_message" msgid="934477720755323579">"<xliff:g id="REQUESTING_APP">%1$s</xliff:g> tətbiqindən bu sertifikat Ayarlarda quraşdırılmalıdır. Yalnız güvəndiyiniz təşkilatlardan CA sertifikatları quraşdırın."</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"Bağlayın"</string>
     <string name="invalid_certificate_title" msgid="6500315398016809635">"Bu fayldan istifadə etmək olmur"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"Bağlayın"</string>

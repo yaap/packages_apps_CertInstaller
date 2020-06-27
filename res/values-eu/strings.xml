@@ -42,8 +42,8 @@
     <string name="action_missing_private_key" msgid="7543470057312920042">"Gako pribatua behar da ziurtagiri bat instalatzeko"</string>
     <string name="action_missing_user_cert" msgid="3727411730202316771">"Ziurtagiria behar da gako pribatu bat instalatzeko"</string>
     <string name="select_certificate_usage_title" msgid="8853023485944920851">"Aukeratu ziurtagiri mota bat"</string>
-    <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"Ezin dira instalatu CA ziurtagiriak"</string>
-    <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"CA ziurtagiriek arriskuan ezar dezakete zure pribatutasuna. Ezarpenak atalean instalatu behar dira."</string>
+    <string name="redirect_ca_certificate_title" msgid="3457516863949244510">"Instalatu CA ziurtagiriak Ezarpenak atalean"</string>
+    <string name="redirect_ca_certificate_with_app_info_message" msgid="934477720755323579">"<xliff:g id="REQUESTING_APP">%1$s</xliff:g> aplikazioaren ziurtagiri hau instalatu behar da Ezarpenak atalean. Instalatu erakunde fidagarrien CA ziurtagiriak soilik."</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"Itxi"</string>
     <string name="invalid_certificate_title" msgid="6500315398016809635">"Ezin da erabili fitxategi hau"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"Itxi"</string>

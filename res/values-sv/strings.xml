@@ -42,8 +42,8 @@
     <string name="action_missing_private_key" msgid="7543470057312920042">"En privat nyckel krävs för att installera certifikat"</string>
     <string name="action_missing_user_cert" msgid="3727411730202316771">"Certifikat krävs för att installera en privat nyckel"</string>
     <string name="select_certificate_usage_title" msgid="8853023485944920851">"Välj typ av certifikat"</string>
-    <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"Det går inte att installera CA-certifikat"</string>
-    <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"CA-certifikat kan äventyra din integritet och måste installeras i inställningarna"</string>
+    <string name="redirect_ca_certificate_title" msgid="3457516863949244510">"Installera CA-certifikat i inställningarna"</string>
+    <string name="redirect_ca_certificate_with_app_info_message" msgid="934477720755323579">"Det här certifikatet från <xliff:g id="REQUESTING_APP">%1$s</xliff:g> måste installeras i inställningarna. Installera endast CA-certifikat från organisationer du litar på."</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"Stäng"</string>
     <string name="invalid_certificate_title" msgid="6500315398016809635">"Det går inte att använda den här filen"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"Stäng"</string>

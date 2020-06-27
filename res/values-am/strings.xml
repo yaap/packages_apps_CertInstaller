@@ -42,8 +42,8 @@
     <string name="action_missing_private_key" msgid="7543470057312920042">"የእውቅና ማረጋገጫን ለመጫን የግል ቁልፍ ያስፈልጋል"</string>
     <string name="action_missing_user_cert" msgid="3727411730202316771">"የግል ቁልፍን ለመጫን የእውቅና ማረጋገጫ ያስፈልጋል"</string>
     <string name="select_certificate_usage_title" msgid="8853023485944920851">"የየእውቅና ማረጋገጫ ዓይነት ይምረጡ"</string>
-    <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"የ CA የእውቅና ማረጋገጫዎችን መጫን አልተቻለም"</string>
-    <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"CA የእውቅና ማረጋገጫዎች የእርስዎን ግላዊነት ስጋት ውስጥ ሊጨምሩት ይችላሉ እና በቅንብሮች ውስጥ መጫን አለባቸው"</string>
+    <string name="redirect_ca_certificate_title" msgid="3457516863949244510">"የCA እውቅና ማረጋገጫዎችን በቅንብሮች ውስጥ ይጫኑ"</string>
+    <string name="redirect_ca_certificate_with_app_info_message" msgid="934477720755323579">"ይህ የ<xliff:g id="REQUESTING_APP">%1$s</xliff:g> የእውቅና ማረጋገጫ በቅንብሮች ውስጥ መጫን አለበት። እርስዎ ከሚያምኗቸው ድርጅቶች የመጡ የCA የእውቅና ማረጋገጫዎችን ብቻ ይጫኑ።"</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"ዝጋ"</string>
     <string name="invalid_certificate_title" msgid="6500315398016809635">"ይህን ፋይል መጠቀም አይቻልም"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"ዝጋ"</string>
