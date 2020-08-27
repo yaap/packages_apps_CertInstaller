@@ -42,21 +42,19 @@
     <string name="action_missing_private_key" msgid="7543470057312920042">"Kinakailangan ng pribadong key para mag-install ng certificate"</string>
     <string name="action_missing_user_cert" msgid="3727411730202316771">"Kinakailangan ng certificate para mag-install ng pribadong key"</string>
     <string name="select_certificate_usage_title" msgid="8853023485944920851">"Pumili ng uri ng certificate"</string>
-    <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"Hindi ma-install ang mga CA certificate"</string>
-    <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"Puwedeng malagay sa panganib ang iyong privacy dahil sa mga CA certificate at dapat i-install ang mga ito sa Mga Setting"</string>
+    <string name="redirect_ca_certificate_title" msgid="3457516863949244510">"Mag-install ng mga CA certificate sa Mga Setting"</string>
+    <string name="redirect_ca_certificate_with_app_info_message" msgid="934477720755323579">"Dapat i-install sa Mga Setting ang certificate na ito na mula sa <xliff:g id="REQUESTING_APP">%1$s</xliff:g>. Mag-install lang ng mga CA certificate mula sa mga organisasyong pinagkakatiwalaan mo."</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"Isara"</string>
-    <string name="invalid_certificate_title" msgid="4642955675523621795">"Hindi ma-install ang mga certificate"</string>
+    <string name="invalid_certificate_title" msgid="6500315398016809635">"Hindi magagamit ang file na ito"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"Isara"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"Hindi puwedeng gamitin ang file na ito bilang <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g>"</string>
     <string name="certificate" msgid="8790577925509962529">"Certificate"</string>
     <string name="ca_certificate" msgid="7397198551290322945">"CA certificate"</string>
     <string name="user_certificate" msgid="514888069820553128">"VPN at certificate ng app user"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"Certificate ng Wi-Fi"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"Certificate ng App Source"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"Na-install na ang CA certificate"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"Na-install na ang certificate ng user"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"Na-install na ang certificate ng Wi-Fi"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"Na-install na ang certificate ng App Source"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"Hindi ma-install dahil masyadong malaki ang certificate."</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"Hindi ma-install dahil hindi mahanap ang file ng certificate."</string>
     <string name="cert_read_error" msgid="7353463360652419796">"Hindi mai-install dahil hindi mabasa ang file ng certificate."</string>

@@ -42,21 +42,19 @@
     <string name="action_missing_private_key" msgid="7543470057312920042">"Каб усталяваць сертыфікат, патрэбны закрыты ключ"</string>
     <string name="action_missing_user_cert" msgid="3727411730202316771">"Каб усталяваць закрыты ключ, патрэбны сертыфікат"</string>
     <string name="select_certificate_usage_title" msgid="8853023485944920851">"Выберыце тып сертыфіката"</string>
-    <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"Не ўдалося ўсталяваць сертыфікаты ЦС"</string>
-    <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"Сертыфікаты ЦС могуць паставіць вашу прыватнасць пад пагрозу. Іх трэба ўсталёўваць у Наладах"</string>
+    <string name="redirect_ca_certificate_title" msgid="3457516863949244510">"Усталяваць сертыфікаты ЦС у Наладах"</string>
+    <string name="redirect_ca_certificate_with_app_info_message" msgid="934477720755323579">"Гэты сертыфікат з праграмы \"<xliff:g id="REQUESTING_APP">%1$s</xliff:g>\" трэба ўсталяваць у Наладах. Усталёўвайце сертыфікаты ЦС толькі ад арганізацый, якім давяраеце."</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"Закрыць"</string>
-    <string name="invalid_certificate_title" msgid="4642955675523621795">"Не ўдалося ўсталяваць сертыфікаты"</string>
+    <string name="invalid_certificate_title" msgid="6500315398016809635">"Не ўдалося скарыстаць гэты файл"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"Закрыць"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"Гэты файл нельга выкарыстоўваць як <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g>"</string>
     <string name="certificate" msgid="8790577925509962529">"Сертыфікат"</string>
     <string name="ca_certificate" msgid="7397198551290322945">"Сертыфікат ЦС"</string>
     <string name="user_certificate" msgid="514888069820553128">"Сертыфікат карыстальніка VPN і праграм"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"Сертыфікат Wi‑Fi"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"Сертыфікат крыніцы праграмы"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"Сертыфікат ЦС усталяваны"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"Сертыфікат карыстальніка ўсталяваны"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"Сертыфікат Wi‑Fi усталяваны"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"Сертыфікат крыніцы праграмы ўсталяваны"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"Не атрымлiваецца ўсталяваць, таму што памер сертыфiката занадта вялікі."</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"Не атрымлiваецца ўсталяваць, таму што немагчыма размясцiць файл сертыфіката."</string>
     <string name="cert_read_error" msgid="7353463360652419796">"Не атрымлiваецца ўсталяваць, таму што немагчыма прачытаць файл сертыфіката."</string>

@@ -28,7 +28,7 @@
     <string name="p12_description" msgid="4128352087331630024">"Certifikati u bazi ključeva PKCS12."</string>
     <string name="one_userkey" msgid="3500697912370644881">"jedan korisnički ključ"</string>
     <string name="userkey_type" msgid="6214833257030657106">"Algoritam:"</string>
-    <string name="one_usercrt" msgid="7690798336332403106">"jedan certifikat korisnika"</string>
+    <string name="one_usercrt" msgid="7690798336332403106">"jedan korisnički certifikat"</string>
     <string name="one_cacrt" msgid="2667950425420663146">"jedan CA certifikat"</string>
     <string name="n_cacrts" msgid="2141498640685639208">"%d CA certifikati"</string>
     <string name="password_error" msgid="2042471639556516356">"Unesite ispravnu lozinku."</string>
@@ -39,24 +39,22 @@
     <string name="cert_not_saved" msgid="4037698479662830270">"Certifikat nije instaliran."</string>
     <string name="no_cert_to_saved" msgid="5708884372817309068">"Nema certifikata za instalaciju."</string>
     <string name="invalid_cert" msgid="7704228670980743590">"Certifikat je nevažeći."</string>
-    <string name="action_missing_private_key" msgid="7543470057312920042">"Za instalaciju potvrde potreban je privatni ključ"</string>
+    <string name="action_missing_private_key" msgid="7543470057312920042">"Za instaliranje certifikata potreban je privatni ključ"</string>
     <string name="action_missing_user_cert" msgid="3727411730202316771">"Za instalaciju privatnog ključa potrebna je potvrda"</string>
     <string name="select_certificate_usage_title" msgid="8853023485944920851">"Odaberite vrstu potvrde"</string>
-    <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"Nije moguće instalirati CA certifikate"</string>
-    <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"CA certifikat može vašu privatnost dovesti u opasnost i mora biti instaliran u Postavkama"</string>
+    <string name="redirect_ca_certificate_title" msgid="3457516863949244510">"Instalirajte CA certifikate u Postavkama"</string>
+    <string name="redirect_ca_certificate_with_app_info_message" msgid="934477720755323579">"Ovaj certifikat iz aplikacije <xliff:g id="REQUESTING_APP">%1$s</xliff:g> morate instalirati u Postavkama. Instalirajte CA certifikate samo ako dolaze od organizacija kojima vjerujete."</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"Zatvori"</string>
-    <string name="invalid_certificate_title" msgid="4642955675523621795">"Nije moguće instalirati potvrde"</string>
+    <string name="invalid_certificate_title" msgid="6500315398016809635">"Nije moguće koristiti ovaj fajl"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"Zatvori"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"Ovaj fajl se ne može koristiti kao <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g>"</string>
     <string name="certificate" msgid="8790577925509962529">"Potvrda"</string>
     <string name="ca_certificate" msgid="7397198551290322945">"CA certifikat"</string>
-    <string name="user_certificate" msgid="514888069820553128">"Potvrda za VPN i korisnika aplikacije"</string>
-    <string name="wifi_certificate" msgid="5356595832360140989">"Potvrda za WiFi"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"Potvrda izvora aplikacije"</string>
+    <string name="user_certificate" msgid="514888069820553128">"Korisnički certifikat za VPN i aplikacije"</string>
+    <string name="wifi_certificate" msgid="5356595832360140989">"Certifikat za WiFi"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"CA certifikat je instaliran"</string>
-    <string name="user_cert_is_added" msgid="3088794616560630823">"Potvrda korisnika je instalirana"</string>
-    <string name="wifi_cert_is_added" msgid="333220613655140428">"Potvrda za WiFi je instalirana"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"Potvrda izvora aplikacije je instalirana"</string>
+    <string name="user_cert_is_added" msgid="3088794616560630823">"Korisnički certifikat je instaliran"</string>
+    <string name="wifi_cert_is_added" msgid="333220613655140428">"Certifikat za WiFi je instaliran"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"Instalacija je prekinuta jer je certifikat prevelik."</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"Instalacija je prekinuta jer fajl u kojem je pohranjen certifikat nije pronađen."</string>
     <string name="cert_read_error" msgid="7353463360652419796">"Instalacija je prekinuta jer fajl u kojem je pohranjen certifikat nije očitan."</string>
