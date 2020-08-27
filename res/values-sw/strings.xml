@@ -42,21 +42,19 @@
     <string name="action_missing_private_key" msgid="7543470057312920042">"Unatakiwa uwe na ufunguo wa faragha ili usakinishe cheti"</string>
     <string name="action_missing_user_cert" msgid="3727411730202316771">"Unatakiwa uwe na cheti ili usakinishe ufunguo wa faragha"</string>
     <string name="select_certificate_usage_title" msgid="8853023485944920851">"Chagua aina ya cheti"</string>
-    <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"Imeshindwa kusakinisha vyeti vya CA"</string>
-    <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"Vyeti vya CA vinaweza kuhatarisha faragha yako na lazima visakinishwe katika Mipangilio"</string>
+    <string name="redirect_ca_certificate_title" msgid="3457516863949244510">"Sakinisha vyeti vya CA katika Mipangilio"</string>
+    <string name="redirect_ca_certificate_with_app_info_message" msgid="934477720755323579">"Ni sharti usakinishe cheti hiki kutoka <xliff:g id="REQUESTING_APP">%1$s</xliff:g> katika Mipangilio. Sakinisha vyeti vya CA kutoka mashirika unayoamini pekee."</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"Funga"</string>
-    <string name="invalid_certificate_title" msgid="4642955675523621795">"Imeshindwa kusakinisha vyeti"</string>
+    <string name="invalid_certificate_title" msgid="6500315398016809635">"Imeshindwa kutumia faili hii"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"Funga"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"Faili hii haiwezi kutumika kama <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g>"</string>
     <string name="certificate" msgid="8790577925509962529">"Cheti"</string>
     <string name="ca_certificate" msgid="7397198551290322945">"Cheti cha CA"</string>
     <string name="user_certificate" msgid="514888069820553128">"Cheti cha mtumiaji wa programu na VPN"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"Cheti cha Wi-Fi"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"Cheti cha Chanzo cha Programu"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"Cheti cha CA kimesakinishwa"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"Cheti cha mtumiaji kimesakinishwa"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"Cheti cha Wi-Fi kimesakinishwa"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"Cheti cha Chanzo cha Programu kimesakinishwa"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"Haikuweza kusakinisha kwa sababu cheti ni kikubwa mno."</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"Haikuweza kusakinisha kwa sababu faili ya cheti haikupatikana."</string>
     <string name="cert_read_error" msgid="7353463360652419796">"Haikuweza kusakinisha kwa sababu faili ya cheti haikuweza kusomwa."</string>

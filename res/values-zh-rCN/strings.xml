@@ -29,8 +29,8 @@
     <string name="one_userkey" msgid="3500697912370644881">"一个用户密钥"</string>
     <string name="userkey_type" msgid="6214833257030657106">"算法："</string>
     <string name="one_usercrt" msgid="7690798336332403106">"一个用户证书"</string>
-    <string name="one_cacrt" msgid="2667950425420663146">"1个CA证书"</string>
-    <string name="n_cacrts" msgid="2141498640685639208">"%d个CA证书"</string>
+    <string name="one_cacrt" msgid="2667950425420663146">"1 个 CA 证书"</string>
+    <string name="n_cacrts" msgid="2141498640685639208">"%d 个 CA 证书"</string>
     <string name="password_error" msgid="2042471639556516356">"键入正确的密码。"</string>
     <string name="password_empty_error" msgid="591713406761723025">"键入密码。"</string>
     <string name="name_empty_error" msgid="3808800768660110354">"键入名称。"</string>
@@ -42,21 +42,19 @@
     <string name="action_missing_private_key" msgid="7543470057312920042">"需要提供私钥才能安装证书"</string>
     <string name="action_missing_user_cert" msgid="3727411730202316771">"需要提供证书才能安装私钥"</string>
     <string name="select_certificate_usage_title" msgid="8853023485944920851">"选择证书类型"</string>
-    <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"无法安装 CA 证书"</string>
-    <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"CA 证书可能会给您带来隐私权方面的风险，而且必须通过“设置”安装"</string>
+    <string name="redirect_ca_certificate_title" msgid="3457516863949244510">"在“设置”中安装 CA 证书"</string>
+    <string name="redirect_ca_certificate_with_app_info_message" msgid="934477720755323579">"必须在“设置”中安装这个由<xliff:g id="REQUESTING_APP">%1$s</xliff:g>提供的证书。请只安装您信任的机构所提供的 CA 证书。"</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"关闭"</string>
-    <string name="invalid_certificate_title" msgid="4642955675523621795">"无法安装证书"</string>
+    <string name="invalid_certificate_title" msgid="6500315398016809635">"无法使用此文件"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"关闭"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"无法将此文件用作<xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g>"</string>
     <string name="certificate" msgid="8790577925509962529">"证书"</string>
     <string name="ca_certificate" msgid="7397198551290322945">"CA 证书"</string>
     <string name="user_certificate" msgid="514888069820553128">"VPN 和应用用户证书"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"WLAN 证书"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"“应用来源”证书"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"已安装 CA 证书"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"已安装用户证书"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"已安装 WLAN 证书"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"已安装“应用来源”证书"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"无法安装该证书，因为证书尺寸过大。"</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"无法安装该证书，因为找不到证书文件。"</string>
     <string name="cert_read_error" msgid="7353463360652419796">"无法安装该证书，因为无法读取证书文件。"</string>

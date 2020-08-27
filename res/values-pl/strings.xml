@@ -42,21 +42,19 @@
     <string name="action_missing_private_key" msgid="7543470057312920042">"Do zainstalowania certyfikatu wymagany jest klucz prywatny"</string>
     <string name="action_missing_user_cert" msgid="3727411730202316771">"Do zainstalowania klucza prywatnego wymagany jest certyfikat"</string>
     <string name="select_certificate_usage_title" msgid="8853023485944920851">"Wybierz typ certyfikatu"</string>
-    <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"Nie można zainstalować certyfikatów CA"</string>
-    <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"Certyfikaty CA mogą stanowić zagrożenie dla prywatności i trzeba je instalować w Ustawieniach"</string>
+    <string name="redirect_ca_certificate_title" msgid="3457516863949244510">"Zainstaluj certyfikaty CA w Ustawieniach"</string>
+    <string name="redirect_ca_certificate_with_app_info_message" msgid="934477720755323579">"Certyfikat aplikacji <xliff:g id="REQUESTING_APP">%1$s</xliff:g> trzeba zainstalować w Ustawieniach. Instaluj tylko certyfikaty CA organizacji, którym ufasz."</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"Zamknij"</string>
-    <string name="invalid_certificate_title" msgid="4642955675523621795">"Nie można zainstalować certyfikatów"</string>
+    <string name="invalid_certificate_title" msgid="6500315398016809635">"Nie można użyć tego pliku"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"Zamknij"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"Ten plik nie może zostać użyty jako: <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g>"</string>
     <string name="certificate" msgid="8790577925509962529">"Certyfikat"</string>
     <string name="ca_certificate" msgid="7397198551290322945">"Certyfikat CA"</string>
     <string name="user_certificate" msgid="514888069820553128">"Certyfikat użytkownika VPN i aplikacji"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"Certyfikat Wi‑Fi"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"Certyfikat źródła aplikacji"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"Zainstalowano certyfikat CA"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"Zainstalowano certyfikat użytkownika"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"Zainstalowano certyfikat Wi‑Fi"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"Zainstalowano certyfikat źródła aplikacji"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"Nie można zainstalować, ponieważ rozmiar certyfikatu jest zbyt duży."</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"Nie można zainstalować, ponieważ nie można znaleźć pliku certyfikatu."</string>
     <string name="cert_read_error" msgid="7353463360652419796">"Nie można zainstalować, ponieważ nie można odczytać pliku certyfikatu."</string>

@@ -42,21 +42,19 @@
     <string name="action_missing_private_key" msgid="7543470057312920042">"အသိအမှတ်ပြုလက်မှတ် ထည့်သွင်းရန် သီးသန့်ကီး လိုအပ်သည်"</string>
     <string name="action_missing_user_cert" msgid="3727411730202316771">"သီးသန့်ကီး ထည့်သွင်းရန် အသိအမှတ်ပြုလက်မှတ် လိုအပ်သည်"</string>
     <string name="select_certificate_usage_title" msgid="8853023485944920851">"အသိအမှတ်ပြုလက်မှတ် အမျိုးအစားကို ရွေးပါ"</string>
-    <string name="redirect_ca_certificate_title" msgid="6485888009061040788">"CA လက်မှတ်များကို ထည့်သွင်း၍ မရပါ"</string>
-    <string name="redirect_ca_certificate_message" msgid="8856228614987350607">"CA လက်မှတ်သည် သင်၏ကန့်သတ်ဆက်တင်ကို အန္တရာယ်ရှိစေနိုင်ပြီး ဆက်တင်များတွင် ထည့်သွင်းရမည်"</string>
+    <string name="redirect_ca_certificate_title" msgid="3457516863949244510">"CA လက်မှတ်များကို \'ဆက်တင်များ\'တွင် ထည့်သွင်းပါ"</string>
+    <string name="redirect_ca_certificate_with_app_info_message" msgid="934477720755323579">"<xliff:g id="REQUESTING_APP">%1$s</xliff:g> မှ ဤလက်မှတ်ကို \'ဆက်တင်များ\'တွင် ထည့်သွင်းရမည်။ သင်ယုံကြည်ရသော အဖွဲ့အစည်းများထံမှ CA လက်မှတ်များကိုသာ ထည့်သွင်းပါ။"</string>
     <string name="redirect_ca_certificate_close_button" msgid="4291301659747279488">"ပိတ်ရန်"</string>
-    <string name="invalid_certificate_title" msgid="4642955675523621795">"လက်မှတ်များကို ထည့်သွင်း၍ မရပါ"</string>
+    <string name="invalid_certificate_title" msgid="6500315398016809635">"ဤဖိုင်ကို အသုံးပြု၍ မရပါ"</string>
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"ပိတ်ထားသည်"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"ဤဖိုင်ကို <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g>အဖြစ် သုံး၍မရပါ"</string>
     <string name="certificate" msgid="8790577925509962529">"အသိအမှတ်ပြုလက်မှတ်"</string>
     <string name="ca_certificate" msgid="7397198551290322945">"CA လက်မှတ်"</string>
     <string name="user_certificate" msgid="514888069820553128">"VPN အက်ပ် သုံးစွဲသူ လက်မှတ်"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"Wi‑Fi လက်မှတ်"</string>
-    <string name="app_src_certificate" msgid="3694999524870757145">"အက်ပ် အရင်းအမြစ် အသိအမှတ်ပြုလက်မှတ်"</string>
     <string name="ca_cert_is_added" msgid="2847081843756291802">"CA လက်မှတ် ထည့်သွင်းပြီးပါပြီ"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"အသုံးပြုသူ အသိအမှတ်ပြုလက်မှတ် ထည့်သွင်းပြီးပါပြီ"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"Wi‑Fi အသိအမှတ်ပြုလက်မှတ် ထည့်သွင်းပြီးပါပြီ"</string>
-    <string name="app_src_cert_is_added" msgid="9052696598954619608">"အက်ပ် အရင်းအမြစ် အသိအမှတ်ပြုလက်မှတ် ထည့်သွင်းပြီးပါပြီ"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"အသိအမှတ်ပြုလက်မှတ်ဖိုင် အရွယ် ကြီးသောကြောင့် ထည့်သွင်းခြင်း မပြုနိုင်ပါ"</string>
     <string name="cert_missing_error" msgid="7040527352278728220">"အသိအမှတ်ပြုလက်မှတ် မတွေ့သောကြောင့် ထည့်သွင်းခြင်း မပြုနိုင်ပါ"</string>
     <string name="cert_read_error" msgid="7353463360652419796">"အသိအမှတ်ပြုလက်မှတ်ဖိုင်အား ဖတ်မရသောကြောင့် ထည့်သွင်းခြင်း မပြုနိုင်ပါ"</string>
@@ -84,7 +82,7 @@
     <string name="install_done_title" msgid="4822989918460334497">"အထောက်အထားများ သွင်းယူပြီး၏"</string>
     <string name="install_done" msgid="1522718684172097080">"သိမ်းဆည်းထားသော ဝိုင်ဖိုင်ကွန်ယက်များသို့ <xliff:g id="NAME">%1$s</xliff:g> အထောက်အထားများ ထည့်ပြီး၏။"</string>
     <string name="done_label" msgid="5597425930652904250">"ပြီးပါပြီ"</string>
-    <string name="wifi_installer_detail" msgid="63879632832701669">"<xliff:g id="NAME">%1$s</xliff:g> မှတဆင့် ရနိုင်သော ကွန်ယက်များအား ချိတ်ဆက်ရန် ဝိုင်ဖိုင်အထောက်အထားများ သွင်းယူပါ"</string>
+    <string name="wifi_installer_detail" msgid="63879632832701669">"<xliff:g id="NAME">%1$s</xliff:g> မှတစ်ဆင့် ရနိုင်သော ကွန်ယက်များအား ချိတ်ဆက်ရန် ဝိုင်ဖိုင်အထောက်အထားများ သွင်းယူပါ"</string>
     <string name="wifi_installer_download_error" msgid="5429453090956277692">"ဒေါင်းလုပ်ရယူထားသော ဖိုင်များတွင် ပြဿနာရှိပြီး သွင်းယူမရနိုင်ပါ။ ဖိုင်အား မှန်ကန်သောနေရာမှ ဒေါင်းလုပ်ရယူထားကြောင်း သေချာပါစေ။"</string>
     <string name="wifi_installer_fail" msgid="894483173306576331">"Wi-Fi  အထောက်အထားများအား သွင်းယွင်းနိုင်ခြင်းမရှိပါ။ ဖိုင်အား ထပ်မံ၍ ဒေါင်းလုပ်ရယူပါ။"</string>
     <string name="wifi_installer_fail_no_wifi_title" msgid="8358191074828840533">"ထည့်သွင်းခြင်း ပယ်ဖျက်လိုက်ပါပြီ"</string>
