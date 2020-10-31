@@ -29,7 +29,7 @@
     <string name="one_userkey" msgid="3500697912370644881">"una clave de usuario"</string>
     <string name="userkey_type" msgid="6214833257030657106">"Algoritmo:"</string>
     <string name="one_usercrt" msgid="7690798336332403106">"un certificado de usuario"</string>
-    <string name="one_cacrt" msgid="2667950425420663146">"un certificado de CA"</string>
+    <string name="one_cacrt" msgid="2667950425420663146">"un certificado AC"</string>
     <string name="n_cacrts" msgid="2141498640685639208">"%d certificados de CA"</string>
     <string name="password_error" msgid="2042471639556516356">"Escribe la contraseña correcta."</string>
     <string name="password_empty_error" msgid="591713406761723025">"Escribe la contraseña."</string>
@@ -49,10 +49,10 @@
     <string name="invalid_certificate_close_button" msgid="350986774973653102">"Cerrar"</string>
     <string name="invalid_certificate_message" msgid="3508065546083182733">"Este archivo no puede utilizarse como <xliff:g id="CERTIFICATE_USAGE">%1$s</xliff:g>"</string>
     <string name="certificate" msgid="8790577925509962529">"certificado"</string>
-    <string name="ca_certificate" msgid="7397198551290322945">"certificado de CA"</string>
+    <string name="ca_certificate" msgid="7397198551290322945">"certificado AC"</string>
     <string name="user_certificate" msgid="514888069820553128">"Certificado de usuario de VPN y aplicaciones"</string>
     <string name="wifi_certificate" msgid="5356595832360140989">"certificado de Wi‑Fi"</string>
-    <string name="ca_cert_is_added" msgid="2847081843756291802">"Se ha instalado el certificado de CA"</string>
+    <string name="ca_cert_is_added" msgid="2847081843756291802">"Se ha instalado el certificado AC"</string>
     <string name="user_cert_is_added" msgid="3088794616560630823">"Se ha instalado el certificado de usuario"</string>
     <string name="wifi_cert_is_added" msgid="333220613655140428">"Se ha instalado el certificado de Wi‑Fi"</string>
     <string name="cert_too_large_error" msgid="8715414972725646285">"No se ha podido instalar porque el tamaño del certificado es demasiado grande."</string>
