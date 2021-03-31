@@ -1,5 +1,7 @@
 package com.android.certinstaller;
 
+import static android.view.WindowManager.LayoutParams.SYSTEM_FLAG_HIDE_NON_SYSTEM_OVERLAY_WINDOWS;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -38,6 +40,7 @@ public class WiFiInstaller extends Activity {
     @Override
     protected void onCreate(Bundle savedStates) {
         super.onCreate(savedStates);
+        getWindow().addSystemFlags(SYSTEM_FLAG_HIDE_NON_SYSTEM_OVERLAY_WINDOWS);
 
         mIsPasspointConfigurationValid = false;
         Bundle bundle = getIntent().getExtras();
@@ -169,7 +172,9 @@ public class WiFiInstaller extends Activity {
                 }
             });
         }
-        builder.create().show();
+        final AlertDialog alertDialog = builder.create();
+        alertDialog.show();
+        alertDialog.getWindow().addSystemFlags(SYSTEM_FLAG_HIDE_NON_SYSTEM_OVERLAY_WINDOWS);
     }
 
     /**
